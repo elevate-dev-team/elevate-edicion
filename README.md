@@ -8,7 +8,7 @@ Skills de Claude Code que usan los editores de Elevate para editar reels, pautas
 
 Pegá en Claude (pestaña **Code**, cualquier carpeta) el prompt de instalación que te pasa el coordinador. No hace falta tener git: Claude descarga el repo, instala lo que falte y te guía.
 
-A mano, si preferís: descargá el [.zip](https://github.com/elevate-dev-team/elevate-edicion/archive/refs/heads/main.zip), descomprimilo como `elevate-edicion` en tu carpeta de usuario, abrí Claude en esa carpeta y escribile "Configurá mi computadora para editar con Claude".
+A mano, si preferís: descargá el [.zip](https://codeload.github.com/elevate-dev-team/elevate-edicion/zip/refs/heads/main), descomprimilo como `elevate-edicion` en tu carpeta de usuario, abrí Claude en esa carpeta y escribile "Configurá mi computadora para editar con Claude".
 
 Claude instala las skills base y las de **tus** clientes, encuentra dónde tenés tus carpetas de clientes, música, SFX y stock (aunque no tengas lo mismo que los demás), revisa las herramientas (ffmpeg, Whisper, Node, Python) y te explica qué hizo. Antes de instalar algo te pide permiso.
 

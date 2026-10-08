@@ -116,6 +116,7 @@ Con una de sus skills de cliente: generar un frame de prueba 1080×1920 con un s
 
 ## 8. Explicarle cómo sigue
 Un resumen corto:
+- **Que abra un chat nuevo** (o reinicie la app de Claude): las skills recién instaladas se cargan al empezar una sesión.
 - Qué se instaló (skills base + sus clientes), qué rutas encontró y **qué no tiene** (y qué pasa entonces: por ejemplo, "no tenés la biblioteca de SFX de Envato, voy a usar la tuya de `SFX`").
 - Cómo se usa: abrir Claude en la carpeta del video y pedir normal ("editá el reel de Paola que está en VIDEOS"). Las skills se cargan solas.
 - Para cliente nuevo: "creá la skill del cliente X" (skill `crear-skill-cliente`).
