@@ -1,0 +1,15 @@
+.DS_Store
+*.bak-*
+__pycache__/
+*.pyc
+node_modules/
+out/
+dist/
+.remotion/
+# Nunca subir material de video ni renders
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.m4a
+*.prproj
