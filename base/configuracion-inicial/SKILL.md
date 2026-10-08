@@ -17,8 +17,18 @@ Antes de cambiar algo en su máquina, decirle qué vas a hacer. No borrar nunca 
 
 ## 1. Ubicar el repo
 - El repo es la carpeta `elevate-edicion`, la que tiene `base/` y `clientes/`. Si Claude se abrió dentro de ella, es la carpeta actual. Si no, resolverla desde el enlace de esta skill (`~/.claude/skills/configuracion-inicial`) o preguntarle dónde la descargó.
-- Si la descargó como .zip sin git, sugerirle clonarlo con git para poder actualizarlo (`git clone <url>`). La URL la tiene el coordinador.
+- Repo: `https://github.com/elevate-dev-team/elevate-edicion` (rama `main`). Ubicación recomendada: `~/elevate-edicion` (Windows `%USERPROFILE%\elevate-edicion`), fuera de discos externos para que las skills no desaparezcan si se desconecta el disco.
 - Detectar el sistema: Mac (`uname`) o Windows (`ver` / PowerShell).
+- **Si se descargó como .zip** (no hay carpeta `.git`; es lo normal cuando el editor no tenía git), conectarlo al repo para que pueda actualizar y compartir. Primero instalar git (paso 6), después, dentro de la carpeta:
+  ```
+  git init -b main
+  git remote add origin https://github.com/elevate-dev-team/elevate-edicion.git
+  git fetch origin main
+  git reset origin/main
+  git branch --set-upstream-to=origin/main main
+  ```
+  `git reset` (sin `--hard`) no toca los archivos: solo los conecta con el historial. Verificar con `git status` que no quedaron diferencias inesperadas.
+- Para que pueda subir cambios necesita cuenta de GitHub con acceso de escritura a `elevate-dev-team`. Si no la tiene, igual puede editar: solo tiene que pedirle al coordinador que lo sume. El login lo hace él en el navegador (`gh auth login` o la ventana de Git Credential Manager en Windows); nunca pedirle la contraseña en el chat.
 
 ## 2. Conocer al editor
 Preguntar en un solo mensaje:
@@ -91,7 +101,8 @@ Mostrarle lo que falta y **pedirle permiso antes de instalar**. Cómo instalarlo
 | Falta | Mac | Windows |
 |---|---|---|
 | ffmpeg / ffprobe | `brew install ffmpeg` | `winget install Gyan.FFmpeg` |
-| git | viene con las Command Line Tools (`xcode-select --install`) | `winget install Git.Git` |
+| git | `xcode-select --install` (abre una ventana: el editor toca **Instalar** y espera; o `brew install git` si ya tiene Homebrew) | `winget install --id Git.Git -e` y abrir una terminal nueva |
+| gh (opcional, para abrir Pull Requests) | `brew install gh` | `winget install --id GitHub.cli -e` |
 | Node (npx) | `brew install node` | `winget install OpenJS.NodeJS.LTS` |
 | whisper-cli | `brew install whisper-cpp` | binario de los releases de whisper.cpp en GitHub, agregado al PATH |
 | modelo Whisper | descargar `ggml-large-v3-turbo.bin` (Hugging Face, `ggerganov/whisper.cpp`) a `~/.cache/whisper/` | igual, en `%USERPROFILE%\.cache\whisper\` |
