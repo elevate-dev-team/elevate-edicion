@@ -47,11 +47,12 @@ Interletrado medido: **subtítulos −4 %**, **títulos y precios −10 %** (en 
 Ver `assets/sistema-texto.jpg` (frames de las referencias) y `assets/prueba-sistema.jpg` (subtítulo + título + precio armados con las fuentes de `assets/`). Los títulos de las referencias se renderizaron sobre verde y están en el `RECURSOS/` de cada pieza (ej. `08-09 …/RECURSOS/SHED.mp4`): sirven para comparar medidas.
 - **Subtítulos:** 1–3 palabras por pantalla, **64 px** de cuerpo (mayúscula 46 px), interletrado −4 %, centrados. Mezcla Medium + ExtraBold ("respondo **EMAILS**", "mis **clientes**", "en **LAKEMONT HILLS**"). Blancos con **borde navy `#263142` (~4 px) + sombra corta**. Al **pecho / debajo del mentón** (y ≈ 1000–1150 según el encuadre): **nunca tapan la cara**. Sobre B-roll, al centro. Entran por corte.
 - **Títulos (gancho, datos, CTA):** 2–3 líneas apiladas, Open Sans **~110 px** en la línea blanca y **~140 px** en la palabra dorada (mayúscula ~100 px), interletrado −10 %, interlineado ~0,85, centrados o al centro del plano debajo de la cara. Estructura: línea en Medium/ExtraBold blanco + **última palabra o lugar en ExtraBold con degradé dorado** ("¿Necesitás una **casa** / con 4 HABITACIONES / **en TAMPA?**", "hay un SHED / **INDEPENDIENTE**"). Entrada: un **bloque dorado `#D2B759` barre** y revela el texto (o escritura palabra por palabra al ritmo de la voz). Título *o* subtítulo, no los dos.
+- **Rotoscopia en los títulos con palabra dorada** (pedido del usuario, 2026-10-19, 07-10: "para que quede más profesional"): cuando el título está sobre David a cámara, va **detrás de él**, apoyado sobre la cabeza (solo el pie de la última línea pasa detrás; si esa línea es una bajada chica, ~30 % de su alto). Proceso y medidas: regla 10 de `edicion-reels-base` (`roto_video.swift` + `limpiar_mascara.py`). Sobre B-roll (ej. "a **PAGAR**" sobre dólares) no hace falta. Si arriba de la cabeza está el logo de Home Prime en la pared (oficina), no taparlo: ese título va debajo del mentón, sin rotoscopia ("no es una **TRAMPA**", 07-10).
 - **Precio y datos:** "**USD** 374,900" (USD blanco, cifra dorada, ~140 px, interletrado −10 %, sombra suave). Datos sueltos grandes ("**4** HABITACIONES", "**1400 pies** cuadrados", "8600 PIES") al nombrarlos. SFX *CashMoney* en el precio.
 - **B-roll en los momentos importantes:** en reels a cámara, cada concepto concreto (firma, contrato, teléfono, seguro, préstamo, aseguradora, la ciudad) se corta a B-roll a pantalla completa; logos reales cuando nombra una entidad (ej. Citizens en tarjeta blanca redondeada). En tours, cada ambiente es su plano, con una palabra que lo nombra (BACKSPLASH, Y GRIFERÍA, countertops).
 - **Transición de la casa:** **zoom / whip con desenfoque de movimiento** entre bloques (Transform con ángulo de obturación). Swoosh en cada una.
 - **Zooms y ritmo:** tours con plano cada **1–2 s**; reels a cámara con punch-in entre frases y cambios de locación (calle, cocina, escritorio, sillón) para sostener el ritmo. Arranque opcional en blanco y negro que pasa a color en el giro (02-10).
-- **Música:** **funk para redes** (groove, bajo marcado, sin voces) bajo la voz. Ver `references/biblioteca.md`. Niveles: los de la base (las referencias quedaron entre −24 y −19 LUFS, **por debajo** del master de la base: no copiar eso).
+- **Música:** **funk para redes** (groove, bajo marcado, sin voces) bajo la voz. En reels educativos/serios a cámara (contratos, trámites) el usuario eligió *Lost In The Fire* (Gesaffelstein & The Weeknd, instrumental, `{MUSICA}/`) **desde 0:11**, a ~13 dB bajo la voz (07-10). Ver `references/biblioteca.md`. Niveles: los de la base (las referencias quedaron entre −24 y −19 LUFS, **por debajo** del master de la base: no copiar eso).
 - **SFX:** Swoosh 04, Transition Complex 14 (transiciones), Eye Wink / Mouse Click (entrada de títulos y palabras clave), CashMoney (precios).
 - **Stock:** material propio primero (tomas de la casa, de David en la propiedad). Stock de Tampa/Florida y de trámites (firma, documentos, teléfono, dólares).
 
@@ -61,6 +62,8 @@ Analizadas (`assets/portadas.jpg`), en `01 REELS/`: `10 OCTUBRE/04-09 …/PORTAD
 - Lockup Open Sans muy apretado (interlineado ~0,85): Medium/ExtraBold blanco + **palabra clave o precio en ExtraBold con degradé dorado**, grande ("**$400,000**", "**TRABAJO**", "**SEGURO EN CITIZENS?**", "**$389,900**"). En portada el precio va con `$`.
 - Tour house: fachada de la casa con cielo; reel a cámara: David sonriendo, más expuesto que el fondo, con el texto arriba o al costado de la cabeza.
 - Variante 02-10: sin caja, texto blanco + *ExtraBold Italic dorado* sobre fondo claro.
+- Variante 07-10 (hecha por el usuario): sin caja, texto blanco Medium + **ExtraBold Italic** en la palabra clave y la frase final en *ExtraBold Italic dorado* ("¿Por qué te pido **FIRMAR** / antes de ver *una CASA?*"), arriba de la cabeza, David sonriendo en la mesa.
+- **A veces la portada la hace el usuario** ("de la portada me encargo yo", 07-10): no generarla; cuando la deja en `PORTADA/` (PNG 1080×1920), insertarla como frame 0 con `portadas-reels/scripts/portada_primer_frame.sh` (fps 25).
 
 ## 6. Referencias aprobadas (REFERENCIA, no fórmula)
 Mirar antes de editar. Detalle en `references/piezas.md`.
@@ -80,9 +83,12 @@ Citizens / seguros: sentado en living, B-roll de Florida y logo de Citizens, cie
 ### E. Reel de representación (variante Open Sauce One) — `01 REELS/10 OCTUBRE/02-10 DC Título pendiente/` (51,6 s)
 Arranca en B/N, fondo de follaje por croma, mucho B-roll de firmas y llamadas, Tampa aérea, cierre frente a puertas de granero.
 
+### F. Reel educativo a cámara con rotoscopia — `01 REELS/10 OCTUBRE/07-10 DC Por qué te pido firmar antes de/` (24,8 s)
+Acuerdo de representación de compradores (NAR, agosto 2024). El usuario entregó el corte hecho (3 locaciones: oficina con logo Home Prime → lobby caminando → mesa de café). Acabado en Remotion (plantilla en `assets/remotion/Video.tsx`): zoom continuo anclado a los ojos, whip en los cambios de locación, B-roll sobre la voz continua (agente con compradores, toma propia de David mostrando el acuerdo, casa de Florida desde dron, teléfono, dólares), títulos con rotoscopia, *Lost In The Fire* desde 0:11, portada del usuario en el frame 0.
+
 ## 7. Ideas que pueden sumar (opcionales, a criterio)
 - Mapa simple de Tampa Bay marcando la zona de la casa (Brandon, Riverview, Tampa).
 - Checklist de datos de la casa (habitaciones, baños, pies², HOA) que se completa durante el tour.
 
 ## 8. Correcciones del cliente
-*(vacío — sumar con fecha y pieza de origen)*
+- **2026-10-19 · 07-10:** música cambiada de funk (*Bounce Me Brother*) a *Lost In The Fire* instrumental desde 0:11 para este tono. Rotoscopia en los momentos con palabra resaltada (títulos dorados sobre David). El resto aprobado sin cambios ("excelente").
