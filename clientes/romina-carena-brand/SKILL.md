@@ -21,7 +21,7 @@ El manual es una paleta (coolors) y un docx de fuentes. Pasa: el **verde salvia*
 
 ## 2. Tipografía — Open Sauce One + Birthstone
 - `assets/fonts/open-sauce-one/` (OFL): Medium, Black, Black Italic, ExtraBold Italic. Pesos confirmados en los `.prproj` de las seis piezas.
-- **Birthstone** (Google Fonts, OFL; no está en `assets/`): bajarla de fonts.google.com/specimen/Birthstone si no está instalada.
+- `assets/fonts/birthstone/` (OFL): **Birthstone** Regular (único peso), de Google Fonts.
 - Interletrado bajo (≈ −2 %) e interlineado de títulos ≈ 0,85: las líneas casi se tocan.
 
 | Uso | Fuente / peso |
