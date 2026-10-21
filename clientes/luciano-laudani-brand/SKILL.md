@@ -60,6 +60,7 @@ Ver `assets/sistema-texto.jpg` (recortes de las piezas) y `assets/prueba-sistema
 - **Música:** **funk / groove para redes** o **corporate** (Motion Array). Ver `references/biblioteca.md`. Niveles: los de la base (las piezas viejas están entre −20 y −24 LUFS; no copiar eso).
 
 ## 5. Portadas
+**Normalmente la portada la entrega el editor**: usar la que pasa y solo insertarla como primer frame (base). Esta guía es para cuando haya que hacerla o retocarla.
 Analizadas diez (`assets/portadas.jpg`, en `01 REELS/<mes>/<pieza>/PORTADA/`) + `assets/portada-ejemplo.jpg` (06-07 José Mármol, aprobada).
 - Fondo: frame de la propiedad o del barrio con **degradé índigo arriba** (`#2C3381` en el borde, se disuelve hacia el centro). Cielo limpio en exteriores.
 - **Caja índigo** semitransparente (~80 %) con esquinas redondeadas detrás del lockup, pegada al borde izquierdo o derecho, encima de la cabeza de Luciano.
