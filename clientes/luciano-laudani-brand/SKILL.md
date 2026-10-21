@@ -21,7 +21,7 @@ El manual es una paleta (coolors) y un docx de fuentes ("Montserrat: subs y port
 
 ## 2. Tipografía — Montserrat + Begum
 - `assets/fonts/montserrat/` (OFL): Light, Regular, Medium, ExtraBold, ExtraBold Italic, Black, Black Italic.
-- **Begum** (Indian Type Foundry) es de **Adobe Fonts**: se activa desde Creative Cloud (<https://fonts.adobe.com/fonts/begum>) y **no se copia al repo** (la licencia no lo permite). Si se renderiza fuera de Premiere (Remotion/PIL) y no está activada, avisar al editor antes de reemplazarla.
+- **Begum** (Indian Type Foundry, pesos Regular/Bold + itálicas) es de **Adobe Fonts**: **cada editor la activa con su propia cuenta de Creative Cloud** (<https://fonts.adobe.com/fonts/begum>). **No se copia al repo** ni se extrae de kits web (la licencia no lo permite). Activada, queda en `~/Library/Application Support/Adobe/CoreSync/plugins/livetype/.r/` con nombre numérico: buscarla por su nombre interno para usarla en PIL/Remotion. Si el editor tiene un kit web propio de Adobe Fonts, va en su `~/.claude/elevate/config.json` → `fuentes.begum_kit`, nunca en la skill. Si no está activada, avisar al editor antes de reemplazarla por otra serif.
 - Interletrado apretado (≈ −2 %) e interlineado ≈ 1,0 en subtítulos y 0,85 en títulos: las líneas casi se tocan y en los títulos dobles se **montan**.
 
 | Uso | Fuente / peso |
