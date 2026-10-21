@@ -36,3 +36,13 @@ Música: *Models*. Recursos: `citizens-logo500.webp`.
 - Subtítulos blancos, Open Sauce Medium con interletrado muy negativo + Black Italic en la palabra clave ("**POR LÍNEA**", "**NO DESAPAREZCO**"), sombra suave, sin borde navy.
 - Mucho B-roll: firma de contrato, marcador sobre texto, Tampa aérea con el río ("¿Qué estás aceptando?"), teclado de teléfono ("A las 8 de la mañana"), hombre al teléfono ("a las 10 de la noche").
 - Cambios de fondo (follaje → panel de listones → puertas de granero blancas) con whip borroso. Cierre a cámara: "no cuesta *NADA*".
+
+## G. Busca a tu realtor antes de mandarle tus papeles — `10 OCTUBRE/06-10 DC Busca a tu realtor antes de man/` (22,4 s · −11,1 LUFS)
+Música: *Timeless (Instrumental)* (`{MUSICA}/`) desde 22,73 s del tema (drop a 26,25 s = entrada a la pantalla), voz −12 / música −28 LUFS. Corte entregado por el usuario; portada del usuario.
+- **0–0,86 s:** plano abierto, David sentado frente al muro verde con el logo; subtítulo al pecho.
+- **0,86–2,7 s:** motion sobre fondo de marca: W-2 y estado de cuenta (montos desenfocados) entran con pop; en "a un realtor" aparece un círculo navy con borde dorado y "?".
+- **2,7–3,52 s:** vuelve a David: "búscalo / **AQUÍ**" (dorado, debajo del mentón).
+- **3,52–18 s:** grabación del celular en ventana con borde dorado sobre fondo navy: URL → botón *Verify a License* (recuadro blanco) → campo del número (tecleo acelerado ×2,4) → resultado del DBPR: *Current, Active*, el nombre, la línea de *complaints or discipline* (recuadros dorados), "es PÚBLICO / y **GRATIS**" sobre la página oscurecida, y la tarjeta de David con **LICENCIA SL3630377**.
+- **18–19,64 s:** selfie frente al logo; la cara llega a y ≈ 1410, así que el subtítulo va arriba de la cabeza.
+- **19,64–22,36 s:** plano abierto: "Haz esta **BÚSQUEDA**", "antes de la / **PRIMERA** / reunión", "con **cualquier** realtor."
+- Whips en los cambios de plano, zoom-blur adentro de la ventana en cada cambio de página, ~35 SFX.

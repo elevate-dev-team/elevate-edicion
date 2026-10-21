@@ -7,6 +7,7 @@ Lo que se usó en las referencias (Motion Array, descargado dentro de cada `PROY
 - *Reaching For The Stars*, *Rising Together* (02-10, 05-08, 15-09): más inspiracional; solo para piezas de tono "representación / confianza".
 
 - *Lost In The Fire* (Gesaffelstein & The Weeknd, instrumental), en `{MUSICA}/`: sintes oscuros y graves, casi sin energía en la banda de la voz. Elegida por el usuario para el reel educativo 07-10, desde 0:11.
+- *Timeless (Instrumental)*, en `{MUSICA}/`: trap oscuro, banda de la voz 9,6 dB bajo el total, BPM medido 150 (golpes fuertes cada 0,75 s en la intro). Usada en 06-10 desde 22,73 s (drop en 26,25 s); aprobada a −16 dB bajo la voz (a −13 dB era "demasiado fuerte").
 
 Para los próximos: buscar en Motion Array / Envato "funk", "funky groove", "nu disco", "funk social media": guitarra rítmica, bajo slap, 100–120 BPM, sin voces. Escuchar antes de elegir y medir el BPM con `grilla_beats.py`.
 En `{MUSICA}/` lo más cercano es `Bounce Me Brother (With a Solid Four).mp3`. El resto de esa carpeta (cinemático, trap, clásica) no va con DC.
