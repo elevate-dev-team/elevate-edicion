@@ -45,7 +45,7 @@ El manual es una paleta (coolors) y un docx de fuentes ("Montserrat: subs y port
 | Blanco | `#FFFFFF` | Subtítulos, bordes |
 
 ## 4. Sistema de texto y acabado
-Ver `assets/sistema-texto.jpg` (recortes de las piezas) y `assets/prueba-sistema.jpg` (render de prueba; la serif ahí es Georgia como suplente de Begum).
+Ver `assets/sistema-texto.jpg` (recortes de las piezas) y `assets/prueba-sistema.jpg` (render de prueba con Begum Regular + Montserrat).
 - En los proyectos de Premiere los subtítulos se generan sobre **fondo verde** (`RECURSOS/<pieza>.mp4`) y se integran con Ultra Key; si se hacen en Remotion/PIL, exportar con alfa y respetar el mismo look.
 - **Subtítulos:** 1–4 palabras, máx. 2 renglones, Montserrat **~58 px** (cap ≈ 41 px), blancos con sombra suave, sin caja. Base en minúscula Light/Regular, palabra clave en ExtraBold. Centro de la frase a y ≈ 1150 (60 %); con plano cerrado baja al pecho. **Nunca sobre la cara.** Entrada corta (pop/escala).
 - **Palabra clave (alternar, 1 recurso por frase):** (a) caja roja semitransparente detrás ("bajar", "y los ACCESOS"); (b) Montserrat Black MAYÚSCULA rellena índigo con borde blanco ~4 px y sombra; (c) Black en degradé rojo.
