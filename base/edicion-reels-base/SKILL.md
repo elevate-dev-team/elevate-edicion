@@ -21,6 +21,7 @@ Las skills se comparten entre editores (repo `elevate-edicion`) y cada uno guard
 - **Al empezar cualquier tarea, leer `config.json`.** Si no existe, cargar la skill `configuracion-inicial` antes de seguir.
 - Una clave en `null` o una ruta que no existe significa que **ese editor no tiene ese recurso**. No es un error: avisarle y usar una alternativa (otra biblioteca configurada, material propio del cliente, motion en lugar de stock), nunca inventar una ruta. Si una skill de cliente menciona un archivo puntual (una canción, una pieza de referencia) que el editor no tiene, decírselo y pedirle algo equivalente.
 - Las skills se referencian como `~/.claude/skills/<skill>/`. Nunca escribir en una skill rutas absolutas de una máquina puntual: siempre marcadores.
+- **Remotion: nunca un `blur()` negativo** (AR 24-10, 2026-10-22): con un `spring` que rebota (pasa de 1), `interpolate(p, [0, 1], [10, 0])` da valores negativos; `filter: blur(-1px)` es inválido, Chrome lo ignora y deja el filtro que tenía ese elemento en el cuadro anterior renderizado en esa pestaña → en el export la cifra parpadeaba entre nítida y muy desenfocada (los `still` sueltos salían bien, por eso no se ve hasta el render). Siempre `Math.max(0, …)` o `extrapolateRight: 'clamp'` en blur, opacidad y escalas que salen de un spring, y revisar en el mp4 una tira de cuadros de cada título.
 
 ## 1. Márgenes de seguridad de redes sociales
 En 1080×1920, todo texto, subtítulo, gráfico, logo o dato va dentro de la zona segura:
@@ -77,6 +78,7 @@ Cadena aprobada, **por tramo/toma** (cada toma tiene su nivel y su ruido):
 
 ### 3.3 SFX
 - Por debajo de la voz, nunca encima de una palabra importante; alinear el **pico** del archivo con el evento visual (medirlo). Los mp3 de la biblioteca tienen colas rotas: convertir a WAV antes de mezclar.
+- **Nivel por loudness, no por pico** (AR 24-10, 2026-10-22: "el CashMoney es casi imperceptible"): normalizar cada SFX a un pico fijo (−18 dBFS) deja los archivos con mucho pico y poco cuerpo (CashMoney, wink) 15–16 dB bajo la voz. Medir el LUFS del SFX colocado sobre su duración contra la voz en ese tramo: los SFX de "golpe" que el usuario quiere oír (dinero, wink, CTA) van a **~6–8 dB bajo la voz**; whoosh y pops de fondo, más abajo. Un SFX pegado (< 0,15 s) a un whoosh fuerte queda tapado: sacar el whoosh o separarlos.
 - Densidad aprobada en reels con mucho movimiento: ~**35 SFX en 57 s** (whoosh/swipe en cada corte y transición, pop en cifras y títulos, "check" en listas, riser que llega con su pico al drop). Con 18 dijo "faltan sfx" (2026-10-02).
 
 ### 3.4 Master y export
