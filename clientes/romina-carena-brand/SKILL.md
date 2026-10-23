@@ -61,6 +61,11 @@ Analizadas las seis (`assets/portadas.jpg`; cada una en `01 REELS/<mes>/<pieza>/
 - Texto en Open Sauce One con mezcla de pesos: Medium + Black + Black Italic, MAYÚSCULA en la idea fuerte ("NO ESTÁN", "CUÁNTO GANAS", "SIN TERRENO"). Glow blanco suave en la palabra grande.
 - **Caja salvia** semitransparente con esquinas redondeadas detrás del lockup (HERON BAY, Las tasas, Weston) o texto suelto con sombra.
 - Lockup arriba del sujeto, Romina de pecho para arriba y mirando a cámara. Precio en Black con degradé blanco→piedra. Birthstone/itálica fina para la ubicación ("en Pembroke Pines").
+- **Portada aprobada de G (la hizo el editor y reemplazó a la de Claude, 2026-10-23)** — `10 OCTUBRE/21-12 ROC Título pendiente/PORTADA/`. Tomarla como modelo:
+  - **Romina grande y nítida**: un cuadro cercano del rodaje (cara ~400 px de ancho, pelo desde y ≈ 605, mentón ≈ 1110), boca cerrada con media sonrisa. No un plano lejano ampliado: la de Claude salió de un cuadro de cuerpo entero con zoom de 1,5× y quedó blanda y chica.
+  - **Golpe en Open Sauce One Black Italic MAYÚSCULA (~105 px, cap ≈ 75 px) con glow blanco fuerte** ("FORT LAUDERDALE" en una línea). Arriba la bajada en Medium + Bold ("Townhouse **en renta** en", ~50 px) y abajo el dato en Black Italic menta ("SIN ASOCIACIÓN", ~48 px).
+  - **Caja salvia ancha** (`#3C7B65` ~75 %, esquinas redondeadas) de x ≈ 80 a 980, y ≈ 400–632: apoya sobre el tope del pelo y puede pisarlo unos 25 px. Texto blanco de x 99 a 956.
+  - Velo salvia **solo arriba** (degradé desde el borde hasta y ≈ 700); el resto de la foto natural, sin desenfoque fuerte ni velo parejo sobre toda la imagen (la de Claude lo tenía al 35 % y se veía lavada).
 
 ## 6. Referencias aprobadas (REFERENCIA, no fórmula)
 Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/`.
@@ -70,10 +75,13 @@ Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE
 - **D. Pauta town house Pembroke Pines** — `10 OCTUBRE/03-10 ROC PAUTA Título pendiente` (41 s).
 - **E. Reel "Broward sin terreno"** — `10 OCTUBRE/07-10 ROC Broward se está quedando sin t` (34 s).
 - **F. Reel selfie "Weston"** — `10 OCTUBRE/16-10 ROC Weston se diseñó desde cero` (33 s).
+- **G. Pauta townhouse en renta Fort Lauderdale** (hecha en Remotion por Claude) — `10 OCTUBRE/21-12 ROC Título pendiente` (49 s). Hook y CTA a cámara frente a la casa, voz en off grabada aparte sobre el recorrido.
 
 ## 7. Ideas que pueden sumar (opcionales, a criterio)
 - Mapa simple de Broward con pin salvia cuando compara ciudades.
 - Fotos históricas o de prensa como tarjeta semitransparente (como Walt Disney en F) para datos curiosos.
 
 ## 8. Correcciones del cliente
-(Vacío por ahora. Sumar con fecha y pieza de origen.)
+- **2026-10-23, G (21-12):** "Hay muchos silencios. Cortalos para hacerlo más dinámico." Con ~0,35 s entre frases de la voz en off se sentía lento: se recortaron 14 pausas (3,3 s de 52,5 s) a ~0,12 s y quedó aprobado. Regla general en `edicion-reels-base` §4.
+- **2026-10-23, G (21-12):** la portada la rehízo el editor (ver §5, "Portada aprobada de G").
+- **2026-10-23, G (21-12):** música: no usar `Bounce Me Brother` de `{MUSICA}/`; buscar un funk propio (ver `references/biblioteca.md`).

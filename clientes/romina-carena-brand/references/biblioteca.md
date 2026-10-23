@@ -5,8 +5,9 @@ Lo que se usó en las referencias (Motion Array, se descarga dentro de cada `PRO
 - *Break Down The Silos* (08-09, 16-10): la más repetida.
 - *Groove Tonic* (07-10), *On Fleek* (03-09), *Models* (03-10): funk/groove con bajo marcado. **Dirección para redes.**
 - *Explore Together* (18-09): corporate liviano, para piezas educativas.
+- *Retro Funky Groove (Lightwight Funk)* — BombinSound, Pixabay (licencia gratuita), en `MUSICA/` de 21-12 (G). Funk liviano, **122,0 BPM medidos**, 87,6 s. Secciones: intro 0–4 s, cuerpo 4–35 s, break sin bajo 38,4–42,8 s, vuelve el bajo 43,3 s, **drop en 51,18 s**. En G se arrancó para que el drop caiga en el CTA. Aprobado.
 
-Para los próximos: buscar en Motion Array "funk", "funky groove", "corporate upbeat": 100–120 BPM, sin voces. En `{MUSICA}/` lo más cercano es `Bounce Me Brother (With a Solid Four).mp3`; el resto (cinemático, trap, clásica) no va con ROC.
+Para los próximos: buscar en Motion Array o en Pixabay Music (género funk, "Editor's Choice") "funk", "funky groove", "corporate upbeat": 100–120 BPM, sin voces. **`Bounce Me Brother` de `{MUSICA}/` no** (rechazado por el editor en 21-12: "no utilices ese tema, buscá uno estilo funk por tu cuenta"); el resto de `{MUSICA}/` (cinemático, trap, clásica) tampoco va con ROC.
 
 ## SFX (`{SFX}/`)
 - `CashMoney Sound Effect.mp3`: precios.
