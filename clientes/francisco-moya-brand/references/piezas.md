@@ -36,3 +36,10 @@ Base: `{CARPETA_CLIENTE}/01 REELS/2026/`. Todas 1080×1920, 25 fps. Análisis 20
 - 21,5–24 s y 24–27,5 s **montaje de fotos-tarjeta** (cuadradas o 3:4, una por bloque de subtítulo): equipo corriendo en un patio, chico saludando con cámara, dos editores en notebook, chico apilando platos con remera "WRK OUT", mate, Fran hablando con buzo beige, zapatillas caminando en el pasto → "el equipo / que está / **detrás** de mí / haciendo / **todo** / lo que / ***no*** se ve".
 - 50,5–55 s foto-tarjeta: celebración en una cocina con globos dorados, brindis → "hace **8 meses** / hoy en día / *ha cambiado* / **transformado** / completamente".
 - Punch-ins entre plano abierto y más cerrado de la misma toma.
+
+## 24-10 FM VSL webinar 2 — horizontal 1920×1080 (92,3 s) ★ primer horizontal aprobado
+`01 REELS/10 OCTUBRE/24-10 FM VSL webinar 2/` · base ya montada por el editor en `EXPORT/Secuencia 02_1.mp4` (Fran sentado, pared gris con viga de madera, remera negra) · inserts verticales en `RECURSOS/` (Tampa/Miami: rooftop con notebook, oficina, clases, equipo caminando, autos) · música generada (`scripts/musica_corporativa.py`).
+- VSL de la página de gracias: felicitaciones → entrar al grupo de WhatsApp → 3 regalos → fecha (martes 3 de noviembre, 7 PM hora Florida) → cierre.
+- Títulos al costado (x ≈ 480) a la altura de los ojos; placas negra ("3 REGALOS") y blancas ("MARTES 3 DE NOVIEMBRE", cierre "nos vemos el martes / **3 DE NOVIEMBRE** / 7 PM · HORA FLORIDA"); 12 fotos-tarjeta 450×800; botón "INGRESAR AL GRUPO" → "✓ LUGAR RESERVADO".
+- Corrección del editor: el skyline vertical agrandado a 16:9 "se nota"; va placa blanca en su lugar.
+- Audio: voz −12,7 LUFS (LRA 3,3 → 1,3), música −25, master −11,0 LUFS / −1,4 dBTP. Transiciones sin SFX (pedido del editor).
