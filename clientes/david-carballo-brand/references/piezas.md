@@ -46,3 +46,11 @@ Música: *Timeless (Instrumental)* (`{MUSICA}/`) desde 22,73 s del tema (drop a 
 - **18–19,64 s:** selfie frente al logo; la cara llega a y ≈ 1410, así que el subtítulo va arriba de la cabeza.
 - **19,64–22,36 s:** plano abierto: "Haz esta **BÚSQUEDA**", "antes de la / **PRIMERA** / reunión", "con **cualquier** realtor."
 - Whips en los cambios de plano, zoom-blur adentro de la ventana en cada cambio de página, ~35 SFX.
+
+## H. Navidad en tu casa nueva — `10 OCTUBRE/05-10 DC Título pendiente/` (30,5 s · 30 fps · −11,1 LUFS)
+Crudos: 2 tomas cenitales del calendario con la voz de David en off (IMG_0845 / IMG_0846, HDR 60 fps) y 2 tomas a cámara en el sillón (polo azul Home Prime). Estructura armada por etapas (guion → estructura → acabado). Voz limpiada por el usuario. *Gimme that Groove!* a −13 dB. Portada del usuario.
+- **0–3,5 s · hook (toma 0845):** calendario de diciembre mientras rodea el 25, zoom in lento 1,00→1,16. Títulos arriba: "¿Quieres pasar / **NAVIDAD** / *en tu casa nueva?*" (dorado) → "entonces la cuenta se hace / **AL REVÉS**" (entra girando, SFX flip).
+- **3,5–21,2 s · cuerpo en off (toma 0846), un plano por idea:** formulario (TASADOR) "Un cierre con financiamiento…", agenda pasando hojas con "30 a 45 / **DÍAS** (caja navy) / desde que se acepta la oferta", llaves, el 25 rodeado ("antes del **25** de diciembre"), pasa a noviembre y rodea el 15 ("a mediados de **NOVIEMBRE**"), mano escribiendo ("necesitas la **PRECALIFICACIÓN**"), pareja frente a la casa, octubre ("la precalificación es / **AHORA** / en octubre", riser con el pico en AHORA).
+- **21,2–30,5 s · a cámara (toma B):** subtítulos pegados al mentón, stock de obra con "la fecha la pone / **EL BUILDER**", punch-in con "**NO TÚ**" (dorado) arriba de la cabeza, CTA "escríbeme esta semana y armamos tu calendario con tus fechas".
+- Whip / zoom-blur en cada corte, light leak cálido al entrar al cuerpo y a la cámara, 28 SFX (whoosh, pops, lápiz en el 25, sello en NO TÚ, guiño en escríbeme). Logo Home Prime arriba a la derecha todo el video.
+- Lo que dijo y no estaba en el guion: "entre **30** a 45 días" (el guion decía 40) y "armamos **tu** calendario": va lo que dice él.
