@@ -43,3 +43,4 @@ Base: `{CARPETA_CLIENTE}/01 REELS/2026/`. Todas 1080×1920, 25 fps. Análisis 20
 - Títulos al costado (x ≈ 480) a la altura de los ojos; placas negra ("3 REGALOS") y blancas ("MARTES 3 DE NOVIEMBRE", cierre "nos vemos el martes / **3 DE NOVIEMBRE** / 7 PM · HORA FLORIDA"); 12 fotos-tarjeta 450×800; botón "INGRESAR AL GRUPO" → "✓ LUGAR RESERVADO".
 - Corrección del editor: el skyline vertical agrandado a 16:9 "se nota"; va placa blanca en su lugar.
 - Audio: voz −12,7 LUFS (LRA 3,3 → 1,3), música −25, master −11,0 LUFS / −1,4 dBTP. Transiciones sin SFX (pedido del editor).
+- Portada horizontal aprobada (2026-10-26): `PORTADA/24-10 FM VSL webinar 2.jpg`, frame de `VIDEOS/DJI_20261022_111858_181_video.MP4` a 3:22,5, "ESTÁS A PUNTO DE / **RESERVAR** / TU LUGAR" (golpe amarillo) a la izquierda de Fran.
