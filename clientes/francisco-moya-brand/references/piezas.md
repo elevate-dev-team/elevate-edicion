@@ -44,3 +44,4 @@ Base: `{CARPETA_CLIENTE}/01 REELS/2026/`. Todas 1080×1920, 25 fps. Análisis 20
 - Corrección del editor: el skyline vertical agrandado a 16:9 "se nota"; va placa blanca en su lugar.
 - Audio: voz −12,7 LUFS (LRA 3,3 → 1,3), música −25, master −11,0 LUFS / −1,4 dBTP. Transiciones sin SFX (pedido del editor).
 - Portada horizontal aprobada (2026-10-26): `PORTADA/24-10 FM VSL webinar 2.jpg`, frame de `VIDEOS/DJI_20261022_111858_181_video.MP4` a 3:22,5, "ESTÁS A PUNTO DE / **RESERVAR** / TU LUGAR" (golpe amarillo) a la izquierda de Fran.
+- Segunda portada aprobada (2026-10-26): `PORTADA/24-10 FM VSL webinar 2 - Como vender 2 o 3 propiedades.jpg`, frame del original a 0:25,43 (de frente, sonrisa suave; el editor la prefirió a la pose pensativa con la mano en el mentón), "¿CÓMO LOGRAR VENDER / **2 O 3** / **PROPIEDADES** / POR MES?".

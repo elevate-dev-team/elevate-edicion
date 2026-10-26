@@ -1,6 +1,7 @@
-# portada_horizontal.py — miniatura 1920×1080 de Fran, aprobada en FM 24-10 VSL webinar 2 (2026-10-26).
+# portada_horizontal.py — miniatura 1920×1080 de Fran. Aprobada en FM 24-10 VSL webinar 2 (2026-10-26): "ESTÁS A PUNTO DE / RESERVAR / TU LUGAR"
+# y esta versión, "¿CÓMO LOGRAR VENDER / 2 O 3 / PROPIEDADES / POR MES?" (frame del original 0:25,43).
 # Insumos (portadas-reels/scripts): frame.jpg (frame del original, color igualado a la captura del editor),
-# recorte_personas.swift -> mascara.png, fondo_limpio.swift -> fondo.jpg. Ajustar LINES, TEXT_X, BLOCK_W, TEXT_MID y OUT.
+# recorte_personas.swift -> mascara.png, fondo_limpio.swift -> fondo.jpg. Ajustar LINES, GAPS, TEXT_X, BLOCK_W, TEXT_MID, glow y OUT.
 # Modos: `guias` (zona de títulos + sello de duración de YouTube) y `solotexto` (para medir la caja del texto).
 # Portada HORIZONTAL 1920×1080 de FM 24-10 VSL webinar 2 (adaptada de portadas-reels/scripts/portada_pil.py).
 # Marca: francisco-moya-brand §9 (MAYÚSCULAS, blanco Montserrat ExtraBold + golpe amarillo #FFC324 Montserrat Black, interlineado muy apretado).
@@ -11,10 +12,10 @@ F = os.path.expanduser('~/.claude/skills/francisco-moya-brand/assets/fonts/')
 W, H = 1920, 1080
 AMARILLO = (255, 195, 36); WHITE = (255, 255, 255); OSC = (16, 16, 18)
 MODE = sys.argv[1] if len(sys.argv) > 1 else ''
-OUT = 'proj/PORTADA/24-10 FM VSL webinar 2.jpg'
-TEXT_X = 120          # borde izquierdo del bloque (alineado a la izquierda)
-BLOCK_W = 770         # ancho del golpe: termina ~70 px antes de la oreja de Fran (x ≈ 945)
-TEXT_MID = 500        # centro vertical del bloque: a la altura de la cara
+OUT = 'proj/PORTADA/24-10 FM VSL webinar 2 - Como vender 2 o 3 propiedades.jpg'
+TEXT_X = 110          # borde izquierdo del bloque (alineado a la izquierda)
+BLOCK_W = 730         # termina ≥ 60 px antes de la oreja de Fran (borde del sujeto x ≈ 907 a la altura de la cara)
+TEXT_MID = 480        # centro vertical del bloque: a la altura de la cara (cabeza y ≈ 306–680)
 
 base = Image.open('frame.jpg').convert('RGB')
 A = lambda im: np.asarray(im, np.float32)
@@ -27,7 +28,7 @@ fondo = Image.open('fondo.jpg').convert('RGB').resize((W, H)).filter(ImageFilter
 fondo = ImageEnhance.Color(ImageEnhance.Brightness(fondo).enhance(0.80)).enhance(0.92)
 near = A(Image.fromarray((mk * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(31)).filter(ImageFilter.GaussianBlur(10))) / 255
 bg = A(fondo) * (1 - near[..., None]) + A(ImageEnhance.Brightness(base).enhance(0.80)) * near[..., None]
-glow = np.exp(-(((xx - 1100) / 420) ** 2 + ((yy - 470) / 360) ** 2))[..., None] * 0.20
+glow = np.exp(-(((xx - 1060) / 420) ** 2 + ((yy - 470) / 360) ** 2))[..., None] * 0.20
 bg = bg * (1 - glow) + np.array([255, 236, 220], np.float32) * glow
 # degradés oscuros: desde la izquierda (detrás del texto), arriba y abajo; no pasan por la cara
 left = np.clip(1 - xx / 1150, 0, 1) ** 1.3 * 0.72
@@ -55,9 +56,11 @@ def font_for(txt, fn, width):
         w = sum(f.getlength(c) for c in txt) - 0.035 * sz * (len(txt) - 1)
         if w <= width: return f, sz
         sz -= 1
-LINES = [('ESTÁS A PUNTO DE', 'Montserrat-ExtraBold.ttf', WHITE, BLOCK_W),
-         ('RESERVAR', 'Montserrat-Black.ttf', AMARILLO, BLOCK_W),
-         ('TU LUGAR', 'Montserrat-ExtraBold.ttf', WHITE, BLOCK_W * 0.62)]
+LINES = [('¿CÓMO LOGRAR VENDER', 'Montserrat-ExtraBold.ttf', WHITE, BLOCK_W),
+         ('2 O 3', 'Montserrat-Black.ttf', AMARILLO, BLOCK_W * 0.52),
+         ('PROPIEDADES', 'Montserrat-Black.ttf', AMARILLO, BLOCK_W),
+         ('POR MES?', 'Montserrat-ExtraBold.ttf', WHITE, BLOCK_W * 0.5)]
+GAPS = [14, 14, 16]   # px entre la línea de base de una línea y el tope de las mayúsculas de la siguiente
 def render(txt, fn, col, width):
     f, sz = font_for(txt, fn, width); tr = -0.035 * sz
     asc = f.getmetrics()[0]
@@ -69,13 +72,13 @@ def render(txt, fn, col, width):
 sp = [render(*l) for l in LINES]
 # por línea de base: cada línea apoya ~10 px sobre el tope de las mayúsculas de la de abajo (acentos aparte)
 G = 0
-pos = {1: G - sp[1][1]}
-pos[0] = (G - (sp[1][1] - sp[1][2])) - 12 - sp[0][1]
-pos[2] = G + 14 + (sp[2][1] - sp[2][2]) - sp[2][1]
+pos = {0: G - sp[0][1]}; base = G
+for i in range(1, len(sp)):
+    cap_top = base + GAPS[i - 1]; pos[i] = cap_top - sp[i][2]; base = pos[i] + sp[i][1]
 y0 = min(pos.values()); y1 = max(pos[i] + sp[i][0].height for i in pos)
 shift = TEXT_MID - (y0 + y1) / 2
 block = Image.new('RGBA', (W, H), (0, 0, 0, 0))
-for i in range(3):
+for i in range(len(sp)):
     s = sp[i][0]; block.alpha_composite(s, (int(TEXT_X), int(pos[i] + shift)))
 a = block.split()[3].point(lambda v: int(v * 0.6)); sh = Image.new('RGBA', (W, H), (0, 0, 0, 0)); sh.putalpha(a)
 sh = sh.filter(ImageFilter.GaussianBlur(14)); txt = Image.new('RGBA', (W, H), (0, 0, 0, 0))
