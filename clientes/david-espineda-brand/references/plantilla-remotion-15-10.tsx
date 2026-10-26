@@ -1,6 +1,6 @@
 import React from 'react';
 // Plantilla de referencia del reel DAE 15-10 (aprobado 2026-10-26). Media en public/dae1510/ del proyecto Remotion del editor; mix.wav sale de la mezcla en ffmpeg.
-// PlacaLogo quedó sin usar (el logo de SIMPLE no va).
+// PlacaLogo y PlacaDavid quedaron sin usar (el logo de SIMPLE no va; David lleva la tarjeta de Airbnb).
 import {
   AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, continueRender, delayRender, getInputProps, interpolate, spring,
   staticFile, useCurrentFrame,
@@ -237,6 +237,20 @@ const T5: React.FC<{dur: number}> = ({dur}) => (
     <Maquina size={92} words={[['administración', 0.02, 0.82], ['\n', 0, 0], ['en', 0.88, 0.95], ['Airbnb', 0.98, 1.4]]} />
   </Bloque>
 );
+// tarjeta de su perfil de Airbnb (captura del cliente) bajo el mentón de David
+const TarjetaAirbnb: React.FC<{dur: number}> = ({dur}) => {
+  const {fr, sp, op} = useIO(dur);
+  const z = interpolate(fr, [0, dur], [1, 1.04]);
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', left: 195, top: 860, width: 690, opacity: op,
+        transform: `translateY(${interpolate(sp, [0, 1], [60, 0])}px) scale(${interpolate(sp, [0, 1], [0.85, 1]) * z})`, transformOrigin: '345px 280px',
+        filter: 'drop-shadow(0 18px 40px rgba(0,0,0,0.45))'}}>
+        <Img src={staticFile('dae1510/airbnb_david.png')} style={{width: 690, display: 'block'}} />
+      </div>
+    </AbsoluteFill>
+  );
+};
 // placa de David bajo el mentón
 const PlacaDavid: React.FC<{dur: number}> = ({dur}) => {
   const {fr, op} = useIO(dur);
@@ -290,7 +304,7 @@ export const TITULOS: [number, number, (d: number) => React.ReactNode][] = [
   [16.867, 18.6, (d) => <Numero n={5} dur={d} />],
   [19.86, 21.8, (d) => <T4 dur={d} />],
   [23.333, 25.067, (d) => <T5 dur={d} />],
-  [25.067, 27.067, (d) => <PlacaDavid dur={d} />],
+  [25.067, 27.067, (d) => <TarjetaAirbnb dur={d} />],
   [27.067, 29.333, (d) => <T6 dur={d} />],
   [31.45, 32.22, (d) => <T7 dur={d} />],
 ];
