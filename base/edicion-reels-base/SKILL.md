@@ -56,6 +56,7 @@ La voz manda, pero la música **se tiene que escuchar**. No hay un número fijo:
 - **Tema denso** (pop comercial, EDM, mucho medio, voces/sintes al frente): a −12 dB "está muy fuerte, tapando prácticamente la voz" (corrección del usuario, 2026-10-02, reel LIU 03-10). Aprobado: **−20 dB debajo de la voz + hueco de EQ en la música mientras se habla** (`equalizer=f=2200:t=o:w=1.6:g=-6,equalizer=f=350:t=o:w=1:g=-2`).
 - Cómo hacerlo: dos copias de la música (con hueco de EQ para los tramos hablados y limpia para los tramos solo música), cruzadas con `volume=...:eval=frame` en los cambios de sección. En un **tramo solo música** (cuerpo musical sin voz) la música va al frente, al nivel de la voz.
 - Ante la duda con un tema nuevo, empezar en −16 dB y escuchar/medir; avisar al usuario qué nivel quedó.
+- **Que el tema termine con el video:** como el reel corta cuando termina de hablar, elegir el punto de entrada para que el final natural del tema (medir dónde cae a < −35 LUFS) coincida con el último frame: `entrada = fin_natural − duración`. Así no hay fade-out forzado (DAE 15-10: "Talent in the Air" desde 77,5 s, 34 s, aprobado).
 
 ### 3.2 Cadena de voz (orden y por qué)
 Corrección del usuario (2026-10-02): "las voces se sienten muy enterradas todo el tiempo". La causa era la **cadena**, no el nivel:
@@ -160,6 +161,8 @@ Si el usuario pasa **un solo video ya cortado** o con la estructura resuelta (so
   - **Moneda** de uso real en ese mercado (ej. Argentina: dólares o pesos sí, euros no; EE. UU.: dólares).
   - Ante la duda, mejor stock sin personas ni fachadas reconocibles (manos, llaves, papeles, detalles) o una animación.
 - **Mismo formato del video**: convertir a 1080×1920 y a los fps del proyecto. Si viene en HDR (HLG de iPhone), pasarlo a SDR antes.
+- **Si se nombra a una persona y se la muestra, el plano es de esa persona mirando a cámara** (corrección del usuario, 2026-10-26, DAE 15-10: el plano de perfil "queda raro"). Vale aunque esté hablando y su voz no se escuche: es preferible a un tramo en silencio pero de perfil.
+- **Speaker a contraluz** (ventana o pasillo iluminado detrás): levantar sombras y medios al convertir la toma, sin quemar los blancos. Aprobado en DAE 15-10 ("subile un poco la exposición"): `curves=all='0/0 0.15/0.22 0.4/0.52 0.75/0.84 1/1',eq=saturation=1.05`. Verificar con capturas antes/después que las paredes blancas no se pierdan.
 
 ## 10. Títulos, transiciones y SFX (obligatorio en el acabado)
 Corrección del usuario (2026-09-30, pauta RIS 20-09): un acabado sin esto está "muy verde".
