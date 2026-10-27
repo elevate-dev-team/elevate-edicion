@@ -1,6 +1,6 @@
 ---
 name: isledys-hernandez-brand
-description: Identidad visual para video de Isledys Hernandez (ISM), Mortgage Loan Originator de Pioneer Mortgage Funding en Brandon / Tampa, Florida (NMLS #1924019), cubana, que les habla a realtors y compradores hispanos. Bodoni URW (Bold MAYÚSCULA para el golpe, Italic para las frases) + Montserrat SemiBold, subtítulos blancos de 2–3 palabras con la palabra clave en Bodoni Bold Italic sobre marcador azul Pioneer con filete dorado, títulos con un solo golpe en dorado o blanco y rotoscopia en el hook, placas celestes con check dorado y pantalla celeste completa en las enumeraciones, CTA en pastilla azul con borde dorado, logos Equal Housing + Pioneer al 50 % en todos los videos, disclaimer "Sujeto a calificación…" y NMLS en el cierre, zoom-blur y destello dorado como transición, música corporativa suave, paleta azul Pioneer / celeste / dorado / hueso, más la referencia de dos pautas a cámara (sentada en la oficina; de pie con B-roll de stock) y la guía de portadas (las hace el editor). Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Isledys Hernandez / ISM / Pioneer Mortgage (reels, pauta, portadas), o cuando el usuario diga "editá el video de Isledys", "video de ISM", "con la marca de Isledys", aunque no mencione la skill.
+description: Identidad visual para video de Isledys Hernandez (ISM), Mortgage Loan Originator de Pioneer Mortgage Funding en Brandon / Tampa, Florida (NMLS #1924019), cubana, que les habla a realtors y compradores hispanos. Bodoni URW (Bold MAYÚSCULA para el golpe, Italic para las frases) + Montserrat SemiBold, subtítulos blancos de 2–3 palabras con la palabra clave en Bodoni Bold Italic sobre marcador azul Pioneer con filete dorado, títulos con un solo golpe en dorado o blanco y rotoscopia en el hook, placas celestes con check dorado y pantalla celeste completa en las enumeraciones, CTA en pastilla azul con borde dorado, logos Equal Housing + Pioneer al 50 % en todos los videos, disclaimer "Sujeto a calificación…" y NMLS en el cierre, zoom-blur y destello dorado como transición, música corporativa suave, paleta azul Pioneer / celeste / dorado / hueso, más la referencia de dos pautas aprobadas a cámara (sentada en la oficina; de pie con B-roll de stock) y la guía de portadas (las hace el editor). Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Isledys Hernandez / ISM / Pioneer Mortgage (reels, pauta, portadas), o cuando el usuario diga "editá el video de Isledys", "video de ISM", "con la marca de Isledys", aunque no mencione la skill.
 ---
 
 # Isledys Hernandez (ISM) — Marca para video
@@ -64,7 +64,7 @@ Ver `assets/sistema-texto.jpg`. Plantilla de Remotion: `references/plantilla-rem
 Estilo de sus portadas (`assets/portadas.jpg`): degradé **azul Pioneer** desde arriba sobre el plano, ella recortada con más exposición, texto pegado arriba de la cabeza: golpe en **Bodoni Bold** (REALTOR / LOS NÚMEROS? en itálica con brillo blanco) + Montserrat Light/ExtraBold Italic, clave en degradé dorado. El texto puede pasar detrás de la cabeza.
 
 ## 6. Referencias (REFERENCIA, no fórmula)
-Las dos aprobadas por el editor; **pendientes de la clienta** al crear la skill (2026-10-27).
+Las dos **aprobadas por la clienta** (2026-10-27), con las correcciones de la §8.
 
 ### A. Pauta sentada en la oficina — `01 REELS/10 OCTUBRE/01-10 ISM PAUTA Título pendiente` (23,8 s)
 - Hook "Realtor, ¿un banco le dijo que no a tu comprador?": REALTOR, espaciado en dorado + "¿un banco le dijo que" + **NO?** con slam dorado; después "No lo mandes a **RENTAR**" con tachado dorado.
@@ -82,6 +82,7 @@ Las dos aprobadas por el editor; **pendientes de la clienta** al crear la skill 
 - Tarjeta "Isledys Hernandez · Pioneer Mortgage Funding · NMLS" estilo la de DC si se presenta más largo.
 
 ## 8. Correcciones del cliente
+- 2026-10-27: la clienta aprobó el 01-10 y el 02-10 tal como se entregaron (con logos y B-roll de stock): el sistema de §2–§4 queda confirmado, B-roll incluido.
 - 2026-10-26 (02-10, editor): rotoscopia en el hook; pantalla celeste completa con el texto entrando en las enumeraciones; el subtítulo dice **"pre-aprobación"** aunque ella diga "aprobación" (lo que se ofrece es la carta de **pre-aprobación**).
 - 2026-10-27 (01-10 y 02-10, editor): logos Equal Housing + Pioneer al 50 % en todos los videos (§4).
 - 2026-10-26 (01-10): el dorado no se lee sobre su ropa amarilla → la palabra clave del subtítulo va en marcador azul; con saco claro, los textos van sobre la pared.
