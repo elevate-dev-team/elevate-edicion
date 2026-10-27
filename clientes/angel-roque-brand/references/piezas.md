@@ -22,6 +22,15 @@ Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/`. Tiempos aproximados (frames cad
 - **Recorrido:** "a **GREAT LAYOUT**" (dorado), "The **KITCHEN** right **into** the", "**CREATING**", "with **family**", patio ("Right off", "Perfect for enjoying"), "the **PRIVACY**", "you have **3** additional" (caja dorada), "their own **SPACE**", "**PLENTY** of room", "a **PLAYROOM**" (azul). Zoom out con desenfoque a los 46 s.
 - **CTA sentado (54–61 s):** "in **DADE CITY**" → "**UNDER**" (azul) + **USD 350.000** (degradé beige) → "**SEND ME** / schedule a".
 
+### 01-09 ARO PAUTA — `10 OCTUBRE/01-09 ARO PAUTA Título pendiente/EXPORT/` (65,2 s, 30 fps, −11 LUFS; aprobado 2026-10-27)
+Casa terminada en Mango Hills (San Antonio, FL), $339.640. Crudos: el recorrido con él a cámara (`Athena .mov`, 4K) y una **voz en off aparte** grabada con el celular tapado (`IMG_1021.MOV`). La estructura fue: hook y CTA de la toma a cámara y cuerpo en off sobre B-roll.
+- **Hook (0–12 s):** fachada, segunda toma. "lista para **ESTRENAR**" (azul con borde) → "**3 habitaciones**" (The Seasons) → "en San Antonio, **FLORIDA**" (blanco→azul) → "y solamente **$339.640**" (dorado + CashMoney). Punch-ins anclados a los ojos y whip al entrar por la puerta.
+- **Zona (12–24 s):** él abre la puerta ("en **Mango Hills**"), sigue el mapa animado (pin dorado, I-75), después el dron de una autopista con "cerca de la **I-75**" / "a unos **15 MINUTOS**" y el mapa con la ruta a Wesley Chapel y los outlets.
+- **A cámara en la cocina (24–33 s):** "la casa está **TERMINADA**" → "3 habitaciones / 2 baños" (The Seasons) → **1.522** calado + "pies cuadrados" → "garaje para ***dos autos.***". Va sin subtítulos: los títulos cubren lo que dice.
+- **Recorrido en off (33–60 s):** sala, cocina ("topes de **GRANITO**"), "la habitación **PRINCIPAL**", clóset, gráfico de íconos de línea "lavadora / secadora", dron de casas con "a ahorrar **ENERGÍA**", pareja, firma y calculadora ("tasas de interés ***promocionales***") y llaves.
+- **CTA (60–65 s):** junto a la ventana, "**ESCRIBEME**" (blanco→beige) + "por WhatsApp", y "terminar el año en tu ***nuevo hogar.***".
+- Música *Evergreen* a −12 dB bajo la voz, 47 SFX. Correcciones de la ronda en la sección 8 del SKILL.md.
+
 ## B. Reel a cámara con stock
 
 ### 12-07 ARO Sabías que antes de vender tu — `07 JULIO/12-07 ANR Sabías que antes de vender tu/` (27,1 s, 30 fps, −23,3 LUFS)

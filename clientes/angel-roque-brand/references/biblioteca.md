@@ -6,6 +6,8 @@ Lo que se usó (Motion Array, descargado en cada `PROYECTO/Motion Array Library/
 - *This Is Your Story* (14-07, 13-07), *Warm Inside* (03-08), *My October* (09-07): corporate / inspiracional para los reels de consejo.
 - Adobe Stock (06-07): *Good Every Day*, *Easy Flow*, *Chill Positive Dance*.
 
+Verificados con Demucs (`vocales.py`, 2026-10-27): ***Evergreen* es instrumental** (voz −57 dB; banda 1–4 kHz 1,5 % → va a −12 dB bajo la voz; aprobado en 01-09, cortado para que el final del tema caiga con el final del video). *Dare To Dream* también es instrumental (−59 dB). ***Victory Lap* NO**: tiene voz o una línea que Demucs separa como voz (mediana −8 dB). *Soft Luxury* tiene momentos con voz (p90 −14 dB): escucharlo antes.
+
 Para los próximos: en Motion Array buscar "funk", "funky groove", "nu disco" (pauta) o "corporate inspiring", "uplifting corporate" (consejos). Siempre instrumental (ver base). `{MUSICA}/` es en su mayoría cinemático, trap o con voz: escuchar antes de usar algo de ahí.
 
 ## SFX
@@ -21,6 +23,9 @@ Para los próximos: en Motion Array buscar "funk", "funky groove", "nu disco" (p
 ## Stock (`{STOCK}/`)
 Sirven: `TAMPA 2.mp4`, `TAMPA BEACH.mp4`, `TAMPA MIAMI.mp4`, `FLORIDA.mp4`, `FLORIDA CASA.mp4`, `autopista florida.mp4`, `familia estados unidos.mp4`, `SHAKE HANDS.mp4` (usado en 03-08 y 13-07), `LLAVES*.mp4`, `FIRMA*.mp4`, `CONTRACT.mp4`, `documentos.mp4`, `DOLARES.mp4`, `CALCULADORA*.mp4`, `CARTEL REAL STATE*.mp4`, `PAREJA*.mp4`, `FAMILIA*.mp4`, `INSPECCION CASA.mp4`.
 **No usar:** nada de Argentina (`BUENOS AIRES`, `OBELISCO`, `CALLE FLORIDA*` — es la calle Florida de Buenos Aires —, `MENDOZA DRONE`, `PLATA ARGENTINA*`, `sur buenos aires`).
+
+## Stock usado en 01-09 (no repetir seguido)
+`autopista florida.mp4` (I-75), `FLORIDA CASA.mp4` (dron de casas con paneles: "ahorrar energía"), `PAREJA 8.mp4` (pareja frente a una casa), `FIRMA 3.mp4`, `CALCULADORA 2.mp4`, `LLAVES 3.mp4` (agente que entrega llaves). Descartar `LLAVES.mp4`: tiene un ícono de casa amarillo animado encima.
 
 ## Material propio
 Tomas de cada casa en `VIDEOS/` y `RECURSOS/` de cada reel (gimbal, drone del barrio). Revisarlas antes de ir a stock.

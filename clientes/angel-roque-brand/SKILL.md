@@ -68,16 +68,21 @@ El manual (`00 IMAGEN DE MARCA/`) es una paleta de 4 colores + "Montserrat / The
 - Acento de color: palabra en dorado o azul ("ARREPIENTES", "PROFESIONAL DETRÁS", "TU CASA?").
 - A veces la palabra grande queda **detrás de la cabeza** (rotoscopia), solo si el recorte queda limpio.
 - Pautas de propiedad: fachada o interior, sin Ángel, con el precio o la zona como protagonista.
+- **En las pautas la portada la hace el editor** (01-09, 2026-10-27): no se genera. Se le pasan **2 frames de la propiedad sin Ángel** (2160×3840, el más nítido de ±0,3 s medido con la varianza del laplaciano) en `PORTADA/` y, cuando la deja ahí, se pone como frame 0 con `portadas-reels/scripts/portada_primer_frame.sh`. La de 01-09: sala vacía con luz, "**San Antonio**, *Florida*" (Montserrat Black Italic + Medium Italic) y "por **$339,000**" con el precio gigante en The Seasons blanco, en el tercio superior. El precio va con coma de miles y redondeado, distinto del video.
 
 ## 6. Referencias aprobadas (REFERENCIA, no fórmula)
 Detalle en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/`.
 - **A. Tour house (pauta)**: `07 JULIO/01-05 ARO PAUTA 14 DE INICIAL` (73 s, Dade City, $14.000 de inicial), `08 AGOSTO/01-08 ANR PAUTA Título pendiente` (71 s, $357.000, tasa 4.99 %), `08 AGOSTO/15-08 ANR POSIBLE PAUTA $330,000` (61 s, **en inglés**).
+- **A2. Tour house con voz en off** (`10 OCTUBRE/01-09 ARO PAUTA Título pendiente`, 65 s, aprobado el 2026-10-27): hook y CTA a cámara, cuerpo en off (grabado aparte con la pantalla en negro) sobre tomas de la casa, un mapa animado de la zona y stock. Detalle en `references/piezas.md`; el código de Remotion está en `template/aro0109/`.
 - **B. Reel a cámara con stock**: `07 JULIO/12-07 ANR Sabías que antes de vender tu` (27 s, arranca en B/N), `08 AGOSTO/02-08 ANR Es el mejor momento para compr` (58 s, mercado de Tampa con gráficos), `08 AGOSTO/14-07 ARO La decisión más grande de tu v` (33 s, CTA "ESCRIBEME").
 
 ## 7. Ideas que pueden sumar (opcionales, a criterio)
-- Mapa simple de Tampa Bay marcando la zona de la casa (navy + punto dorado) cuando dice dónde queda.
+- Mapa simple de Tampa Bay marcando la zona de la casa (navy + punto dorado) cuando dice dónde queda. Se hizo en 01-09: lat/lon reales proyectadas, I-75 dibujándose, pin dorado de la comunidad y ruta dorada con "15 MIN" hasta Wesley Chapel / outlets (`template/aro0109/Video.tsx`, `Mapa`). Los nombres que no dice (Tampa, Dade City) quedaron aprobados.
 - Ficha final de la casa (precio + cuartos + baños + pies²) en The Seasons sobre un plano limpio, antes del CTA.
 
 ## 8. Correcciones del cliente
 (Vacío por ahora: sumar con fecha y pieza de origen. Si contradice algo de arriba, reescribir la regla.)
 - Niveles: las referencias quedaron entre −20 y −25 LUFS; no copiar eso, se masteriza como pide la base.
+- **Sin avisos legales en pantalla** (01-09, 2026-10-27: "Ese texto… sacalo. No lo quiero ahí"): nada de "Sujeto a aprobación de crédito…" aunque hable de financiamiento o tasas. Para ARO esto reemplaza el disclaimer de la regla 6 de la base.
+- **CashMoney bien audible en el precio** (01-09): colocado con el pico a −19 dBFS no se escuchaba, porque el archivo tiene un golpe corto y el cuerpo ~26 dB más abajo. Quedó aprobado con el pico a **−8 dBFS**. Medirlo por loudness contra la voz, no por el pico.
+- **Música funk/groove liviana a −12 dB bajo la voz** (01-09, *Evergreen*: 1,5 % de la energía en 1–4 kHz). A −16 dB "está algo baja".
