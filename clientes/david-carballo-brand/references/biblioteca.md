@@ -9,6 +9,8 @@ Lo que se usó en las referencias (Motion Array, descargado dentro de cada `PROY
 - *Lost In The Fire* (Gesaffelstein & The Weeknd, instrumental), en `{MUSICA}/`: sintes oscuros y graves, casi sin energía en la banda de la voz. Elegida por el usuario para el reel educativo 07-10, desde 0:11.
 - *Timeless (Instrumental)*, en `{MUSICA}/`: trap oscuro, banda de la voz 9,6 dB bajo el total, BPM medido 150 (golpes fuertes cada 0,75 s en la intro). Usada en 06-10 desde 22,73 s (drop en 26,25 s); aprobada a −16 dB bajo la voz (a −13 dB era "demasiado fuerte").
 
+- *Funkee Monkeee* (Mixkit, gratis), en `{CLIENTES}/ANDREA ALMONACID/…/02-10 AAL PAUTA GAVIOTAS 200/MUSICA/` y en el `MUSICA/` de 04-10: funk instrumental (voz −50 dB con `vocales.py`). Usada en 04-10 desde el inicio, a −13 dB bajo la voz (aprobada).
+- **No usar** *Keep the Funk ON* (Mixkit): tiene voz cantada desde ~11 s (rechazada en 04-10). Antes de usar un tema nuevo, medirlo con `vocales.py` de la base.
 - *Gimme that Groove!* (Michael Ramir C., Mixkit, gratis), en `{CLIENTES}/FRANCHU/…/16-10 FM Pauta webinar 5/MUSICA/` y en el `MUSICA/` de 05-10: funk con groove, banda de la voz ≤ 3 % de la energía. Usada en 05-10 desde el seg. 8, a −13 dB bajo la voz (aprobada).
 
 Para los próximos: buscar en Motion Array / Envato "funk", "funky groove", "nu disco", "funk social media": guitarra rítmica, bajo slap, 100–120 BPM, sin voces. Escuchar antes de elegir y medir el BPM con `grilla_beats.py`.
@@ -34,4 +36,5 @@ El usuario pide no repetir stock entre videos de DC (06-10 y 05-10). Antes de el
 - Remotion: los archivos de `public/dc*/` del proyecto.
 
 Usado hasta 05-10 (2026-10-23): `AGENTE BIENES RAICES 2`, `CALCULADORA`, `CLIENTE REAL STATE 6`, `CONTRACT`, `Copia de documentos` (= `documentos`), `DASD`, `FIRMA 3`, `FIRMA CONTRATOS`, `FLORIDA CASA`, `FLORIDA`, `GAS`, `INSPECCION 3`, `MIAMI`, `REALTOR 8`, `TAMPA`, `SHED` (propio), clips de Motion Array (manos con llaves de pareja, firma con abogado, tarjeta de crédito, dinero pasado de mano, teléfono, skyline de Tampa, llamada al 911, hornalla) y en 05-10: `TASADOR`, `AGENDAR`, `LLAVES 3`, `escribir`, `PAREJA 8`, `PAREJA 2`.
+En 04-10 (2026-10-27): `TAMPA BEACH` (ojo: es Miami, MacArthur Causeway; se usó sobre "vives en Florida"), `PAREJA`, `CARTEL REAL STATE 2`, `autopista florida`, `LLAVES 2`, `CALCULADORA 2` (temblor 0,76 px), `Agente bienes raices 3`. Descartado en 04-10: `TAMPA 2` (se ve el cartel de un shopping).
 Descartado por temblor: `CALCULADORA 3` (1,37 px con `temblor.py`), `DOLARES` (3,1 px).
