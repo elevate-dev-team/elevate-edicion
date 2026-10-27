@@ -84,3 +84,10 @@ Pedido del usuario (2026-10-05, PAO 10-09): la portada **se pone en el primer fr
 4. Comparar lado a lado con la foto original: el sujeto se tiene que ver **más luminoso y separado del fondo**, sin halos ni recorte duro.
 5. Portada insertada como primer frame del video final (§5).
 6. Entregar **una** portada final (si hubo opciones descartadas, sacarlas de `PORTADA/`) y decir qué se midió.
+
+## 7. Cuando la portada la arma el editor: pasarle 2 frames
+Algunos clientes tienen la portada a cargo del editor (lo dice su skill de marca; ej. `angel-perez-brand`, `matias-heras-brand`, `pamela-erick-brand`), o el usuario lo pide en el momento ("de la portada me encargo yo"). En ese caso no se diseña: se le pasan **2 frames** del video para que la arme (pedido del usuario, 2026-10-27, AP 09-09).
+- El sujeto **mirando a cámara, sonriendo o con la boca cerrada**, ojos abiertos, de frente, nítido y sin manos delante de la cara.
+- Buscarlos midiendo, toma por toma, sobre el video ya en SDR: `swiftc -O scripts/frames_portada.swift -o frames_portada && ./frames_portada <toma.mov> 10 6`. Revisar a ojo los candidatos (hoja de contacto) y también **los finales de cada toma**: al terminar de hablar el speaker suele sonreír (en AP 09-09 los dos aprobados estaban en los últimos 0,4 s del hook y del CTA).
+- Exportarlos en la resolución original como PNG en `PORTADA/` (`frame_portada_1_<toma>_<t>s.png`, `frame_portada_2_…`), preferentemente de dos tomas o encuadres distintos.
+- Cuando el editor deje la portada en `PORTADA/`, se inserta igual como primer frame (§5).
