@@ -6,6 +6,7 @@ Rutas con los marcadores de `edicion-reels-base` §0. Si el editor no tiene un a
 | Tema | Dónde | Uso |
 |---|---|---|
 | Talent in the Air (Mixkit 473) | se descarga de mixkit.co; copia en `MUSICA/` de 01-10 y 02-10 | Fondo corporativo suave de las dos pautas. Cortado para terminar en 109,2 s del tema (desde 85,4 s en 23,8 s; desde 83,2 s en 26 s). −14,8 dB de ganancia ≈ 15 dB debajo de la voz, hueco −3 dB en 2,2 kHz |
+| Gimme that Groove! - Michael Ramir C. (Mixkit) | copia en `MUSICA/` de 03-10 (y DC 05-10) | Funk instrumental (voz −51 dB con Demucs). Desde 63,42 s hasta el final natural (88,4 s) en 24,97 s; −11,5 dB + hueco −5 dB en 2,2 kHz y −2 dB en 350 Hz ≈ 16–17 dB debajo de la voz |
 
 ## SFX (`{SFX}/`)
 | Archivo | Pico | Uso |
@@ -18,7 +19,8 @@ Rutas con los marcadores de `edicion-reels-base` §0. Si el editor no tiene un a
 | `stamp.mp3` | 0,71 s | "NO" con slam |
 | `check mark.mp3` | 0,38 s | Ítems de listas |
 | `glitch.mp3` | 1,07 s | Números que tiemblan |
-| `flip.mp3` | 0,23 s | Agenda / hojas |
+| ~~`flip.mp3`~~ | 0,23 s | NO usar ("suena raro", 03-10) |
+| `Eye Wink Sound Effect.mp3` | 0,14 s | Números que aparecen (PREGUNTA 01/02/03) |
 | `Notifications and Buttons - 04.wav` | 0,01 s | Placas y pastilla CTA |
 | `SFX - Slider - 01.wav` | 0,11 s | Placa de nombre |
 | `SFX - Message - 01.wav` | 0,00 s | Botón WhatsApp |
