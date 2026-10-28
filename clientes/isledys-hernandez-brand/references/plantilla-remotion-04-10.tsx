@@ -467,7 +467,7 @@ export const TITULOS: [number, number, (p: TP) => React.ReactNode][] = [
   [18.433, 19.067, (p) => <L1 {...p} />],
   [19.95, 20.967, (p) => <C1 {...p} />],
   [20.967, 22.133, (p) => <C2 {...p} />],
-  [20.967, 22.133, (p) => <Pie dur={p.dur} txt="Isledys Hernandez · NMLS #1924019" />],
+  [20.967, 22.133, (p) => <Pie dur={p.dur} txt="Mortgage Loan Originator NMLS# 1924019" />],
 ];
 
 const Guias: React.FC = () => {
