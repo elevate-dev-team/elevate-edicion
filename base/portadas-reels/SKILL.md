@@ -77,6 +77,12 @@ Pedido del usuario (2026-10-05, PAO 10-09): la portada **se pone en el primer fr
 - Por eso el cuadro base de la portada sale del arranque del video (`PORTADA/Frame_00.jpg`), para que el paso al frame 1 no salte de lugar; se puede usar con zoom.
 - Revisar en el mp4 final: frame 0 = portada, frame 1 = video, mismo total de frames.
 
+### Cuando la portada la hace el editor: elegir los 2 frames del speaker
+Varios clientes piden solo **2 frames** del speaker "sonriendo o con la boca cerrada, para que quede más profesional". Para no buscarlos a ojo:
+- `swiftc -O scripts/boca.swift -o boca && ./boca <toma.mp4> 0 <dur> 0.1` (Mac, Vision) → por frame: apertura de la boca, apertura de los ojos y ancho de la boca (sonrisa).
+- Boca cerrada: apertura < ~0,015 y ojos > ~0,28. Sonrisa: ancho alto (> ~0,31) con los ojos todavía abiertos; suele estar **justo después de la última palabra del CTA** (DC 13-10: toma 3, 9,90 s, el único frame con sonrisa real).
+- Revisar los candidatos recortados a la cara y exportar los elegidos en PNG 1080×1920 a `PORTADA/` (con el segundo y la toma en el nombre).
+
 ## 6. Revisión antes de entregar
 1. Render con `guides: true`: caras dentro del cuadrado; texto dentro del margen amarillo, pegado al sujeto y sin tapar caras ni manos.
 2. `medir_texto.py` → OK con ≥100 px en los cuatro lados.
