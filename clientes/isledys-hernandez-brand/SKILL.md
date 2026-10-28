@@ -24,7 +24,7 @@ La identidad la armó Elevate (aprobada por la clienta el 2026-10-26; entregable
 - **Bodoni URW** es de **Adobe Fonts**: NO va al repo. Copiarla al proyecto de Remotion desde Creative Cloud con `edicion-reels-base/scripts/fuentes_adobe.py "bodoni urw" <destino> "Bold,Bold Oblique,Regular Oblique,Medium,Medium Oblique"`. Sin Creative Cloud: kit web `https://use.typekit.net/suk1dpw.css` (familia `bodoni-urw`) o, para PIL, Bodoni Moda (Google, OFL).
 - **Montserrat** (OFL): `assets/fonts/montserrat/` (Medium, SemiBold, Bold, Bold Italic, Black, Black Italic).
 - Interlineado de títulos **0,85** (las líneas casi se tocan, con 14–26 px de margen entre una línea chica y el golpe grande para que no se pisen); interletrado −1 % en Montserrat.
-- **Golpe del título de referencia** (`assets/ref-titulo-glow.jpg`): en Canva es una didona Bold Italic **angosta y con las letras casi tocándose**, que no es la Bodoni URW. Se arma con **Bodoni URW Bold Italic angostada al 85 % (`scaleX(0.85)`) e interletrado −3 %**. Si el editor confirma qué fuente es y existe en Google o Adobe Fonts, se reemplaza por esa.
+- **Golpe del título de referencia** (`assets/ref-titulo-glow.jpg`): la referencia de Canva usa una didona Bold Italic angosta, pero **se hace con la Bodoni URW de la marca** (decisión del editor, 2026-10-28): **Bodoni URW Bold Italic angostada al 85 % (`scaleX(0.85)`) e interletrado −3 %**, para que quede igual de angosta y con las letras casi tocándose. No buscar otra fuente.
 
 | Uso | Fuente y peso |
 |---|---|
@@ -117,7 +117,7 @@ Pedido del editor como referencia de estilo (2026-10-28), **con la paleta y las 
 - Tarjeta "Isledys Hernandez · Pioneer Mortgage Funding · NMLS" estilo la de DC si se presenta más largo.
 
 ## 8. Correcciones del cliente
-- 2026-10-28 (editor): **sistema nuevo desde ahora** — golpe crema con glow que destapa una barra dorada (referencia C, en `00 IMAGEN DE MARCA`) y el estilo del 21-11 de AP y del 01-09 de ARO como referencia, siempre con la paleta y las fuentes de Isledys (§4, §6 C–E). **Sin marcador azul en los subtítulos normales**: solo con ropa amarilla o clara. Pendiente: confirmar qué fuente de Canva es la del golpe (por ahora, Bodoni URW Bold Italic angostada).
+- 2026-10-28 (editor): **sistema nuevo desde ahora** — golpe crema con glow que destapa una barra dorada (referencia C, en `00 IMAGEN DE MARCA`) y el estilo del 21-11 de AP y del 01-09 de ARO como referencia, siempre con la paleta y las fuentes de Isledys (§4, §6 C–E). **Sin marcador azul en los subtítulos normales**: solo con ropa amarilla o clara. El golpe se hace con **Bodoni URW Bold Italic angostada**, no con la fuente de Canva (editor, 2026-10-28).
 - 2026-10-27 (03-10, editor): títulos con número balanceados — el número grande alineado por la base con la palabra de al lado ("**3** preguntas") y con aire parejo arriba/abajo ("PREGUNTA **02**"; Bodoni con lineHeight 0,8 se monta sobre la línea de arriba); sin el contacto/NMLS al final; nada de `flip.mp3`; música funk o corporate.
 - 2026-10-27: la clienta aprobó el 01-10 y el 02-10 tal como se entregaron (con logos y B-roll de stock): el sistema de §2–§4 queda confirmado, B-roll incluido.
 - 2026-10-26 (02-10, editor): rotoscopia en el hook; pantalla celeste completa con el texto entrando en las enumeraciones; el subtítulo dice **"pre-aprobación"** aunque ella diga "aprobación" (lo que se ofrece es la carta de **pre-aprobación**).
