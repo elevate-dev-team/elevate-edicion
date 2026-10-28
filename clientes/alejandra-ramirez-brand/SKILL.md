@@ -18,7 +18,7 @@ Fuentes: manual de marca en `{CARPETA_CLIENTE}/MARCA CLAUDE/` (paleta y PDF de f
 ## 2. Idioma y textos en pantalla
 - **Español neutro siempre.** Nunca voseo ni rioplatense ("tenés", "podés", "acá", "laburo", "re"). Tuteo neutro: "puedes", "tienes", "aquí".
 - Términos del mercado de EE. UU. tal como los usa el público: HOA, CDD, sqft, closing, town house, "carros" (no "autos").
-- Precios en **dólares**, formato que ya usa la marca: `$599.990`, `$328.990` (punto de miles). Montos chicos con coma decimal: `$175,70`.
+- Precios en **dólares con coma de miles**: `$304,400`, `$264,000` (decisión del usuario, 28-10-2026, 23-10 AR: "coma, como el 24-10"; reemplaza el punto de miles de las piezas viejas). En la portada, `USD 304,400`. Montos con centavos (ej. un HOA de `$175,70` en piezas viejas): confirmar el formato con el editor antes de usarlos.
 - **Cero datos inventados.** Alejandra es muy estricta: no se muestran cifras, tasas, estadísticas ni proyecciones que no estén en el guion o en lo que ella dice. Si dice un monto sin cifra, se oculta (regla 6 de la base).
 - Tasas o financiación promocional ("4.99% por 5 años") llevan disclaimer corto ("Sujeto a calificación", "Aplican condiciones") si el guion no lo trae.
 
@@ -67,7 +67,14 @@ Solo dos fuentes en los videos:
 - Transiciones: zoom/whip con desenfoque radial entre exterior e interior, usadas con medida (2–4 por video).
 - Look natural y luminoso, interiores claros. Un plano en blanco y negro puede abrir un video personal/educativo (visto en 22-09), no es obligatorio.
 - Formatos: pauta de propiedad 35–80 s; orgánico educativo ~30–40 s.
-- **Música: FUNK con ritmo** para sus reels/pautas (corrección del usuario 22-10-2026, 24-10 AR: pidió corporativo emotivo, lo escuchó y lo cambió por "algo estilo FUNK, tiene que tener más ritmo"). Aprobado: *Let's All Dance This Christmas* (Mixkit 911, Michael Ramir C., 120,0 BPM, instrumental, banda de la voz 5,8 dB bajo el total → denso: −20 dB bajo la voz + hueco de EQ −6 dB). Arrancar el tema en su primer tiempo y pasar los cortes de B-roll a la grilla. Descartado para ella: *Discover* (Mixkit 587, orquestal).
+- **Música: FUNK con ritmo** para sus reels/pautas (corrección del usuario 22-10-2026, 24-10 AR: pidió corporativo emotivo, lo escuchó y lo cambió por "algo estilo FUNK, tiene que tener más ritmo"). Aprobado: *Let's All Dance This Christmas* (Mixkit 911, Michael Ramir C., 120,0 BPM, instrumental, banda de la voz 5,8 dB bajo el total → denso: −20 dB bajo la voz + hueco de EQ −6 dB). Arrancar el tema en su primer tiempo y pasar los cortes de B-roll a la grilla. Descartado para ella: *Discover* (Mixkit 587, orquestal). También aprobado: *Funkee Monkeee* (Mixkit, 100,0 BPM medido, 7,5 % de su energía en 1–4 kHz → −15 dB bajo la voz con hueco de EQ; el drop cae a los 4,81 s del tema), en el 23-10.
+- **Tour house con Alejandra en recuadro** (pedido de Alejandra; aprobado 28-10-2026, 23-10 AR, Dade City): ella graba una sola toma a cámara (teleprompter) y aparte el recorrido de la casa sin audio.
+  - Hook a pantalla completa. Al arrancar el recorrido se **achica con una animación a un recuadro ABAJO A LA DERECHA, pegado a la esquina del cuadro**: 280×498 px, borde a 40 px del lado derecho y a 60 px de abajo (termina en x 1040, y 1860), con esquinas redondeadas, borde blanco y sombra. Para el CTA vuelve a crecer a pantalla completa.
+  - La posición se corrigió tres veces (la izquierda dentro de la zona segura y la esquina derecha de la zona segura fueron rechazadas): el usuario la quiere en la esquina real **aunque salga de la zona segura**. Avisarle que en Instagram los botones pueden tapar parte del recuadro.
+  - Mientras está en el recuadro, títulos y subtítulos van centrados (x = 540) en la mitad alta: títulos con base en y ≈ 900, subtítulos en y ≈ 836, con un velo oscuro suave detrás porque los interiores son blancos. El primer subtítulo espera a que el recuadro termine de achicarse: si no, cruza la cara mientras se mueve.
+  - En cada corte de la voz el recuadro alterna el encuadre (1,0 / 1,1×) para que el salto se lea como un punch.
+  - Los datos de la casa salen uno por plano y al ritmo de la enumeración: ícono lineal + número rojo + etiqueta ("4 / habitaciones", "2 / baños", "garaje para / 2 / carros", "1,824 / pies cuadrados").
+  - La ciudad entra como caja roja en el centro y sube a una etiqueta chica arriba mientras se dan los datos.
 - Audio: master de la base (-11 LUFS). Los aprobados de referencia están más bajos (-19 a -24 LUFS): **no copiar ese volumen**, manda la base.
 
 ## 8. Stock y B-roll
@@ -111,6 +118,7 @@ Probado el 20-10-2026 en `10 OCTUBRE/Key West two rivers -09 AR` (7 ambientes: o
 
 ## 11. Referencias aprobadas
 Videos que el usuario marcó como modelo del estilo (carpeta `LISTOS` de cada uno):
+- `23-10 AR Título pendiente` (aprobado 28-10-2026, Remotion: `remotion-elevate/src/ar2310/`; scripts en `PROYECTO/`: voz.py, build_data.py, mezcla.py) — tour house en Dade City con Alejandra en recuadro (sección 7): hook a cámara ("¿Dejaste de buscar tu *primera casa* / porque los precios te parecían DEMASIADO ALTOS?"), ficha de datos plano a plano, HOA $14 en rojo con CashMoney, cajas de ciudad (Dade City, Wesley Chapel, Tampa), checklist de alrededores, CTA ESCRÍBEME con wink. Correcciones: recuadro abajo a la derecha en la esquina real (3 rondas), "?" al cierre de la pregunta del hook, precio con coma.
 - `24-10 AR Título pendiente` (aprobado 22-10-2026, hecho en Remotion: `remotion-elevate/src/ar2410/`) — reel a cámara en casa modelo + B-roll navideño de Pexels: cajas rojas con pin por ciudad, cifras champagne enteras con CashMoney, checklist con checks rojos, CTA ESCRÍBEME con wink, música funk navideña en la grilla. Se pidió en 3 rondas: portada del usuario, cifras sin rodar, subtítulos con fundido simple, funk en vez de corporativo, CashMoney y wink más presentes.
 - `26-09 AR PAUTA Título pendiente` (v2) — el más actual: precio champagne animado, caja de ubicación roja, cifras en rojo.
 - `22-09 AR Título pendiente` — orgánico educativo, subtítulos limpios, apertura en B/N.
@@ -124,6 +132,8 @@ Analizadas el 22-10-2026 (para el 24-10): `21-10 AR Pauta`, `Azure-09 AR PAUTA`,
 - Tracking muy apretado (≈ −3,5 %), interlineado casi pegado, sombra suave; sin contorno.
 - Foto: degradé oscuro arriba (donde va el texto) y abajo; sujeto más luminoso que el fondo.
 - **Aprobada 24-10 (la hizo el usuario, `24-10 AR Título pendiente/PORTADA/24-10 AR Título pendiente.png`)**: plano abierto del living con Alejandra de cuerpo entero (más chica que en la propuesta con zoom), caja roja "Estrena tu propia **CASA**" (palabra clave en MAYÚSCULA) y debajo "esta **NAVIDAD**" en una sola línea, todo en degradé champagne (también "esta"), Black/ExtraBold Italic, y **emojis** al final (🎄🏠). El texto queda pegado arriba de la cabeza (y ≈ 680–910). Mi propuesta (zoom 1,5× con la cara más abajo y "esta" en blanco liviano) no se usó.
+- **Aprobada 23-10 (la hizo el usuario con un frame que le pasé, `23-10 AR Título pendiente/PORTADA/23-10 AR Título pendiente.png`)**: tour sin Alejandra en la portada, plano abierto de la cocina con isla, degradé rojo arriba, caja roja "**4 habitaciones** por" y golpe "USD 304,400" en degradé champagne (y ≈ 495–750). Para tours se le pasan frames de la **propiedad** (fachada, cocina, living, entrada, dormitorio), los más nítidos (varianza del Laplaciano), sin casas de vecinos.
+- **Antes de insertar la portada, comparar sus cifras con lo que dice Alejandra** (28-10, 23-10: la primera versión decía USD 304,900 y en el audio es $304,400; el usuario la corrigió).
 - Si el usuario deja su portada en `PORTADA/`, se usa esa como frame 0 y no se genera otra.
 
 ## 13. Al cerrar cada video
