@@ -442,6 +442,17 @@ const C2: React.FC<TP> = ({g0, dur}) => {
   );
 };
 
+// cierre con nombre + NMLS (como el 01-10 y 02-10; el editor lo pidió de nuevo en el 04-10)
+const Pie: React.FC<{dur: number; txt: string}> = ({dur, txt}) => {
+  const {op} = useIO(dur, 1);
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', left: 0, width: 1080, top: 1212, textAlign: 'center', opacity: op * 0.95,
+        fontFamily: MON, fontWeight: 500, fontSize: 28, color: 'white', letterSpacing: '0.04em'}}><span style={{backgroundColor: 'rgba(7,30,80,0.6)', padding: '6px 16px', borderRadius: 8}}>{txt}</span></div>
+    </AbsoluteFill>
+  );
+};
+
 export const TITULOS: [number, number, (p: TP) => React.ReactNode][] = [
   [1.133, 2.30, (p) => <H2 {...p} />],
   [2.30, 4.167, (p) => <Velo dur={p.dur} />],
@@ -456,6 +467,7 @@ export const TITULOS: [number, number, (p: TP) => React.ReactNode][] = [
   [18.433, 19.067, (p) => <L1 {...p} />],
   [19.95, 20.967, (p) => <C1 {...p} />],
   [20.967, 22.133, (p) => <C2 {...p} />],
+  [20.967, 22.133, (p) => <Pie dur={p.dur} txt="Isledys Hernandez · NMLS #1924019" />],
 ];
 
 const Guias: React.FC = () => {
