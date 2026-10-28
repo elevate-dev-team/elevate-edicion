@@ -49,6 +49,8 @@ Ver `assets/sistema-texto.jpg` (subtítulo, palabra salvia, título de comunidad
 - **Títulos de comunidad / ubicación:** Black MAYÚSCULA blanca grande (cap ≈ 160 px, "HERON BAY"), ícono de pin gris semitransparente arriba y bajada chica en menta.
 - **Precio y datos:** cifra enorme en Black con degradé blanco→piedra y sombra; bajada en Birthstone ("1600 sqft / *en dos plantas*", "4 / *habitaciones*"). Precio solo: `$1.200.000` con "EN" arriba en Black chico.
 - **Placas en off:** fondo verde texturado, texto blanco Medium + Black, ícono de línea blanco (mano con dinero, casas) que entra animado. Ej. "Y recién ahí CALCULA ¿CUÁNTO DINERO TE PUEDE PRESTAR?", "+500 CASAS".
+  - Sirven también para **lo que se nombra y no se grabó** (en H: pool, gym y dog park de la comunidad → dos placas con íconos de línea en vez de stock genérico).
+  - `RECURSOS/FONDO.mp4` de 18-09 trae destellos y una caja de luz en los primeros segundos: usarlo **desde el segundo 5** y en cámara lenta (0,55–0,7×) para que alcance.
 - **CTA final:** "ESCRIBIME / AL WHATSAPP" apilado en Black (WHATSAPP en degradé gris→piedra) + bajada en Medium con palabra en Black. Va al pecho, no sobre la cara.
 - **Transición de la casa:** **light leak cálido** (naranja/rosa, MOGRT "Generated Light Leak 1/2/9") en cambios de tema y entrada a B-roll, más whips de Animation Composer con su swoosh.
 - **Zooms y ritmo:** punch-ins en las palabras fuertes; planos de B-roll de 1,5–3 s.
@@ -67,6 +69,8 @@ Analizadas las seis (`assets/portadas.jpg`; cada una en `01 REELS/<mes>/<pieza>/
   - **Caja salvia ancha** (`#3C7B65` ~75 %, esquinas redondeadas) de x ≈ 80 a 980, y ≈ 400–632: apoya sobre el tope del pelo y puede pisarlo unos 25 px. Texto blanco de x 99 a 956.
   - Velo salvia **solo arriba** (degradé desde el borde hasta y ≈ 700); el resto de la foto natural, sin desenfoque fuerte ni velo parejo sobre toda la imagen (la de Claude lo tenía al 35 % y se veía lavada).
 
+- **Pautas con portada del editor (H, 04-10, 2026-10-28):** el editor pidió hacerla él y que le pasara **2 frames de la propiedad** (fachada y un interior lindo) y **2 de Romina con la boca cerrada o sonriendo**, en `PORTADA/` (PNG 1080×1920 del cuadro original, sin títulos). Elegirlos midiendo la boca cerrada en los planos a cámara (arranque y cierre de frase suelen servir). Cuando deja su portada en `PORTADA/`, se inserta como frame 0 con `portada_primer_frame.sh` sin regenerar el video.
+
 ## 6. Referencias aprobadas (REFERENCIA, no fórmula)
 Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/`.
 - **A. Pauta propiedad Heron Bay** — `09 SEPTIEMBRE/03-09 ROC PAUTA Título pendiente` (57 s).
@@ -76,6 +80,7 @@ Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE
 - **E. Reel "Broward sin terreno"** — `10 OCTUBRE/07-10 ROC Broward se está quedando sin t` (34 s).
 - **F. Reel selfie "Weston"** — `10 OCTUBRE/16-10 ROC Weston se diseñó desde cero` (33 s).
 - **G. Pauta townhouse en renta Fort Lauderdale** (hecha en Remotion por Claude) — `10 OCTUBRE/21-12 ROC Título pendiente` (49 s). Hook y CTA a cámara frente a la casa, voz en off grabada aparte sobre el recorrido.
+- **H. Pauta townhouse nuevo Coconut Creek** (Remotion) — `10 OCTUBRE/04-10 ROC PAUTA Título pendiente` (57,6 s). Hook y CTA a cámara con lentes de sol, voz en off (nota de voz) sobre recorrido de la propiedad modelo y placas verdes.
 
 ## 7. Ideas que pueden sumar (opcionales, a criterio)
 - Mapa simple de Broward con pin salvia cuando compara ciudades.
@@ -84,4 +89,6 @@ Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE
 ## 8. Correcciones del cliente
 - **2026-10-23, G (21-12):** "Hay muchos silencios. Cortalos para hacerlo más dinámico." Con ~0,35 s entre frases de la voz en off se sentía lento: se recortaron 14 pausas (3,3 s de 52,5 s) a ~0,12 s y quedó aprobado. Regla general en `edicion-reels-base` §4.
 - **2026-10-23, G (21-12):** la portada la rehízo el editor (ver §5, "Portada aprobada de G").
+- **2026-10-28, H (04-10):** "el audio de la voz está un poco saturado". La voz en off era una nota de voz con mucho ruido (piso −29 dB): con reductor fuerte + las dos compresiones quedó saturada. El editor la limpió por fuera y con su archivo bastó ganancia + una compresión rápida de picos + limitador. **Con Romina, si la voz en off viene de nota de voz, ofrecerle de entrada la voz montada cruda en `VOZ/`** (ver base §3.2).
+- **2026-10-28, H (04-10):** el hook grabado no sigue el guion (dice "con tan solo 19 mil dólares" de entrada, no el precio). Se respeta lo que dice en los subtítulos y lo que el guion trae y ella no dice (precio $557,990) va como **título**, no como subtítulo. Avisar al entregar qué datos salieron solo del guion.
 - **2026-10-23, G (21-12):** música: no usar `Bounce Me Brother` de `{MUSICA}/`; buscar un funk propio (ver `references/biblioteca.md`).

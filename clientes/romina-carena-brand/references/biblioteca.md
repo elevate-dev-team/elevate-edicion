@@ -4,6 +4,7 @@
 Lo que se usó en las referencias (Motion Array, se descarga dentro de cada `PROYECTO/Motion Array Library/Music/`):
 - *Break Down The Silos* (08-09, 16-10): la más repetida.
 - *Groove Tonic* (07-10), *On Fleek* (03-09), *Models* (03-10): funk/groove con bajo marcado. **Dirección para redes.**
+  - *Groove Tonic* (en `MUSICA/` de 04-10): **135,03 BPM medidos** (primer tiempo en 0,290 s). En H arrancó desde 0,637 s del tema, a −19 dB bajo la voz con hueco de EQ. Aprobado.
 - *Explore Together* (18-09): corporate liviano, para piezas educativas.
 - *Retro Funky Groove (Lightwight Funk)* — BombinSound, Pixabay (licencia gratuita), en `MUSICA/` de 21-12 (G). Funk liviano, **122,0 BPM medidos**, 87,6 s. Secciones: intro 0–4 s, cuerpo 4–35 s, break sin bajo 38,4–42,8 s, vuelve el bajo 43,3 s, **drop en 51,18 s**. En G se arrancó para que el drop caiga en el CTA. Aprobado.
 
