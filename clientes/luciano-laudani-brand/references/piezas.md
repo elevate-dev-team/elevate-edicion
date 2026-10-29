@@ -48,3 +48,13 @@ Patrón común de los tour house: gancho a cámara frente a la propiedad con el 
 - Palabras con caja roja: "y los **ACCESOS**", "bajar", "**MÁRMOL** / que casi".
 - CTA a cámara en calle empedrada: "¿**Pensás**…" → "**ESCRIBIME** / moviendo acá" (rojo en degradé, grande).
 - Portada aprobada: `assets/portada-ejemplo.jpg`.
+
+## G. Reel a cámara + off — "Lo que más me consultan en Adrogué" (26 s, 30 fps) · aprobado 2026-10-29
+`10 OCTUBRE/14-10 LUL Lo que más me consultan/` · música *Swagger* (Motion Array, desde 32,05 s) · Remotion `references/plantilla-remotion-14-10.tsx`
+- Material: hook sentado en la oficina (letras LAUDANI en el vidrio), cuerpo grabado **solo audio** (la toma vino en negro: todo el cuerpo es off) y CTA caminando hacia cámara entre las sillas rojas.
+- Hook: "Te cuento / qué es" → punch 1,2× anclado a los ojos con el título bajo el mentón: "lo que más" (Begum plateada) / "**ME CONSULTAN**" (Black roja con glow, montada) / 📍 "en Adrogué".
+- Off: "casas entre / **80 y 150** / mil dólares" sobre casas con tejas y empedrado de Adrogué (CashMoney) → pareja joven ("parejas **JÓVENES**" caja roja, "que con **CRÉDITO**" índigo con borde) → llaves con "su primera / **VIVIENDA**" → pareja mayor ("gente **MÁS GRANDE**", "que **vende**") → cuentas con "con plata / **PROPIA**" → dólares ("se **MUEVEN**") → casas con "lo que más me piden / **CASAS**" (220 px, riser hasta el golpe).
+- Whip en los cortes de B-roll, zoom-blur + light leak rojo al entrar y salir del speaker.
+- CTA: zoom continuo 1,3→1,6× anclado a los ojos, subtítulos bajo el mentón y "**ESCRIBINOS**" en Black roja al final (Luciano dice "escribinos", no "escribime").
+- Sobre stock con caras al centro (parejas), el subtítulo baja bajo los mentones (y ≈ 1180–1250); sobre el resto, centrado.
+
