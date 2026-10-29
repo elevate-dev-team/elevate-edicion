@@ -15,7 +15,7 @@ Fuentes: paleta del manual (Coolors, en la carpeta de marca del cliente) y los v
 - **Público:** compradores para vivir e inversores que buscan renta ("zona con alta demanda de alquiler").
 - Tono: cercano y directo. **Vocero: Reji o alguien de su equipo** (en 12-10 habla una asesora: hook y CTA a cámara, sentada en la oficina). No asumir el género del vocero: mirar el crudo.
 - Carpeta: `{CARPETA_CLIENTE}/01 REELS/<NN Mes>/<DD-MM REB Título>/` con `VIDEOS/ VOZ/ MUSICA/ PORTADA/ PROYECTO/ RECURSOS/ EXPORT/`. El final va en `EXPORT/`. En `RECURSOS/` suelen venir tomas de drone propias (ver sección 8).
-- Formato: 1080×1920, **30 fps**. Pautas ~40 s; reels a cámara ~20 s; **loops** (sin cara ni voz, solo música) ~20–23 s.
+- Formato: 1080×1920, **30 fps**. Pautas ~40 s; reels a cámara ~20 s; **loops** (sin cara ni voz, solo música) de **15 s como máximo** (16-10).
 - **Logo: no se usa en reels ni pautas** (decisión del usuario, 2026-10-16). Sin placa final. **Excepción, los loops:** cierran con el logo de **Site Desarrollo** (la marca de Reji) armado sobre blanco (16-10, aprobado 2026-10-29). Logo en `assets/logo-site-desarrollo.png` (también en `{CARPETA_CLIENTE}/00 IMAGEN DE MARCA/1.png`).
 
 ## 2. Idioma y textos en pantalla
@@ -126,6 +126,7 @@ Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea 
   - 14,5–16,5 s: drones del cliente (torres terminadas, barrio) con whip.
   - 16,5–20,3 s: pared de la oficina "convertimos / proyectos" → folleto IMG_5561 → "en ideas / sólidas". **No poner transiciones dentro de un mismo plano** (corrección: un zoom-blur en mitad de la pared "parece una transición al mismo plano").
   - 20,3–23,25 s: logo de Site sobre blanco armado pieza por pieza (`scripts/logo_piezas.py`): baldosas del arco de abajo hacia arriba, letras de "site" que suben, acento mostaza de la i que cae, DESARROLLO que se cierra; 640 px de ancho centrado; whip de salida que empalma con el arranque del loop.
+  - **Versión corta (pedido del usuario, 2026-10-29: "15 s máximo, misma estructura")**: 28 tiempos = 13,55 s, la entregada. Folleto + IDEA (2 unidades de 2 tiempos), 4 fotos + 1 stock con OBRA en las dos primeras, 1 drone, paredA / folleto 5561 / paredB (una unidad cada uno), logo (3 unidades). **Los loops de REB van de ≤15 s**: con este tema, 28 tiempos (32 tiempos daría 15,5 s).
 
 ## 11. Portadas
 - **Por defecto la portada la hace el editor (Tomi)**; si la encarga, se diseña (ver 16-10 abajo). Al terminar el video se le pasan **2 frames** del crudo en `PORTADA/` (1080×1920, PNG): uno **sonriendo** y uno con la **boca cerrada**, con los ojos abiertos y la cara nítida. Buscarlos en las pausas y después de la última palabra (ahí suele sonreír).
