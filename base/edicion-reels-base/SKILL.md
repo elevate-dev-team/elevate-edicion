@@ -21,6 +21,7 @@ Las skills se comparten entre editores (repo `elevate-edicion`) y cada uno guard
 - **Al empezar cualquier tarea, leer `config.json`.** Si no existe, cargar la skill `configuracion-inicial` antes de seguir.
 - Una clave en `null` o una ruta que no existe significa que **ese editor no tiene ese recurso**. No es un error: avisarle y usar una alternativa (otra biblioteca configurada, material propio del cliente, motion en lugar de stock), nunca inventar una ruta. Si una skill de cliente menciona un archivo puntual (una canción, una pieza de referencia) que el editor no tiene, decírselo y pedirle algo equivalente.
 - Las skills se referencian como `~/.claude/skills/<skill>/`. Nunca escribir en una skill rutas absolutas de una máquina puntual: siempre marcadores.
+- **Disco lleno al renderizar con Remotion** (DAE 13-10, 2026-10-29: `ENOSPC: no space left on device`): cada `npx remotion render` copia la carpeta `public/` entera a una temporal (en el proyecto compartido pesaba 9,2 GB) y, si falla, deja la copia en `$TMPDIR/remotion-webpack-bundle-*`. Renderizar con `--public-dir <carpeta>` que tenga solo lo del video (`fonts/` + la carpeta del reel, ~80 MB) y borrar los `remotion-webpack-bundle-*` que queden de renders fallidos.
 
 ## 1. Márgenes de seguridad de redes sociales
 En 1080×1920, todo texto, subtítulo, gráfico, logo o dato va dentro de la zona segura:
@@ -129,6 +130,7 @@ Si el usuario pasa **un solo video ya cortado** o con la estructura resuelta (so
 - **Posición de los subtítulos:**
   - Con el que habla **a cámara**: **SIEMPRE lo más cerca posible de la cara, sin taparla** (corrección del usuario, 2026-10-02 — vale para todos los clientes y pisa la altura fija que diga una skill de marca): el subtítulo va pegado debajo de la caja de la cabeza medida con detección facial (caja con margen bajo el mentón + ~15–20 px de aire), tomando el punto más bajo que alcanza la cabeza durante todo el bloque (zooms y punches incluidos), dentro de la zona segura. Nunca a una altura fija lejos de la cara.
   - Sobre **B-roll / imágenes superpuestas** mientras alguien habla: **lo más centrado posible** (x = 540, y ≈ 960, centro del cuadro completo) sin tapar ninguna cara; si hay una cara en el centro, correrlo lo mínimo hacia arriba o abajo (buscar desde el centro hacia afuera). Si un bloque cruza un corte, manda el plano que ocupa la mayor parte del bloque.
+- **Texto fino sobre ropa clara o a rayas** (DAE 13-10, 2026-10-29): un título bajo el mentón cae sobre el pecho del speaker. Con remera blanca o a rayas, las líneas en peso Regular/Light blanco con sombra no se leen. Esas líneas llevan la caja o el fondo de los subtítulos de la marca, y los golpes pesados, contorno. Revisarlo en una hoja de contacto del render, no solo en el diseño.
 - Tamaños mínimos en 1080×1920: ~30 px datos secundarios, ~36 px texto, ~54 px titulares.
 - Si un título dice lo mismo que el subtítulo, se oculta el subtítulo en ese momento.
 - **Interlineado apretado** en títulos y bloques de varias líneas (~0,85 del cuerpo), sin que los contornos o trazos de una línea toquen la otra.
