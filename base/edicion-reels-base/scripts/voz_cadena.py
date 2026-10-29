@@ -1,10 +1,12 @@
 """Cadena de voz por toma (regla 3.2): ganancia previa, ruido con piso real, EQ, de-esser por banda, compresión suave,
 control de picos sobremuestreado, −12 LUFS y limitador lento. Informa por toma LUFS, LRA, agudos y cuánto trabajó el limitador.
 
-  <python del entorno align> voz_cadena.py <voz.wav> <cortes> <salida.wav>
+  <python del entorno align> voz_cadena.py <voz.wav> <cortes> <salida.wav> [mejorada]
     voz.wav  : voz del export (o de la toma), cualquier formato; se trabaja en float 48 kHz mono.
     cortes   : "0,8.84,11.64,...,41.04" — límites de cada toma en tiempo del video (cada toma tiene su nivel y su ruido).
     salida   : WAV float con la voz procesada, misma duración, ya compensado el retardo de la cadena (~27 ms).
+    mejorada : voz ya limpia (VOZ/AUDIO MEJORADO.wav, Adobe Podcast): sin afftdn. Sin el reductor la cadena retrasa ~5 ms, no 27
+               (DC 10-10: con 27 ms la voz salía 22 ms adelantada, medido por correlación de envolventes).
 
 Caso real: TA 05-10 (2026-10-19). La cadena anterior (presencia +3 dB, dos compresiones rápidas y alimiter de 2/50 ms sin
 sobremuestreo) dejó la voz "algo saturada": los agudos (>3 kHz) quedaban 7 dB más fuertes respecto del total que en la voz
@@ -17,6 +19,7 @@ import os, re, subprocess, sys, tempfile, wave
 import numpy as np
 
 src, cortes, salida = sys.argv[1], sys.argv[2], sys.argv[3]
+MEJORADA = len(sys.argv) > 4 and sys.argv[4] == 'mejorada'
 B = [float(x) for x in cortes.split(',')]
 T = tempfile.mkdtemp(prefix='voz_')
 SR = 48000
@@ -25,7 +28,7 @@ DEESS = 'acrossover=split=4000[lo][hi];[hi]acompressor=threshold=-36dB:ratio=5:a
 COMP = 'acompressor=threshold=-26dB:ratio=2.2:attack=15:release=160:knee=6:makeup=1'
 PICOS = 'aresample=192000,acompressor=threshold=-9dB:ratio=4:attack=2:release=120:knee=4:detection=peak:makeup=1,aresample=48000'
 LIM = 'aresample=192000,alimiter=limit=0.89:attack=5:release=150:level=disabled,aresample=48000'
-PAD, DLY = 0.1, 0.027  # la cadena retrasa la voz ~27 ms
+PAD, DLY = 0.1, (0.005 if MEJORADA else 0.027)  # la cadena retrasa la voz ~27 ms (afftdn + limitador); sin afftdn, ~5 ms
 
 
 def ff(*a):
@@ -68,7 +71,7 @@ for i, (a, b) in enumerate(zip(B, B[1:])):
     a0 = max(0, a - PAD); off = (a - a0) + DLY
     t1 = f'{T}/{i}_1.wav'
     ff('-ss', str(a0), '-to', str(b + PAD), '-i', raw, '-filter_complex',
-       f'[0:a]volume={g:.2f}dB,highpass=f=80,afftdn=nr=6:nf={nf:.1f},{EQ},{DEESS},{COMP}', '-c:a', 'pcm_f32le', t1)
+       f'[0:a]volume={g:.2f}dB,highpass=f=80,{"" if MEJORADA else f"afftdn=nr=6:nf={nf:.1f},"}{EQ},{DEESS},{COMP}', '-c:a', 'pcm_f32le', t1)
     I1, _ = lufs(t1, off, off + b - a)
     t2 = f'{T}/{i}_2.wav'
     ff('-i', t1, '-af', f'apad,atrim=start={off}:duration={b - a},asetpts=N/SR/TB,volume={-12 - I1:.2f}dB,{PICOS}', '-c:a', 'pcm_f32le', t2)
