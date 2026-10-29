@@ -1,6 +1,6 @@
 ---
 name: "reji-bracco-brand"
-description: "Identidad visual para video de Reji Bracco (REB), inmobiliaria en Montevideo, Uruguay (habla Reji o alguien de su equipo). Montserrat con mezcla de pesos (SemiBold en subtítulos, Light de bajada, Black en golpes), subtítulos karaoke con la palabra activa en verde salvia con contorno blanco, golpes en degradé mostaza→crema o en verde MAYÚSCULA con contorno blanco, destello cálido y whip como transición, drone propio de Montevideo antes que stock, voseo uruguayo, más la referencia de dos piezas aprobadas (pauta de edificio en Cordón y reel a cámara con drones: 200 apartamentos en venta) y portadas con 2 frames para el editor. Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Reji Bracco / REB (reels, pauta, portadas), o cuando el usuario diga \"editá el video de Reji\", \"video de REB\", \"con la marca de Reji Bracco\", aunque no mencione la skill."
+description: "Identidad visual para video de Reji Bracco (REB), inmobiliaria en Montevideo, Uruguay (habla Reji o alguien de su equipo). Montserrat con mezcla de pesos (SemiBold en subtítulos, Light de bajada, Black en golpes), subtítulos karaoke con la palabra activa en verde salvia con contorno blanco, golpes en degradé mostaza→crema o en verde MAYÚSCULA con contorno blanco, destello cálido y whip como transición, drone propio de Montevideo antes que stock, voseo uruguayo, más la referencia de dos piezas aprobadas (pauta de edificio en Cordón reel a cámara con drones: 200 apartamentos en venta, y loop sin voz de obra con el logo de Site al cierre) y portadas (2 frames para el editor, o diseñada si la encarga). Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Reji Bracco / REB (reels, pauta, portadas), o cuando el usuario diga \"editá el video de Reji\", \"video de REB\", \"con la marca de Reji Bracco\", aunque no mencione la skill."
 ---
 
 # Reji Bracco (REB) — marca para video
@@ -15,8 +15,8 @@ Fuentes: paleta del manual (Coolors, en la carpeta de marca del cliente) y los v
 - **Público:** compradores para vivir e inversores que buscan renta ("zona con alta demanda de alquiler").
 - Tono: cercano y directo. **Vocero: Reji o alguien de su equipo** (en 12-10 habla una asesora: hook y CTA a cámara, sentada en la oficina). No asumir el género del vocero: mirar el crudo.
 - Carpeta: `{CARPETA_CLIENTE}/01 REELS/<NN Mes>/<DD-MM REB Título>/` con `VIDEOS/ VOZ/ MUSICA/ PORTADA/ PROYECTO/ RECURSOS/ EXPORT/`. El final va en `EXPORT/`. En `RECURSOS/` suelen venir tomas de drone propias (ver sección 8).
-- Formato: 1080×1920, **30 fps**. Pautas ~40 s; reels a cámara ~20 s.
-- **Logo: no se usa por ahora** (decisión del usuario, 2026-10-16). Sin placa final.
+- Formato: 1080×1920, **30 fps**. Pautas ~40 s; reels a cámara ~20 s; **loops** (sin cara ni voz, solo música) ~20–23 s.
+- **Logo: no se usa en reels ni pautas** (decisión del usuario, 2026-10-16). Sin placa final. **Excepción, los loops:** cierran con el logo de **Site Desarrollo** (la marca de Reji) armado sobre blanco (16-10, aprobado 2026-10-29). Logo en `assets/logo-site-desarrollo.png` (también en `{CARPETA_CLIENTE}/00 IMAGEN DE MARCA/1.png`).
 
 ## 2. Idioma y textos en pantalla
 - **Voseo uruguayo, como habla quien está a cámara** ("Acabás de encontrar", "Escribime", "te paso"). Va así en subtítulos **y también en los títulos y textos que escribimos nosotros** (decisión del usuario, 2026-10-16). No pasar a neutro.
@@ -84,6 +84,7 @@ Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea 
 - Transiciones: corte directo de base; **destello cálido (light leak)** al entrar el precio; **whip con motion blur** en planos de cielo o ciudad (los textos pueden entrar con desenfoque de movimiento).
 - Look natural y luminoso, interiores blancos con piso de madera.
 - Audio: master de la base (-11 LUFS). La referencia 01-10 está en −21,7 LUFS: **no copiar ese volumen**.
+- Música de loops: ***Rising Forest*** (Mixkit 471, Demucs −44 dB en el tramo usado), 124,0 BPM medidos; tramo estable desde 47,928 s (drop) hasta ~78 s. El loop dura un número entero de compases (48 tiempos en 16-10) para que la música empalme al repetirse.
 - Música aprobada: ***Motivating Mornings*** (Mixkit 33, instrumental: Demucs p90 −54 dB), 121,0 BPM medidos; el drop (12,16 s del tema) cae cuando entra el primer drone. Uplifting/corporativo liviano, ~15 dB por debajo de la voz con hueco de EQ.
 - CTA de pauta: "Escribime \"PALABRA\" por WhatsApp y te paso…" con una palabra clave del proyecto. CTA de reel con el equipo: "Escribinos…" sin palabra clave.
 
@@ -93,6 +94,8 @@ Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea 
 - Si se habla de obra / **en pozo** y el drone no muestra una obra de cerca, sirve `{STOCK}/CONSTRUCCION.mp4` (estructura de hormigón con grúa y obreros: se lee rioplatense).
 - Stock que **parezca Montevideo**: vista de la ciudad desde altura, Rambla, Parque Rodó, feria de Tristán Narvaja, edificios montevideanos. Nada que se lea Buenos Aires, Miami ni Europa.
 - Temático: asado en parrillero (azotea), firma de escritura, maqueta de casa con billetes (impuestos, inversión).
+- **Stock de obra** (16-10): Pexels vertical 4K (`pexels.com/download/video/<id>/` baja el archivo; buscar con `?orientation=portrait`). Mixkit solo da 720p horizontal: recortado a vertical queda blando. Aprobados: columnas con hierros (34521512), losa con grúas (34764180), ladrillero (39356774), fundaciones (34199756), malla desde arriba (35631524); del banco, `PLANOS.mp4` y `CONSTRUCCION.mp4` (este es el mismo clip que Pexels 26563090: no usar los dos). Ladrillo y hormigón se leen rioplatenses; evitar obreros que se lean de otro país.
+- **Fotos del cliente** (en 16-10, de Regina: la obra en excavación): siempre con zoom in/out leve, alternando el sentido de una foto a la otra.
 
 ## 9. Reglas editoriales de Reji
 - No cambiar el copy ni la estructura del guion sin que lo pidan.
@@ -117,9 +120,17 @@ Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea 
   - 15,2–19,6 s: CTA a cámara, "**ESCRIBINOS** para saber qué **necesitás** y te contamos qué tenemos disponible", punch-in anclado a los ojos en la última frase.
   - Transiciones en cada corte (whip en los drones, zoom-blur en la vocera) con whoosh; pop/stamp/wink en los títulos. Master −10,9 LUFS / −1,5 dBTP.
 
+- `16-10 REB Título pendiente` (loop de 23,25 s, aprobado 2026-10-29) — sin voz ni cara, solo música (*Rising Forest*), un corte cada 2 tiempos:
+  - 0–1,9 s: folleto de Site con lapicera (IMG_5554), "de la / **IDEA**" (degradé) con destello cálido.
+  - 1,9–14,5 s: planos → 6 fotos de la obra con zoom alternado ("a la / **OBRA**" en verde) intercaladas con stock de obra.
+  - 14,5–16,5 s: drones del cliente (torres terminadas, barrio) con whip.
+  - 16,5–20,3 s: pared de la oficina "convertimos / proyectos" → folleto IMG_5561 → "en ideas / sólidas". **No poner transiciones dentro de un mismo plano** (corrección: un zoom-blur en mitad de la pared "parece una transición al mismo plano").
+  - 20,3–23,25 s: logo de Site sobre blanco armado pieza por pieza (`scripts/logo_piezas.py`): baldosas del arco de abajo hacia arriba, letras de "site" que suben, acento mostaza de la i que cae, DESARROLLO que se cierra; 640 px de ancho centrado; whip de salida que empalma con el arranque del loop.
+
 ## 11. Portadas
-- **La portada la hace el editor (Tomi).** Al terminar el video se le pasan **2 frames** del crudo en `PORTADA/` (1080×1920, PNG): uno **sonriendo** y uno con la **boca cerrada**, con los ojos abiertos y la cara nítida. Buscarlos en las pausas y después de la última palabra (ahí suele sonreír).
+- **Por defecto la portada la hace el editor (Tomi)**; si la encarga, se diseña (ver 16-10 abajo). Al terminar el video se le pasan **2 frames** del crudo en `PORTADA/` (1080×1920, PNG): uno **sonriendo** y uno con la **boca cerrada**, con los ojos abiertos y la cara nítida. Buscarlos en las pausas y después de la última palabra (ahí suele sonreír).
 - Estilo de su portada en 12-10 (`assets/portada-1210.jpg`): velo verde salvia arriba, título de dos líneas en Montserrat ("Hoy tenemos **200** / apartamentos ***EN VENTA***") con la cifra en el degradé mostaza→crema, sobre el frame sonriendo.
+- Portada diseñada (16-10, aprobada 2026-10-29, `assets/portada-1610.jpg`): foto de la obra del cliente (excavadora) con velo verde oscuro `#3A5248` arriba (0,9 → 0,62 hasta y 900, se apaga en y 1130) y degradé oscuro abajo; "De la **idea** / a la ***OBRA***" centrado en y ≈ 580–840: "De la" / "a la" en Light blanco 104 px, "idea" en Black degradé mostaza→crema 150 px, "OBRA" en Black Italic verde salvia con contorno blanco. Hecha en PIL (`PROYECTO/portada.py` del 16-10).
 - Cuando la deja, se inserta como **frame 0** con `portada_primer_frame.sh` de la skill `portadas-reels` (30 fps), sin cambiar la cantidad de cuadros.
 
 ## 12. Al cerrar cada video
