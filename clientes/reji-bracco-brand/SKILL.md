@@ -70,9 +70,9 @@ Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea 
   - "**CORDON**" / "para entrar" / "**YA**" (la última en degradé)
   - CTA: "Escribime" / "**\"NARVAJA\"**" / "por WhatsApp"
 - **Stickers de lugar:** foto chica cuadrada (~240 px) del lugar que nombra (feria de Tristán Narvaja, Facultad, Biblioteca Nacional, Parque Rodó) sobre el subtítulo, cambiando con cada nombre.
-- **Lockups de 12-10** (reel a cámara, 6 títulos en 20 s, aprobados):
+- **Lockups de 12-10** (reel a cámara, 5 títulos en 18 s, aprobados):
   - Hook debajo del mentón: "Hoy tenemos" (Light) / "**200**" (Black degradé, 250 px, con destello cálido) / "**apartamentos**" (Bold).
-  - Sobre drone, centrados en y ≈ 930: "en venta en" / "**MONTEVIDEO**" (verde con contorno); "algunos" / "**EN POZO**" (verde) / "para quienes **prefieren**"; "y otros **ya**" / "**terminados**" (degradé); "con una **cartera**" / "**así de grande**" (degradé).
+  - Sobre stock y drone, centrados en y ≈ 930: "algunos" / "**EN POZO**" (verde) / "para quienes **prefieren**"; "y otros **ya**" / "**terminados**" (degradé); "con una **cartera**" / "**así de grande**" (degradé).
   - CTA debajo del mentón: "**ESCRIBINOS**" (verde) / "para saber qué **necesitás**".
   - Tamaños que entran en el ancho seguro (720 px): golpe verde de 10 letras ≈ 96–98 px; "EN POZO" 130 px; degradé de 10–13 letras 92–112 px. Medirlo en el render con guías.
   - Un título tiene que durar ≥ 1 s: "EN POZO" con 0,4 s no se leía; se estiró hasta el cambio de plano sumando la frase que sigue como bajada.
@@ -90,7 +90,7 @@ Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea 
 
 ## 8. Stock y B-roll
 - Primero el material del rodaje (la unidad, el edificio, la azotea).
-- **Drone propio de Montevideo**: el cliente manda tomas de drone en `RECURSOS/` (en 12-10: Rambla y el río, Parque Central / Gran Parque Central, torres, panorámicas con el parque y la ciudad). **Vienen verticales** (1920×1080 con rotación 90 → 1080×1920 al convertir): no hace falta recortar. Hacer hoja de contacto de cada toma y asignar cada una a la frase que mejor ilustra (Rambla en "Montevideo", panorámica en "cartera así de grande", barrios en "la zona"). Se convierten a 30 fps sin audio.
+- **Drone propio de Montevideo**: el cliente manda tomas de drone en `RECURSOS/` (en 12-10: Rambla y el río, Parque Central / Gran Parque Central, torres, panorámicas con el parque y la ciudad). **Vienen verticales** (1920×1080 con rotación 90 → 1080×1920 al convertir): no hace falta recortar. Hacer hoja de contacto de cada toma y asignar cada una a la frase que mejor ilustra (torres en "terminados", panorámica en "cartera así de grande", barrios en "la zona"). Se convierten a 30 fps sin audio.
 - Si se habla de obra / **en pozo** y el drone no muestra una obra de cerca, sirve `{STOCK}/CONSTRUCCION.mp4` (estructura de hormigón con grúa y obreros: se lee rioplatense).
 - Stock que **parezca Montevideo**: vista de la ciudad desde altura, Rambla, Parque Rodó, feria de Tristán Narvaja, edificios montevideanos. Nada que se lea Buenos Aires, Miami ni Europa.
 - Temático: asado en parrillero (azotea), firma de escritura, maqueta de casa con billetes (impuestos, inversión).
@@ -109,16 +109,15 @@ Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea 
   - 24–33 s: azotea con parrillero (stock de asado), terraza con vistas (whip sobre el cielo), vivienda promovida: "exonerado del **IRPF y el ITP** en la **primera** compra".
   - 33–39 s: CTA a cámara con el celular, "Escribime **\"NARVAJA\"** por WhatsApp y te paso las últimas unidades disponibles con piso, metros y precio".
 
-- `12-10 REB Hoy tenemos 200 apartamentos` (19,6 s, aprobado 2026-10-29, "quedó excelente") — reel a cámara de una asesora del equipo, una toma, con drones del cliente:
-  - 0–1,8 s: a cámara caminando hacia el celular, "Hoy tenemos **200** apartamentos", destello cálido en el 200.
-  - 1,8–3,3 s: drone de la Rambla (whip + drop de la música), "en venta en **MONTEVIDEO**".
-  - 3,3–5 s: stock de obra, "algunos **EN POZO** para quienes **prefieren**".
-  - 5–7,3 s: a cámara, "pagarlo en cuotas mientras se va construyendo" (karaoke).
-  - 7,3–8,7 s: drone de torres, "y otros **ya terminados**"; vuelve a cámara en "para quienes necesitan mudarse ya".
-  - 9,9–11,2 s: panorámica de drone, "con una **cartera así de grande**"; a cámara "lo más probable es que encontremos la unidad que necesitás".
-  - 13,7–15,2 s: drone del Parque Central, "y en la zona de tu preferencia".
-  - 15,2–19,6 s: CTA a cámara, "**ESCRIBINOS** para saber qué **necesitás** y te contamos qué tenemos disponible", punch-in anclado a los ojos en la última frase.
-  - Transiciones en cada corte (whip en los drones, zoom-blur en la vocera) con whoosh; pop/stamp/wink en los títulos. Master −10,9 LUFS / −1,5 dBTP.
+- `12-10 REB Hoy tenemos 200 apartamentos` (18,4 s, aprobado 2026-10-29) — reel a cámara de una asesora del equipo, una toma, con drones del cliente. En la v2 Tomi pidió **sacar "en venta en Montevideo"**: el hook pasa directo de "200 apartamentos" a "algunos en pozo" (se fue el drone de la Rambla, que sin esa frase duraba 0,4 s).
+  - 0–1,77 s: a cámara caminando hacia el celular, "Hoy tenemos **200** apartamentos", destello cálido en el 200.
+  - 1,77–3,9 s: stock de obra (whip + drop de la música), "algunos **EN POZO** para quienes **prefieren**".
+  - 3,9–6,1 s: a cámara, "pagarlo en cuotas mientras se va construyendo" (karaoke).
+  - 6,1–7,6 s: drone de torres, "y otros **ya terminados**"; vuelve a cámara en "para quienes necesitan mudarse ya".
+  - 8,8–10,1 s: panorámica de drone, "con una **cartera así de grande**"; a cámara "lo más probable es que encontremos la unidad que necesitás".
+  - 12,6–14,1 s: drone del Parque Central, "y en la zona de tu preferencia".
+  - 14,1–18,4 s: CTA a cámara, "**ESCRIBINOS** para saber qué **necesitás** y te contamos qué tenemos disponible", punch-in anclado a los ojos en la última frase.
+  - Transiciones en cada corte (whip en los drones, zoom-blur en la vocera) con whoosh; pop/stamp/wink en los títulos. Master −11,0 LUFS / −1,4 dBTP.
 
 - `16-10 REB Título pendiente` (loop de 23,25 s, aprobado 2026-10-29) — sin voz ni cara, solo música (*Rising Forest*), un corte cada 2 tiempos:
   - 0–1,9 s: folleto de Site con lapicera (IMG_5554), "de la / **IDEA**" (degradé) con destello cálido.
