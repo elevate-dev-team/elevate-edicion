@@ -59,6 +59,7 @@ Ver `assets/portadas.png` (las 8 publicadas, en `01 REELS/*/*/PORTADA/<nombre de
 - Texto arriba del sujeto o al costado de la cabeza, interlineado muy apretado: **Montserrat Black Italic MAYÚSCULA** para el golpe (blanca o roja) mezclada con Regular/Medium para el resto ("¿Por qué *tanta gente* compra en / **EN POZO?**", "EN CAPITAL / NO ME ALCANZA").
 - Palabra clave en rojo `#E10E1C`, o blanca dentro de una **caja roja** ("**CAPITAL**", "**AMENITIS**").
 - Pautas: dirección en blanco Black + **precio en caja roja** ("MARCOS PAZ 4000 / CAPITAL FEDERAL / **USD 212,000**"); se puede usar el render del edificio en vez del speaker.
+- **El editor puede hacer la portada él mismo** (GIN 21-10, 2026-10-30): pasarle **2 frames de la propiedad + 2 del vocero con la boca cerrada o sonriendo** (en 4K, en `PORTADA/`) y **3 títulos** propuestos, y después insertar su PNG como frame 0 (25 fps). La de 21-10 fue sobre el living: "Villa Luro" en serif fina + "PH con patio y cochera" en Montserrat Bold blanca + **USD 210.000** en caja roja.
 
 ## 6. Referencias aprobadas (REFERENCIA, no fórmula)
 Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/`, final en `EXPORT/`.
@@ -68,6 +69,7 @@ Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/`, final en `EXPORT/`.
 - **C. Reel a cámara con caja roja** — `09 SEPTIEMBRE/06-09 GIN En Capital no me alcanza` (23 s): sentado en la oficina; subtítulos con caja roja y Black rojo; B-roll de obra al decir "Soy **MAESTRO MAYOR DE OBRA**"; whips con zoom-blur; cierre "**POR EL MISMO DINERO**".
 - **D. Reel de lista** — `07 JULIO/16-07 GIN 5 razones para dejar la casa y` (41 s): hook itálico arriba en la cocina ("HAY GENTE QUE PASÓ…", "ESTAS SON LAS RAZONES"), después recorrido de un depto con "**1** LA SEGURIDAD" … "**5** LA COMODIDAD DE" y subtítulos chicos.
 - **E. Reel educativo con stock** — `07 JULIO/15-07 GIN Por qué tanta gente compra en` (32 s): hook con palabras rojas itálicas arriba ("MÁS", "EN"), stock de obra/dinero con subtítulos y palabra clave en caja roja; cierre a cámara "¿Querés ver lo que tenemos en pozo?".
+- **F. Pauta de recorrido con voz en off** — `10 OCTUBRE/21-10 GIN PAUTA Título pendiente` (62 s): hook a cámara en 3 tomas del asesor joven (living, cocina, patio) con títulos arriba de la cabeza ("¿SOÑÁS CON UN **PATIO**?", "**VILLA LURO** / 4 AMBIENTES", precio que cuenta hasta "**USD 210.000**" + caja "APTO CRÉDITO") y punch-in en "frená un segundo". Después voz en off (notas de voz del celular) sobre un plano por ambiente con su dato centrado ("**PLANTA BAJA**", "**3** DORMITORIOS", "**43 M²** DE PATIO", "**25 AÑOS**"), aéreo de barrio porteño del stock y CTA "ESCRIBINOS / WHATSAPP" sobre la cocina. Música *Groove Tonic* −16 dB bajo la voz.
 - También aprobadas: `07 JULIO/04-07 GIN PAUTA NO ESPERES MAS`, `07 JULIO/13-07 GIN Para vivir bien en Capital no`, `09 SEPTIEMBRE/17-08 GIN Podríamos construir en cualqui`.
 
 ## 7. Ideas que pueden sumar (opcionales)
@@ -75,4 +77,8 @@ Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/`, final en `EXPORT/`.
 - Contador animado en el precio con SFX de caja registradora.
 
 ## 8. Correcciones del cliente
-(Vacío por ahora. Indicación inicial, 2026-10-30: basarse en los videos aprobados; sin logo.)
+Indicación inicial, 2026-10-30: basarse en los videos aprobados; sin logo.
+- **Punch-in en la frase de freno del hook** (GIN 21-10, 2026-10-30): en "frená un segundo" pidió un zoom in de énfasis (1× → 1,26× en 0,12 s, anclado a los ojos, con whoosh suave). Repetirlo en las frases que cortan el scroll.
+- **Ortografía en los datos**: "semi-integrada", con guion (no "semiintegrada").
+- **CTA en off**: no va sobre el vocero callado (se lee como desfasado); va sobre la propiedad.
+- **Precio**: el que dice el vocero manda sobre el guion (21-10: dijo 210.000 y el guion decía 200 mil; quedó 210.000). Avisar siempre la diferencia.
