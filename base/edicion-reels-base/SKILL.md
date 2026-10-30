@@ -22,6 +22,8 @@ Las skills se comparten entre editores (repo `elevate-edicion`) y cada uno guard
 - Una clave en `null` o una ruta que no existe significa que **ese editor no tiene ese recurso**. No es un error: avisarle y usar una alternativa (otra biblioteca configurada, material propio del cliente, motion en lugar de stock), nunca inventar una ruta. Si una skill de cliente menciona un archivo puntual (una canción, una pieza de referencia) que el editor no tiene, decírselo y pedirle algo equivalente.
 - Las skills se referencian como `~/.claude/skills/<skill>/`. Nunca escribir en una skill rutas absolutas de una máquina puntual: siempre marcadores.
 
+- **Proxies grandes con poco disco libre** (GIN 21-10, 2026-10-30): con ~4 GB libres, Remotion extraía bien el cuadro de proxies de 1440×2560 pero Chrome lo rechazaba ("Failed to fetch … disk space is low"), incluso en un `remotion still`. Con los proxies en 1080×1920 anduvo. Si hace falta más definición para un zoom, subir solo la toma que se acerca.
+
 ## 1. Márgenes de seguridad de redes sociales
 En 1080×1920, todo texto, subtítulo, gráfico, logo o dato va dentro de la zona segura:
 
@@ -56,6 +58,7 @@ La voz manda, pero la música **se tiene que escuchar**. No hay un número fijo:
 - **Tema denso** (pop comercial, EDM, mucho medio, voces/sintes al frente): a −12 dB "está muy fuerte, tapando prácticamente la voz" (corrección del usuario, 2026-10-02, reel LIU 03-10). Aprobado: **−20 dB debajo de la voz + hueco de EQ en la música mientras se habla** (`equalizer=f=2200:t=o:w=1.6:g=-6,equalizer=f=350:t=o:w=1:g=-2`).
 - Cómo hacerlo: dos copias de la música (con hueco de EQ para los tramos hablados y limpia para los tramos solo música), cruzadas con `volume=...:eval=frame` en los cambios de sección. En un **tramo solo música** (cuerpo musical sin voz) la música va al frente, al nivel de la voz.
 - Ante la duda con un tema nuevo, empezar en −16 dB y escuchar/medir; avisar al usuario qué nivel quedó.
+- **Voz mono en una mezcla estéreo** (GIN 21-10, 2026-10-30): `ebur128` mide una voz mono 3 dB más baja que la misma voz copiada a los dos canales. Para fijar la música "X dB bajo la voz", medir la voz ya en estéreo (o sumarle 3,01 dB); si no, la música queda 3 dB más baja de lo pensado.
 
 ### 3.2 Cadena de voz (orden y por qué)
 Corrección del usuario (2026-10-02): "las voces se sienten muy enterradas todo el tiempo". La causa era la **cadena**, no el nivel:
@@ -119,6 +122,7 @@ Si el usuario pasa **un solo video ya cortado** o con la estructura resuelta (so
 
 ### 4.2 Tramos de voz en off o pantalla en negro (motion, stock)
 - Antes de renderizar, mandar una **propuesta corta**: qué va sobre cada frase (animación, stock o combinación). Esperar el OK.
+- **No mostrar al speaker de frente y callado mientras suena su voz en off** (corrección del usuario, 2026-10-30, GIN 21-10: el CTA en off iba sobre el asesor parado con la boca cerrada y "no está hablando cuando aparecen los subtítulos, está desfasado"). Se lee como un error de sincronía aunque la voz esté bien. Si una frase en off no la dijo a cámara, va sobre B-roll (la propiedad, el lugar), no sobre él.
 - **La información va centrada** (en el cuadro completo, x = 540; ver regla 1). Gráfico y subtítulo forman **un bloque centrado**, con el subtítulo **pegado debajo del gráfico** (~50 px) y **a la misma altura en todo el tramo** para que no salte. Nunca el gráfico arriba y el subtítulo lejos abajo.
 
 ## 5. Legibilidad
