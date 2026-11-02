@@ -71,7 +71,11 @@ Se usan 1–3 por video para el concepto clave. Título **o** subtítulo, nunca 
 ### Entrevistas a terceros (desarrolladores, 09-11)
 - **Preguntas = títulos numerados** sobre el plano abierto de los dos ("1. ¿qué / **UNIDADES** / tiene?"), en la mesa, debajo de las cabezas. La que pregunta está lejos del micrófono y casi no se entiende: el título cubre lo que pregunta (sin subtítulo) y puede quedarse ~0,5 s sobre el arranque de la respuesta si el entrevistado repite la pregunta ("se puede financiar…").
 - Respuestas: el entrevistado se **reencuadra** (zoom 1,5 con los ojos en ~x 330 / y 700): es un cambio de persona respecto del plano de la pregunta, no un punch del mismo speaker. Los cortes dentro de una respuesta caen bajo B-roll.
-- **Sin zócalo del entrevistado** salvo que el usuario pase nombre y rol (corrección del usuario, 2026-11-02: "saquemos ese zócalo… arranquemos cuando él comienza a hablar"). Nunca un zócalo provisorio con "NOMBRE".
+- **Zócalo del entrevistado** con nombre y empresa (09-11: "SERGIO MAYOR / Mayor Desarrollos", estilo de los rótulos de nombre, abajo con el borde en y 1440) cuando arranca su primera respuesta, hasta el primer B-roll. **Pedir el nombre antes de armarlo**: nunca un zócalo provisorio con "NOMBRE" (corrección del usuario, 2026-11-02).
+- **Las preguntas terminan completas** (corrección del usuario, 2026-11-02: "a ella no se le termina de entender… dale ese espacio"): la que pregunta cae en volumen al final y la alineación cierra la última palabra antes de tiempo. Medir la cola con la energía en banda de voz (250–3500 Hz) y dejar ~0,1 s después; entre pregunta y respuesta, ~0,2–0,4 s.
+- **Ritmo de las respuestas**: el entrevistado hace pausas de 0,5–1,5 s a mitad de frase ("cocheras para… los departamentos", "un espacio de… parrillas"); se recortan a ~0,15 s (corrección del usuario, 2026-11-02: "tenés que darle ritmo al audio"). Buscar todas las pausas > 0,4 s en lo que queda y no cortar nunca la cola de una frase ("en el sector trasero" entera). Si el recorte cae sobre el entrevistado a cámara, punch de zoom (1,5 → 1,64); bajo B-roll no hace falta. Verificar transcribiendo de nuevo la voz montada.
+- **Voz original, no Adobe** (corrección del usuario, 2026-11-02: "capaz el Adobe Podcast ha deformado algunas palabras", "no termina de modular"): `voz_cadena.py` normal, con un tramo por cada pregunta y cada respuesta para que la que pregunta quede al mismo nivel; música a −19 dB bajo la voz. La oficina tiene ruido de fondo (~7 dB bajo la voz): se acepta.
+- Un subtítulo que termina justo cuando entra el título de la pregunta siguiente se muestra hasta ese momento (en v1 "tres y cuatro ambientes" desaparecía entero).
 - B-roll: **renders del desarrollador** con movimiento (Ken Burns) para unidades, fachada, cocheras y azotea; stock conceptual (billetes argentinos, calculadora, firma) solo para la financiación. Clips de obra o unidades terminadas que no se sabe si son del proyecto, afuera hasta que se confirme.
 - Selfies con un cartel detrás grabadas con la cámara frontal: **espejarlas** (`hflip`) para que el cartel se lea al derecho.
 
@@ -134,10 +138,10 @@ Analizadas (2026-10-22) en `{CARPETA_CLIENTE}/01 REELS/*/PORTADA/`: 05-10 "Así 
 - **Enumeración de nombres** ("Gise, Vale, Paz, Estefi, Joha y Ro"): pausa natural de **~0,3 s** entre nombres y **cada clip entra justo en su nombre** (0,6–0,9 s cada uno, con su nombre sobreimpreso); después, en la frase que describe lo que hacen, cada una **vuelve ~2 s** con nombre y rol. Correcciones del usuario: primero pidió ≥2 s por clip; estirar la voz con silencios de 1,6 s entre nombres quedó "RARÍSIMO"; la solución aprobada es la de acá.
 - Rótulos de nombre/rol (sección 4), títulos "EQUIPO" y "estilo de vida", cierre con B-roll del equipo (sin Tamara).
 
-### D. Entrevista a un desarrollador — `09-11 TA Le pregunté al desarrollador de` (57,8 s)
+### D. Entrevista a un desarrollador — `09-11 TA Le pregunté al desarrollador de` (54,4 s)
 - Graba otra chica (no Tamara): hook en selfie frente al cartel de la desarrolladora ("Le hice tres preguntas al desarrollador de Torre Venecia", título **3 PREGUNTAS** arriba de su cabeza), tres preguntas sobre el plano abierto de la oficina con títulos numerados, respuestas reencuadradas sobre el desarrollador con renders del proyecto y stock de dinero/calculadora/firma en la financiación, CTA en selfie ("¿Querés saber qué unidades quedan? Contactanos").
 - Light leak en cada bloque (hook / P1 / P2 / P3 / CTA), zoom-blur y whip en el resto; 25 SFX. Palabras clave del subtítulo en Gibson Heavy MAYÚSCULA beige (como 08-09 y 10-09).
-- La voz la limpió el usuario con Adobe (`VOZ/audio mejorado.wav`) a partir de la voz cruda montada; se procesó con `voz_cadena.py … mejorada`.
+- Voz original procesada con `voz_cadena.py` por tramo (v2; la versión con la voz de Adobe se descartó por deformar palabras). Zócalo "SERGIO MAYOR / Mayor Desarrollos". Aprobado 2026-11-02.
 
 ## 7. Ideas que pueden sumar (opcionales)
 - Rotoscopia en el gancho cuando el fondo lo permita.
@@ -147,5 +151,5 @@ Analizadas (2026-10-22) en `{CARPETA_CLIENTE}/01 REELS/*/PORTADA/`: 05-10 "Así 
 ## 8. Correcciones del cliente
 - 2026-10-20 — Skill creada.
 - 2026-10-20 (06-10) — Música corporate, no infantil; blanco y negro corto; agenda en vez de rompecabezas; no repetir stock entre videos consecutivos.
-- 2026-11-02 (09-11) — Entrevista a desarrollador: preguntas como títulos numerados, sin zócalo si no hay nombre, selfies espejadas, portada con el cuadro bajado. Aprobado.
+- 2026-11-02 (09-11) — Entrevista a desarrollador: preguntas como títulos numerados, zócalo con nombre real (nunca "NOMBRE"), selfies espejadas, portada con el cuadro bajado. v2: preguntas completas, pausas largas recortadas, voz original en vez de Adobe, música −19 dB. Aprobado.
 - 2026-10-22 (13-10) — Fuentes: **Gibson + Amandine**, no Montserrat. Nombres en enumeración sin silencios largos. Rótulo de nombre separado de los subtítulos. Nombrar a quien no tiene clip ("JOHA Y RO"). Cierre con B-roll y no con Tamara. Portada con golpe café de contorno blanco (como CANNING).
