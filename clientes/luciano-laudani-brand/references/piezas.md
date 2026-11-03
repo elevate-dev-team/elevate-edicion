@@ -58,3 +58,12 @@ Patrón común de los tour house: gancho a cámara frente a la propiedad con el 
 - CTA: zoom continuo 1,3→1,6× anclado a los ojos, subtítulos bajo el mentón y "**ESCRIBINOS**" en Black roja al final (Luciano dice "escribinos", no "escribime").
 - Sobre stock con caras al centro (parejas), el subtítulo baja bajo los mentones (y ≈ 1180–1250); sobre el resto, centrado.
 
+
+## H. Reel a cámara + off — "Cuando la casa te queda grande" (23 s, 30 fps) · aprobado 2026-11-03
+`11 NOVIEMBRE/17-10 LUL Cuando la casa te queda grande/` · música *Gimme that Groove!* (Mixkit 872, desde 1,77 s) · Remotion: la plantilla de G + `Paso` y `Sombra` (en `src/lul1710/Video.tsx` del editor) · mezcla `references/mezcla-17-10.py`
+- Material: hook de pie junto a la pileta (4K HDR → SDR con `avconvert -p Preset3840x2160`), cuerpo **solo audio** otra vez (toma en negro) y CTA en una terraza. Micrófono con compuerta: entre frases hay silencio digital.
+- Hook: subtítulos "Los **chicos**" / "se **FUERON**" (caja roja) → punch 1,09→1,19× en "y la casa" con el título bajo el mentón: "y la casa te quedó" (Begum plateada) / "**GRANDE**" (Black roja). Detrás, una sombra radial suave porque el fondo (pileta, cielo) es claro. GRANDE se queda hasta 0,4 s dentro del primer B-roll.
+- Off: pareja mayor en un living grande ("a algo **MÁS CHICO**" índigo, debajo de las caras) → "el orden / **IMPORTA**" sobre primer plano (debajo del mentón) → paso **1** "saber cuánto vale / **TU CASA HOY**" sobre casas de ladrillo con tejas → paso **2** "salir a / **MIRAR**" sobre la visita → "a poder **COMPRAR**", "depende de lo que **VENDAS**" → placa blanca "y no / **AL REVÉS**" → drone "seguir viviendo en / 📍**ADROGUÉ**" → drone con edificios "tenemos / **CASAS** / y **DEPARTAMENTOS**" → "para que puedas **ELEGIR**".
+- Anchos: con 1080 de ancho, "TU CASA HOY" va a 100 px, "ADROGUÉ" con pin a 112, "DEPARTAMENTOS" a 70 y "ESCRIBINOS" a 112 (más grande se pasan de x = 900). El pin necesita ~26 px de margen: el degradé rojo tiene margen negativo y lo pisa.
+- CTA: zoom 1,15→1,38× anclado a los ojos, "que te **TASEMOS** tu casa" bajo el mentón y "**ESCRIBINOS**" al final.
+- Audio: la voz pega picos fuertes en hook y CTA (el limitador trabaja 6–7 dB) y quedan ~1 dB debajo del cuerpo: se emparejan por toma en la mezcla (cuerpo −0,9 dB, CTA +0,8 dB) → las tres en −14 LUFS.
