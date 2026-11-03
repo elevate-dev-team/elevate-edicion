@@ -1,6 +1,6 @@
 ---
 name: "reji-bracco-brand"
-description: "Identidad visual para video de Reji Bracco (REB), inmobiliaria en Montevideo, Uruguay (habla Reji o alguien de su equipo). Montserrat con mezcla de pesos (SemiBold en subtítulos, Light de bajada, Black en golpes), subtítulos karaoke con la palabra activa en verde salvia con contorno blanco, golpes en degradé mostaza→crema o en verde MAYÚSCULA con contorno blanco, destello cálido y whip como transición, drone propio de Montevideo antes que stock, voseo uruguayo, más la referencia de tres piezas aprobadas (pauta de edificio en Cordón, reel a cámara con drones: 200 apartamentos en venta, y loop sin voz de obra con el logo de Site al cierre) y portadas (2 frames para el editor, o diseñada si la encarga). Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Reji Bracco / REB (reels, pauta, portadas), o cuando el usuario diga \"editá el video de Reji\", \"video de REB\", \"con la marca de Reji Bracco\", aunque no mencione la skill."
+description: "Identidad visual para video de Reji Bracco (REB), inmobiliaria en Montevideo, Uruguay (habla Reji o alguien de su equipo). Montserrat con mezcla de pesos (SemiBold en subtítulos, Light de bajada, Black en golpes), subtítulos karaoke con la palabra activa en verde salvia con contorno blanco, golpes en degradé mostaza→crema o en verde MAYÚSCULA con contorno blanco, destello cálido y whip como transición, drone propio de Montevideo antes que stock, voseo uruguayo, más la referencia de cuatro piezas aprobadas (pauta de edificio en Cordón, reel a cámara con drones: 200 apartamentos en venta, reel educativo a cámara con pasos numerados: cómo se paga en pozo, y loop sin voz de obra con el logo de Site al cierre) y portadas (2 frames para el editor, o diseñada si la encarga). Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Reji Bracco / REB (reels, pauta, portadas), o cuando el usuario diga \"editá el video de Reji\", \"video de REB\", \"con la marca de Reji Bracco\", aunque no mencione la skill."
 ---
 
 # Reji Bracco (REB) — marca para video
@@ -59,6 +59,10 @@ Si Montserrat no está disponible en el editor, avisar antes de reemplazarla.
 - Se respeta puntuación y mayúsculas de nombres ("Tristán Narvaja", "Parque Rodó").
 - En **Vyra**: `addCaptions` / `editAllCaptionStyles` con modo **`highlight`**, `highlightColor: "#5D8776"`, texto `#FFFFFF`, fuente Montserrat SemiBold, máximo 4 palabras, sombra suave, sin fondo.
 - Posición: la de la base (debajo del mentón medido con detección facial, ~y 900–990 con la vocera sentada; centrado sobre B-roll). Cuando hay título en pantalla, se oculta el subtítulo.
+- **Fondos blancos** (11-10, aprobado 2026-11-03): la oficina tiene pared y pizarra blancas y la vocera usa saco blanco; con la sombra sola el texto blanco se pierde. Se suman (no son cajas):
+  - **halo oscuro** detrás del subtítulo: elipse radial `rgba(0,0,0,0.42)` → 0, ~760×170 px, centrada en el renglón; lo mismo detrás del CTA (900×300, 0,5) mientras está el título;
+  - sombra más marcada: `0 0 3px rgba(0,0,0,.75), 0 2px 6px rgba(0,0,0,.7), 0 3px 20px rgba(0,0,0,.65), 0 0 40px rgba(0,0,0,.45)`;
+  - si el título va arriba de la cabeza sobre la pizarra, **velo verde oscuro `#3A5248`** desde arriba (0,88 → 0,8 hasta y 560, se apaga en y 840): apaga lo escrito en la pizarra y deja leer el título.
 
 ## 6. Títulos y datos en pantalla
 Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea por línea al ritmo de la voz.
@@ -76,11 +80,17 @@ Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea 
   - CTA debajo del mentón: "**ESCRIBINOS**" (verde) / "para saber qué **necesitás**".
   - Tamaños que entran en el ancho seguro (720 px): golpe verde de 10 letras ≈ 96–98 px; "EN POZO" 130 px; degradé de 10–13 letras 92–112 px. Medirlo en el render con guías.
   - Un título tiene que durar ≥ 1 s: "EN POZO" con 0,4 s no se leía; se estiró hasta el cambio de plano sumando la frase que sigue como bajada.
+- **Pasos numerados** (11-10, reel educativo, aprobado 2026-11-03): círculo verde salvia con borde blanco de 6 px y el número en Montserrat Bold blanco (≈0,95 del cuerpo de la palabra) + la palabra en verde MAYÚSCULA con contorno blanco (96–110 px), en una fila centrada; la bajada en Light 48–52 con la palabra clave en Bold. Un solo golpe pesado por título (la palabra verde; el círculo no cuenta).
+  - "reservás la **unidad**" / ① **ANTICIPO** (sobre la vocera señalando la pizarra) · ② **CUOTAS** / "mientras está **en obra**" (sobre la obra) · "coordinamos una" / ③ **ENTREGA** / "así lo podés **disfrutar**" (sobre el drone de las torres terminadas).
+  - Hook: "Comprar **en pozo**" / "**3**" (degradé 230, destello cálido) / "momentos" (Bold); cierre de idea: "y un esquema de **cuotas**" / "**propio**" (degradé 150); CTA "**ESCRIBINOS**" / "contanos qué **apartamento**" / "te interesa".
 - Frecuencia: 4–5 títulos en ~40 s (hook con barrio y precio, datos del edificio, beneficio fiscal, CTA); en reels cortos a cámara, uno por idea (6 en 20 s).
 
 ## 7. Ritmo, look y acabado
 - Estructura de pauta: hook a cámara (barrio + precio) → B-roll de la unidad cada ~1,5–2 s con voz en off → amenities y beneficios con stock → CTA a cámara.
 - Estructura de reel a cámara (12-10): una sola toma hablando, con drone o stock **por encima de la voz** en cada idea que se pueda mostrar (ciudad, obra, edificios terminados, zonas). Las pausas largas de la toma se cortan debajo del B-roll o con un punch-in anclado a los ojos.
+- Estructura de reel educativo a cámara (11-10): varias tomas; hook y cuerpo en la que tiene la pizarra con los pasos escritos (ella señala cada uno), B-roll por encima de la voz en cada paso que se puede mostrar (obra en "cuotas", torres terminadas en "entrega", la ciudad en "cada unidad") y cierre + CTA en una toma más cerrada. Elegir la toma que dice lo del guion (en 11-10 una toma decía "contanos qué **unidad**" en vez de "qué **apartamento**").
+- Tomas en la oficina con **tinte verde** (luz de ventana + tubos): corregir antes de montar (`colorchannelmixer=rr=1.22:gg=1.07:bb=1.17,eq=gamma=0.97:saturation=1.05` en IMG_5499 del 11-10) para que empareje con las otras tomas.
+- **Punch en el CTA cuando la vocera se acerca entre tomas** (11-10): si en la toma siguiente los ojos quedan mucho más arriba, el punch-in anclado a los ojos saca el recorte del cuadro. Se invierte: el tramo anterior va cerrado (1,10→1,15) y el CTA abre a 1×, con los ojos en el mismo punto. Además deja lugar debajo del mentón para el CTA dentro de y ≤ 1440.
 - Transiciones: corte directo de base; **destello cálido (light leak)** al entrar el precio; **whip con motion blur** en planos de cielo o ciudad (los textos pueden entrar con desenfoque de movimiento).
 - Look natural y luminoso, interiores blancos con piso de madera.
 - Audio: master de la base (-11 LUFS). La referencia 01-10 está en −21,7 LUFS: **no copiar ese volumen**.
@@ -95,6 +105,8 @@ Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea 
 - Stock que **parezca Montevideo**: vista de la ciudad desde altura, Rambla, Parque Rodó, feria de Tristán Narvaja, edificios montevideanos. Nada que se lea Buenos Aires, Miami ni Europa.
 - Temático: asado en parrillero (azotea), firma de escritura, maqueta de casa con billetes (impuestos, inversión).
 - **Stock de obra** (16-10): Pexels vertical 4K (`pexels.com/download/video/<id>/` baja el archivo; buscar con `?orientation=portrait`). Mixkit solo da 720p horizontal: recortado a vertical queda blando. Aprobados: columnas con hierros (34521512), losa con grúas (34764180), ladrillero (39356774), fundaciones (34199756), malla desde arriba (35631524); del banco, `PLANOS.mp4` y `CONSTRUCCION.mp4` (este es el mismo clip que Pexels 26563090: no usar los dos). Ladrillo y hormigón se leen rioplatenses; evitar obreros que se lean de otro país.
+- **Stock de obra del banco** (11-10): `{STOCK}/en obra 2.mp4` (columnas con hierros y obreros, vertical 4K) y `en obra 5.mp4` (ladrillero) se leen rioplatenses; `en obra 1/3/4` son obras grandes en campo abierto, menos creíbles para Montevideo.
+- **Drones del 12-10 reutilizables** (en `RECURSOS/` del 12-10): el 1 (30 s) termina en dos torres blancas terminadas → "entrega", "terminados"; el 6 (15 s) barre la ciudad hasta el río → "cada proyecto", "cartera"; el 3 es el Parque Central y el 5 la Rambla fija.
 - **Fotos del cliente** (en 16-10, de Regina: la obra en excavación): siempre con zoom in/out leve, alternando el sentido de una foto a la otra.
 
 ## 9. Reglas editoriales de Reji
@@ -119,6 +131,15 @@ Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea 
   - 14,1–18,4 s: CTA a cámara, "**ESCRIBINOS** para saber qué **necesitás** y te contamos qué tenemos disponible", punch-in anclado a los ojos en la última frase.
   - Transiciones en cada corte (whip en los drones, zoom-blur en la vocera) con whoosh; pop/stamp/wink en los títulos. Master −11,0 LUFS / −1,4 dBTP.
 
+- `11-10 REB Así se paga un apartamento en` (25,3 s, aprobado 2026-11-03) — reel educativo a cámara de la asesora con la pizarra "ANTICIPO / CUOTAS / ENTREGA":
+  - 0–1,8 s: hook junto a la pizarra (s 1,15, ella a la izquierda), "Comprar en pozo tiene **3** momentos", velo verde arriba y destello en el 3.
+  - 1,8–4,7 s: punch-in anclado a los ojos, "reservás la unidad" / ① ANTICIPO mientras señala la pizarra.
+  - 4,7–9,8 s: obra (whip + drop de *Motivating Mornings*), ② CUOTAS; ladrillero en "se va construyendo".
+  - 9,8–13,7 s: drone de las torres, ③ ENTREGA.
+  - 13,7–17,1 s: drone de la ciudad, "Cada unidad tiene un anticipo" → "y un esquema de cuotas / **propio**".
+  - 17,1–25,3 s: toma cerrada, "te lo confirmamos una vez que elijas la unidad" y CTA "**ESCRIBINOS** / contanos qué apartamento te interesa" (punch invertido, sección 7).
+  - Voz: Adobe Podcast de Tomi (0 ms de desfase) + cadena modo `mejorada`; música −16/−17 dB bajo la voz; 19 SFX; master −10,9 LUFS / −1,5 dBTP.
+
 - `16-10 REB Título pendiente` (loop de 23,25 s, aprobado 2026-10-29) — sin voz ni cara, solo música (*Rising Forest*), un corte cada 2 tiempos:
   - 0–1,9 s: folleto de Site con lapicera (IMG_5554), "de la / **IDEA**" (degradé) con destello cálido.
   - 1,9–14,5 s: planos → 6 fotos de la obra con zoom alternado ("a la / **OBRA**" en verde) intercaladas con stock de obra.
@@ -131,6 +152,7 @@ Lockups centrados de 2–3 líneas muy apretadas, con entrada pop/escala línea 
 - **Por defecto la portada la hace el editor (Tomi)**; si la encarga, se diseña (ver 16-10 abajo). Al terminar el video se le pasan **2 frames** del crudo en `PORTADA/` (1080×1920, PNG): uno **sonriendo** y uno con la **boca cerrada**, con los ojos abiertos y la cara nítida. Buscarlos en las pausas y después de la última palabra (ahí suele sonreír).
 - Estilo de su portada en 12-10 (`assets/portada-1210.jpg`): velo verde salvia arriba, título de dos líneas en Montserrat ("Hoy tenemos **200** / apartamentos ***EN VENTA***") con la cifra en el degradé mostaza→crema, sobre el frame sonriendo.
 - Portada diseñada (16-10, aprobada 2026-10-29, `assets/portada-1610.jpg`): foto de la obra del cliente (excavadora) con velo verde oscuro `#3A5248` arriba (0,9 → 0,62 hasta y 900, se apaga en y 1130) y degradé oscuro abajo; "De la **idea** / a la ***OBRA***" centrado en y ≈ 580–840: "De la" / "a la" en Light blanco 104 px, "idea" en Black degradé mostaza→crema 150 px, "OBRA" en Black Italic verde salvia con contorno blanco. Hecha en PIL (`PROYECTO/portada.py` del 16-10).
+- Portada de Tomi en 11-10 (`assets/portada-1110.jpg`): frame sonriendo con degradé mostaza → verde salvia de arriba hacia abajo, "Así se paga un / departamento en ***POZO***" en blanco con "POZO" en Black Italic, arriba a la izquierda. Usa "departamento" aunque los textos del video digan "apartamento": es decisión de Tomi, no corregirla.
 - Cuando la deja, se inserta como **frame 0** con `portada_primer_frame.sh` de la skill `portadas-reels` (30 fps), sin cambiar la cantidad de cuadros.
 
 ## 12. Al cerrar cada video
