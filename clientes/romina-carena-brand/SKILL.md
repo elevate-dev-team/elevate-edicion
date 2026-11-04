@@ -71,6 +71,8 @@ Analizadas las seis (`assets/portadas.jpg`; cada una en `01 REELS/<mes>/<pieza>/
 
 - **Pautas con portada del editor (H, 04-10, 2026-10-28):** el editor pidió hacerla él y que le pasara **2 frames de la propiedad** (fachada y un interior lindo) y **2 de Romina con la boca cerrada o sonriendo**, en `PORTADA/` (PNG 1080×1920 del cuadro original, sin títulos). Elegirlos midiendo la boca cerrada en los planos a cámara (arranque y cierre de frase suelen servir). Cuando deja su portada en `PORTADA/`, se inserta como frame 0 con `portada_primer_frame.sh` sin regenerar el video.
 
+- **Trends (I, 04-11, 2026-11-04):** portada diseñada por Claude, pero el editor eligió otro cuadro: el del remate (con la máscara, mirando de costado con el celular en la mano), no el de frente con la boca cerrada. Mismo lockup del video ("Yo cuando mi cliente" Medium + "ME NECESITA" Black Italic con glow, 50/94 px) en caja salvia bajo el mentón, centrado bajo la cara (x ≈ 468) para no tapar el celular.
+
 ## 6. Referencias aprobadas (REFERENCIA, no fórmula)
 Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/`.
 - **A. Pauta propiedad Heron Bay** — `09 SEPTIEMBRE/03-09 ROC PAUTA Título pendiente` (57 s).
@@ -82,6 +84,8 @@ Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE
 - **G. Pauta townhouse en renta Fort Lauderdale** (hecha en Remotion por Claude) — `10 OCTUBRE/21-12 ROC Título pendiente` (49 s). Hook y CTA a cámara frente a la casa, voz en off grabada aparte sobre el recorrido.
 - **H. Pauta townhouse nuevo Coconut Creek** (Remotion) — `10 OCTUBRE/04-10 ROC PAUTA Título pendiente` (57,6 s). Hook y CTA a cámara con lentes de sol, voz en off (nota de voz) sobre recorrido de la propiedad modelo y placas verdes.
 
+- **I. Trend sin voz "Yo cuando mi cliente me necesita"** (Remotion + Python) — `11 NOVIEMBRE/04-11 ROC Título pendiente` (13,3 s). Máscara facial acelerada → llega un WhatsApp de un cliente → sale de casa vestida con la carpeta. Plantilla en `assets/plantilla-trend/` (base de imagen con rampa y transiciones en `base.py`, sobreimpreso + notificación en `Video-trend.tsx`, `mezcla.sh`, `portada.py`).
+
 ## 7. Ideas que pueden sumar (opcionales, a criterio)
 - Mapa simple de Broward con pin salvia cuando compara ciudades.
 - Fotos históricas o de prensa como tarjeta semitransparente (como Walt Disney en F) para datos curiosos.
@@ -92,3 +96,4 @@ Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE
 - **2026-10-28, H (04-10):** "el audio de la voz está un poco saturado". La voz en off era una nota de voz con mucho ruido (piso −29 dB): con reductor fuerte + las dos compresiones quedó saturada. El editor la limpió por fuera y con su archivo bastó ganancia + una compresión rápida de picos + limitador. **Con Romina, si la voz en off viene de nota de voz, ofrecerle de entrada la voz montada cruda en `VOZ/`** (ver base §3.2).
 - **2026-10-28, H (04-10):** el hook grabado no sigue el guion (dice "con tan solo 19 mil dólares" de entrada, no el precio). Se respeta lo que dice en los subtítulos y lo que el guion trae y ella no dice (precio $557,990) va como **título**, no como subtítulo. Avisar al entregar qué datos salieron solo del guion.
 - **2026-10-23, G (21-12):** música: no usar `Bounce Me Brother` de `{MUSICA}/`; buscar un funk propio (ver `references/biblioteca.md`).
+- **2026-11-04, I (04-11):** video aprobado sin cambios ("excelente cómo quedó"); solo pidió cambiar la imagen de la portada por el cuadro de 97,97 s de la toma 1 (ver §5, trends). Master en −15,4 LUFS por el brief "música baja" (base §3.4) y "¿" agregado al mensaje de WhatsApp: aceptados.
