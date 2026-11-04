@@ -29,6 +29,7 @@ Pedido del usuario (2026-10-05): la portada tiene que parecerse a las que ya pub
 
 ## 2. Imagen
 - Preferir las **fotos que manda el cliente** (mejor calidad y expresión); si no hay, un cuadro nítido del video en la resolución original, pasado a SDR si es HDR.
+- **Si el usuario manda una captura del cuadro que quiere** (ROC 04-11, 2026-11-04): no usar la captura (viene escalada, con zoom del reproductor y botones encima, ej. "Fre…"). Ubicar el cuadro exacto en el video con `cv2.matchTemplate` (TM_CCOEFF_NORMED) de la captura en escala de grises contra los cuadros de la toma, probando escalas 1,00–1,16 (correlación ~0,99 = mismo cuadro) y sacarlo del original; repetir el encuadre de la captura (escala y desplazamiento que dio el match).
 - Fotos de iPhone vienen 3:4 con rotación EXIF: aplicarla (`ffmpeg -i foto.jpg -q:v 2 salida.jpg` la aplica). Para 9:16 se usa toda la altura y se recortan los costados; elegir el desplazamiento horizontal (`posX`) para que las personas queden enteras y dentro del cuadrado.
 
 ## 3. Texto
@@ -75,6 +76,7 @@ Pedido del usuario (2026-10-05, PAO 10-09): "aislar al sujeto y darle un poco m�
 Pedido del usuario (2026-10-05, PAO 10-09): la portada **se pone en el primer frame del video final**, así queda como miniatura por defecto al subir el reel. Se reemplaza el frame 0 (no se agrega un frame): la duración, la cantidad de frames y el audio no cambian.
 - `bash scripts/portada_primer_frame.sh <video.mov> <portada.jpg> <master.wav> <final.mp4> [fps]` — verifica que la cantidad de frames sea la misma que la del video de entrada (con `-loop 1` + `-shortest` se perdía el último frame).
 - Por eso el cuadro base de la portada sale del arranque del video (`PORTADA/Frame_00.jpg`), para que el paso al frame 1 no salte de lugar; se puede usar con zoom.
+- **Excepción: trends y piezas con un momento clave** (ROC 04-11, 2026-11-04): el usuario cambió una portada de arranque (de frente, boca cerrada) por el cuadro del remate (con la máscara, mirando de costado con el celular en la mano). Ahí la portada sale del momento que cuenta el chiste aunque el paso al frame 1 salte; proponer ese cuadro primero. Si el objeto clave (el celular) cae donde iría el texto, el lockup se achica y se centra bajo la cara (no en x = 540) para no taparlo.
 - Revisar en el mp4 final: frame 0 = portada, frame 1 = video, mismo total de frames.
 
 ## 6. Revisión antes de entregar
