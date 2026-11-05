@@ -1,0 +1,6 @@
+# Plantilla motion de ROC (pieza J, 21-11 "Florida baja los impuestos de tu casa")
+Reel a cámara (selfies) con motion de marca sobre placa verde (`fondo.mp4` de 18-09, 0,7×) o sobre su propio plano desenfocado y teñido de verde (`kind: 'card'`).
+- `Video-impuestos.tsx`: planos (cam con zoom anclado a los ojos, broll, placa, card), light leaks, zoom-blur, subtítulos al mentón, y los motion: `Enmienda` (sello APROBADA), `Cifras` (barras con contador), `Calendario` (corre al 31 y cae el sello FECHA LÍMITE), `Linea` (línea de tiempo vertical de 5 años), `Golpe` (Birthstone + Black salvia con borde blanco), `Hook`/`Cta` arriba de la cabeza.
+  - Los frames se escribieron en la línea de tiempo v1 y pasan a la v2 con `R()` (tabla `remap` de data.json) porque se recortaron silencios después. En un video nuevo, escribir los frames directo y sacar el `R`.
+- `cortes.py`: cortes al final del habla (silencios ≥ 0,18 s, regla de la base). `gen.py`: planos, ojos/mentón por frame (cara_selfie.swift), subtítulos, punch-ins alternados en cortes dentro de una toma. `mezcla.py`: voz + música con hueco de EQ + SFX con el pico alineado. `voz_tomi.sh`: nivel/dinámica para la voz que limpia el editor.
+Rutas absolutas de la máquina de Tomi: cambiarlas antes de usar.

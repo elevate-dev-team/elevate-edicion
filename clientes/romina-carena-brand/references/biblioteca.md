@@ -8,6 +8,8 @@ Lo que se usó en las referencias (Motion Array, se descarga dentro de cada `PRO
 - *Explore Together* (18-09): corporate liviano, para piezas educativas.
 - *Retro Funky Groove (Lightwight Funk)* — BombinSound, Pixabay (licencia gratuita), en `MUSICA/` de 21-12 (G). Funk liviano, **122,0 BPM medidos**, 87,6 s. Secciones: intro 0–4 s, cuerpo 4–35 s, break sin bajo 38,4–42,8 s, vuelve el bajo 43,3 s, **drop en 51,18 s**. En G se arrancó para que el drop caiga en el CTA. Aprobado.
 
+- *Funkee Monkeee* (Mixkit, instrumental medido con Demucs, en `MUSICA/` de 21-11): funk liviano, banda de la voz 6,4 dB bajo el total → −18 dB bajo la voz con hueco de EQ. Desde 7,0 s del tema (los primeros 6 s son más flojos). Aprobado en J.
+
 Para los próximos: buscar en Motion Array o en Pixabay Music (género funk, "Editor's Choice") "funk", "funky groove", "corporate upbeat": 100–120 BPM, sin voces. **`Bounce Me Brother` de `{MUSICA}/` no** (rechazado por el editor en 21-12: "no utilices ese tema, buscá uno estilo funk por tu cuenta"); el resto de `{MUSICA}/` (cinemático, trap, clásica) tampoco va con ROC.
 
 ## SFX (`{SFX}/`)
@@ -17,12 +19,17 @@ Para los próximos: buscar en Motion Array o en Pixabay Music (género funk, "Ed
 - `FOTO3.mp3`: aparición de una foto-tarjeta. `glitch.mp3`: golpes de corte.
 - Animation Composer (pack de Premiere): *Swoosh 04 - 02*, *Swoosh 04 - Double 02*, *Swoosh Transition 28*, *Swoosh Transition 03*, *Transition Complex 14*.
 
+- `stamp.mp3` (sellos que caen), `flip.mp3` (tarjeta / calendario), `clock ticking sound effect.mp3` (contador de días), `Click 4 (digital).wav` (barras y pasos de una línea de tiempo): usados en J.
+
 ## Transiciones
 MOGRT "Generated Light Leak 1 / 2 / 9" (1080×1920), en `PROYECTO/Motion Graphics Template Media/` de 16-10.
 
 ## Stock (`{STOCK}/`)
 Sirven: `FLORIDA.mp4`, `FLORIDA CASA.mp4`, `MIAMI.mp4`, `autopista florida.mp4`, `familia estados unidos.mp4`, `DOLARES.mp4`, `DINERO 6.mp4`, `CALCULADORA*.mp4`, `LLAVES*.mp4`, `FIRMA*.mp4`, `CONTRACT.mp4`, `documentos.mp4`, `INSPECCION CASA.mp4`, `PAREJA*.mp4`, `FAMILIA*.mp4`, `SHAKE HANDS.mp4`.
 **No usar:** `CALLE FLORIDA*`, `BUENOS AIRES`, `CIUDAD BS AS*`, `OBELISCO`, `MENDOZA DRONE`, `PLATA ARGENTINA*`, `sur buenos aires` (Argentina / pesos). `TAMPA*` solo si habla de Florida en general (ella está en Broward).
+
+## Pexels (con permiso del editor, J)
+Usados en J (no repetir seguido): 19212227 drone Tampa con palmeras, 7347874 familia mudándose, 6863131 formulario 1040, 27066154 casa con pileta, 7424469 entrega de llaves. Otros que se vieron bien para ROC: 7646287 / 7646284 cartel SOLD, 8369976 alcancía, 39576501 villa con pileta y cielo azul, 31639427 barrio desde arriba. Descarga: ver base §9.
 
 ## Material propio (`{CARPETA_CLIENTE}/00 IMAGEN DE MARCA/`)
 - `[4k] Broward County, Florida Drone Footage.mp4`: drone de Broward (canales, lagos, barrios). Pese al nombre es **1280×720**: en vertical queda blando, usarlo en planos cortos o con zoom suave.

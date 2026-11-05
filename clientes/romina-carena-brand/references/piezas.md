@@ -68,3 +68,27 @@ Todas 1080×1920, 25 fps. Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/`. El fi
 - Remotion (`Video-trend.tsx`): sobreimpreso todo el video en caja salvia `rgba(60,123,101,0.77)` bajo el mentón (y 1125): "Yo cuando mi cliente" Medium 50 + "ME NECESITA" Black Italic 94 con glow blanco, pop con spring. Notificación de WhatsApp estilo iOS arriba de la cabeza (top 285, x 180–900, ícono verde SVG, remitente "Cliente", "ahora") que baja con el ping (cuadro 174) y sale con el whip. Zoom lento 1→1,12 mientras lee.
 - Audio (`mezcla.sh`): *Retro Funky Groove* desde 3,971 s a −10 dB; mientras lee (5,75–10,82 s) `lowpass=650` ×0,45. Ping de WhatsApp (myinstants, dos notas) +1 dB con el pico en el cuadro de la notificación; whoosh en los cortes (−14 dB), swoosh en el whip (−9), pop en el título (−20). Master +5,5 dB + `alimiter` 0,84 sobremuestreado: música −14,6/−15,0 LUFS, tramo del ping −10,1, lectura −22,2, integrado −15,4, pico −1,5 dB. Aprobado así ("música baja").
 - Portada: cuadro de 97,97 s de `IMG_6046` elegido por el editor (ver SKILL §5, trends), zoom 1,04, márgenes de texto 131/274/625/307 px al cuadrado.
+
+## J. Reel selfie con motion "Florida baja los impuestos de tu casa" — `11 NOVIEMBRE/21-11 ROC Florida baja los impuestos de` (49,2 s, 30 fps, −11,0 LUFS; Remotion)
+- **Crudos:** 6 selfies en el auto (720×1280 HEVC, 30 fps, SDR), una por bloque del guion: hook, qué cambia, la fecha, si te mudás después, para quién y CTA.
+- **Lo que cambió respecto del guion:**
+  - No dice la fecha límite en el hook: va como tag "FECHA LÍMITE: 31 DE DICIEMBRE".
+  - Dice "antes del 31 de diciembre" (el guion dice "al").
+  - No dice la línea del 5 % para inversores.
+  - "Pagás impuestos sobre mucho menos del valor de tu casa" va como bajada del motion de cifras.
+- **Cortes:** silencios ≥ 0,18 s cortados (corrección del editor, ver SKILL §8), con punch-ins alternados de ±0,11× anclados a los ojos. Ojos y mentón por frame con `cara_selfie.swift`. Con 720p los punch no pasan de ~1,17×.
+- **Motion:** sobre la placa `fondo.mp4` a 0,7× van:
+  - Enmienda: "Florida aprobó la" + ENMIENDA en degradé + "3" menta de 340 px + sello APROBADA rotado −6°.
+  - Cifras: barras salvia, la última menta, con contador "$NK" en degradé que crece con la voz; años abajo y bajada en Medium 38.
+  - Calendario: tarjeta crema con cabecera salvia, número que corre 1→31, "DICIEMBRE 2026" y sello FECHA LÍMITE.
+  - Línea de tiempo: AÑO 1–5 en vertical sobre su plano desenfocado + velo verde, de "descuento ACTUAL" a "descuento GRANDE".
+- **Títulos:** hook y CTA arriba de la cabeza (bajo el mentón no entraban en selfie). Golpes "vas a pagar MENOS" / "el momento ES AHORA" en Birthstone + Black salvia con borde blanco sobre B-roll.
+- **B-roll de Pexels**, todo nuevo:
+  - drone de Tampa con palmeras (19212227);
+  - familia entrando con cajas (7347874);
+  - formulario 1040 con lupa (6863131);
+  - casa con pileta (27066154);
+  - entrega de llaves (7424469).
+- **Acabado:** light leaks en los 4 cambios de bloque, zoom-blur en los cortes a B-roll y placas, ~45 SFX: stamp en los sellos, flip + tic-tac en el calendario, click digital en las barras y la línea, CashMoney en $250K y wink en los golpes.
+- **Música:** *Funkee Monkeee* (Mixkit, instrumental) desde 7,0 s, −18 dB bajo la voz con hueco de EQ (banda 6,4 dB bajo el total).
+- **Voz y portada:** la voz la limpió el editor (desfase 0 ms) y quedó en −13 LUFS con `voz_tomi.sh`. Master −11,0 LUFS / −1,3 dBTP. Portada del editor como frame 0.
