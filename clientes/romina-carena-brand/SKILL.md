@@ -1,6 +1,6 @@
 ---
 name: romina-carena-brand
-description: Identidad visual para video de Romina Carena (ROC), realtor argentina en Broward County, Florida (Weston, Parkland, Pembroke Pines, Heron Bay; PRG Real Estate). Tipografía Open Sauce One con mezcla de pesos (Medium de base + Black / Black Italic / ExtraBold Italic en la palabra clave) y Birthstone (cursiva) como acento, subtítulos blancos al pecho que nunca tapan la cara, palabra fuerte rellena en verde salvia con borde blanco o en menta, datos y precios en degradé blanco→piedra, placas explicativas sobre fondo verde con íconos de línea, mucho B-roll en los momentos importantes, light leaks cálidos como transición, música funk para redes o corporate, paleta verde bosque / salvia / taupe / piedra / blanco, más la referencia de seis piezas aprobadas (dos pautas de propiedad y cuatro reels a cámara: tasas, precalificación, Broward sin terreno, Weston) y la guía de portadas con caja salvia. Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Romina Carena / ROC (reels, pauta de propiedades, portadas), o cuando el usuario diga "editá el video de Romina", "video de ROC", "con la marca de Romina Carena", aunque no mencione la skill.
+description: Identidad visual para video de Romina Carena (ROC), realtor argentina en Broward County, Florida (Weston, Parkland, Pembroke Pines, Heron Bay; PRG Real Estate). Tipografía Open Sauce One con mezcla de pesos (Medium de base + Black / Black Italic / ExtraBold Italic en la palabra clave) y Birthstone (cursiva) como acento, subtítulos blancos al pecho que nunca tapan la cara, palabra fuerte rellena en verde salvia con borde blanco o en menta, datos y precios en degradé blanco→piedra, placas explicativas sobre fondo verde con íconos de línea, mucho B-roll en los momentos importantes, light leaks cálidos como transición, música funk para redes o corporate, paleta verde bosque / salvia / taupe / piedra / blanco, más la referencia de las piezas aprobadas (pautas de propiedad, reels a cámara: tasas, precalificación, Broward sin terreno, Weston, un trend sin voz y un reel selfie con motion de marca sobre la Enmienda 3 con barras, calendario y línea de tiempo) y la guía de portadas con caja salvia. Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Romina Carena / ROC (reels, pauta de propiedades, portadas), o cuando el usuario diga "editá el video de Romina", "video de ROC", "con la marca de Romina Carena", aunque no mencione la skill.
 ---
 
 # Romina Carena (ROC) — Marca para video
@@ -71,6 +71,12 @@ Analizadas las seis (`assets/portadas.jpg`; cada una en `01 REELS/<mes>/<pieza>/
 
 - **Pautas con portada del editor (H, 04-10, 2026-10-28):** el editor pidió hacerla él y que le pasara **2 frames de la propiedad** (fachada y un interior lindo) y **2 de Romina con la boca cerrada o sonriendo**, en `PORTADA/` (PNG 1080×1920 del cuadro original, sin títulos). Elegirlos midiendo la boca cerrada en los planos a cámara (arranque y cierre de frase suelen servir). Cuando deja su portada en `PORTADA/`, se inserta como frame 0 con `portada_primer_frame.sh` sin regenerar el video.
 
+- **Reel a cámara con portada del editor (J, 21-11, 2026-11-05):** le hice la portada (modelo G, caja salvia sobre el pelo) y le pareció bien, pero la rehízo él "para que quede más profesional" (`11 NOVIEMBRE/21-11 ROC Florida baja los impuestos de/PORTADA/…png`). Su versión:
+  - **Sin caja**: velo verde oscuro desde arriba hasta los hombros y el texto suelto sobre el velo, arriba de la cabeza.
+  - "Florida baja" en **Birthstone** blanca, "LOS IMPUESTOS" en **Black recta MAYÚSCULA** con glow blanco y "DE TU CASA" en **Black menta** chica.
+  - Romina con sonrisa de boca cerrada, sin mover el cuadro original.
+  - **Con Romina, pasarle siempre 2–3 frames con la boca cerrada o sonriendo en `PORTADA/`** (elegidos midiendo la boca) aunque se haga una propuesta: es probable que la haga él. Si hay que diseñarla, tomar este sistema y no la caja.
+
 - **Trends (I, 04-11, 2026-11-04):** portada diseñada por Claude, pero el editor eligió otro cuadro: el del remate (con la máscara, mirando de costado con el celular en la mano), no el de frente con la boca cerrada. Mismo lockup del video ("Yo cuando mi cliente" Medium + "ME NECESITA" Black Italic con glow, 50/94 px) en caja salvia bajo el mentón, centrado bajo la cara (x ≈ 468) para no tapar el celular.
 
 ## 6. Referencias aprobadas (REFERENCIA, no fórmula)
@@ -86,6 +92,12 @@ Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE
 
 - **I. Trend sin voz "Yo cuando mi cliente me necesita"** (Remotion + Python) — `11 NOVIEMBRE/04-11 ROC Título pendiente` (13,3 s). Máscara facial acelerada → llega un WhatsApp de un cliente → sale de casa vestida con la carpeta. Plantilla en `assets/plantilla-trend/` (base de imagen con rampa y transiciones en `base.py`, sobreimpreso + notificación en `Video-trend.tsx`, `mezcla.sh`, `portada.py`).
 
+- **J. Reel selfie en el auto con motion "Florida baja los impuestos de tu casa"** (Remotion) — `11 NOVIEMBRE/21-11 ROC Florida baja los impuestos de` (49,2 s, 30 fps). Seis selfies (una por bloque del guion) con motion de marca:
+  - sello ENMIENDA 3 APROBADA, barras $50K → $150K → $250K y calendario al 31 DIC 2026 con sello FECHA LÍMITE, sobre placa verde;
+  - línea de tiempo de 5 años sobre su propio plano desenfocado y teñido;
+  - golpes en salvia sobre B-roll nuevo de Pexels.
+  - Plantilla en `assets/plantilla-motion/`.
+
 ## 7. Ideas que pueden sumar (opcionales, a criterio)
 - Mapa simple de Broward con pin salvia cuando compara ciudades.
 - Fotos históricas o de prensa como tarjeta semitransparente (como Walt Disney en F) para datos curiosos.
@@ -96,4 +108,9 @@ Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE
 - **2026-10-28, H (04-10):** "el audio de la voz está un poco saturado". La voz en off era una nota de voz con mucho ruido (piso −29 dB): con reductor fuerte + las dos compresiones quedó saturada. El editor la limpió por fuera y con su archivo bastó ganancia + una compresión rápida de picos + limitador. **Con Romina, si la voz en off viene de nota de voz, ofrecerle de entrada la voz montada cruda en `VOZ/`** (ver base §3.2).
 - **2026-10-28, H (04-10):** el hook grabado no sigue el guion (dice "con tan solo 19 mil dólares" de entrada, no el precio). Se respeta lo que dice en los subtítulos y lo que el guion trae y ella no dice (precio $557,990) va como **título**, no como subtítulo. Avisar al entregar qué datos salieron solo del guion.
 - **2026-10-23, G (21-12):** música: no usar `Bounce Me Brother` de `{MUSICA}/`; buscar un funk propio (ver `references/biblioteca.md`).
+- **2026-11-05, J (21-11):** "Encuentro demasiados silencios. Tratá de cortar siempre cuando ella termine de hablar."
+  - Se cortaban solo pausas de más de 0,35 s y quedaban colas de ~0,15 s.
+  - Ahora se corta todo silencio ≥ 0,18 s medido por energía, con 0,03 s de cola (regla en la base §4). Con Romina el ritmo tiene que ser apretado también a cámara, no solo en la voz en off.
+- **2026-11-05, J (21-11):** "Una vez que tengas el audio listo pasámelo para ajustarlo." El editor limpió la voz cruda montada y con su archivo solo hizo falta nivel y dinámica (`assets/plantilla-motion/voz_tomi.sh`, voz en −13 LUFS). **Con Romina, al cerrar los cortes, pasarle la voz cruda montada y esperar su versión antes de la mezcla final.**
+- **2026-11-05, J (21-11):** portada rehecha por el editor (ver §5). El resto del acabado (motion, B-roll, títulos, música) se aprobó sin cambios.
 - **2026-11-04, I (04-11):** video aprobado sin cambios ("excelente cómo quedó"); solo pidió cambiar la imagen de la portada por el cuadro de 97,97 s de la toma 1 (ver §5, trends). Master en −15,4 LUFS por el brief "música baja" (base §3.4) y "¿" agregado al mensaje de WhatsApp: aceptados.
