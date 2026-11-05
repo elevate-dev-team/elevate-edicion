@@ -48,3 +48,23 @@ Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/`. Son REFERENCIA: entender el cri
 - Drone del barrio con light leak: "**seguridad privada** / las 24 horas" navy, "clubhouse", "tenis", "un colegio".
 - Datos rojos: "**LOTE DE 800 M2** / 199 m2 cubiertos", "**un baño zonificado** / con dos antebaños"; navy "**galería techada** / con toldos automatizados".
 - CTA "WhatsApp" con el agente frente a la casa.
+
+## H. Vistalba V2, dos hooks — `11 NOVIEMBRE/21-09 FRI PAUTA Vistalba VERSION 2` (HOOK A 60 s / HOOK B 63 s, 30 fps)
+Misma casa que A, guion nuevo. Hecha en Remotion (`~/remotion-local/src/fri2109`, scripts en `PROYECTO/scripts/`). Aprobada 2026-11-03 con una corrección ("3 dormitorios" tapado por el título PLANTA ALTA).
+- Hook A: agente en la terraza con la cordillera ("Esta es la vista de la **planta alta**") → junto a la pileta con el lockup "Casa de **495 m²** / con **piscina** en / **VISTALBA COUNTRY** / pastilla **USD 455.000**" armándose palabra a palabra arriba de su cabeza.
+- Hook B: fachada con "**495 m²** cubiertos / y **lote** de / **1104 m²**" (rojo) → terraza "hacia **los Andes**" → pileta con "Dentro de **VISTALBA COUNTRY**" y "por **USD 455.000**".
+- Cuerpo en off: un ambiente por plano (~1 s en la enumeración de planta baja, con subtítulos-golpe LIVING Y COMEDOR / COCINA / LAVANDERÍA / TOILETTE + click), títulos "Son **495 m²** en dos plantas", "sobre un lote de **1104 m²**", "En **PLANTA ALTA**", "**VISTALBA COUNTRY** / seguridad privada / las 24 horas" sobre la calle del barrio vista desde la terraza (no había drone).
+- Subtítulos Inter Medium Italic 74 px + Black; palabra clave en rojo degradé con un borde blanco de 2–3 px (sin borde no se lee sobre el cielo).
+- CTA: "**ESCRIBIME** / al WhatsApp" en rojo degradé con borde blanco (en beige se perdía sobre la pared blanca del pasillo) → pastilla del precio como tag arriba del agente, subtítulos bajo el mentón.
+- Whip con desenfoque horizontal en cada cambio de ambiente, zoom-blur en cada cambio de frase, light leak en los cambios de bloque. *Summer Waves* −16 dB bajo la voz, 42–45 SFX. Master −11 LUFS.
+- Portada: el mismo lockup de la portada aprobada de A (barrio en Light Italic → "Casa, piscina y Vista a la Montaña" en Bold → pastilla), alineado a la izquierda en x = 110, sobre el primer cuadro de cada versión con degradé navy arriba.
+
+## I. Captación alquiler — `11 NOVIEMBRE/05-10 FRI PAUTA Captacion alquiler` (41 s, 30 fps)
+Pauta para captar dueños (no muestra propiedad). Agente joven a cámara, siempre lejos y de cuerpo entero (jardines, bicisenda): encuadre que sigue la cara con zoom 1,5–2× (1080p blando a 2×, 4K bien). Hecha en Remotion (`~/remotion-local/src/fri0510`, scripts en `PROYECTO/scripts/`: alinear_tomas → build → timeline → textos → mezcla). Aprobada 2026-11-05.
+- Hook a cámara (2 tomas): "¿Tenés una **propiedad** / para alquilar / **VACÍA?**" (caja roja) arriba de la cabeza → "**NO TE CORRESPONDEN**" golpe con contorno.
+- Cuerpo en off (dos notas de voz): motion 1 (familias vs. casas sobre el drone de Mendoza) y motion 2 (panel "el dueño puede ELEGIR": plazo / moneda / ajuste / EL INQUILINO); después un clip de stock por tarea (laptop, celular, agente mostrando, calculadora con plata, firma, pesos argentinos, hornalla) con cifras rojas "filtrar **50** CONSULTAS", "mostrar la casa **10** VECES" y golpes PUBLICAR / DE VERDAD / UN DOMINGO.
+- Remate a cámara: "**POR VOS**" rojo con borde blanco arriba de la cabeza → tasador (stock) "Tasamos tu casa / al valor / **REAL** / de alquiler de hoy" → "a una **GRAN LISTA** de posibles interesados".
+- CTA: "enviarnos un / **WHATSAPP** / y coordinamos esa visita" en rojo con borde blanco.
+- *Inspire The World* (corporate) −16 dB bajo la voz, 48 SFX, master −11,2 LUFS / −1,3 dBTP.
+- Correcciones: portada con el título sobre la cabeza y el frame entero (ver §5 de la skill); un B-roll de stock tembloroso (CALCULADORA 3) cambiado por CALCULADORA desde 18 s.
+- Portada: "¿Tenés una **casa** / **VACÍA?** (caja roja) / Nosotros la **alquilamos** por vos" sobre el frame de la toma muda IMG_3492 (boca cerrada).

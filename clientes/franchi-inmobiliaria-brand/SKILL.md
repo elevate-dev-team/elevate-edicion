@@ -57,7 +57,7 @@ Ver `assets/sistema-texto.jpg` y la prueba `assets/prueba-sistema.jpg` (subtítu
 ## 5. Portadas
 Analizadas diez (`assets/portadas.jpg`; cada una en `01 REELS/<mes>/<pieza>/PORTADA/`).
 - Fondo: el frente o el ambiente más lindo de la casa (pileta, fachada, jardín) con cielo azul; en reels a cámara, el agente de pecho para arriba.
-- Lockup en el **tercio superior**, arriba del sujeto, en Inter con mezcla de pesos.
+- Lockup en el **tercio superior**, arriba del sujeto, en Inter con mezcla de pesos. **Esto pisa la regla general de `portadas-reels` (texto bajo el mentón)**: en 05-10 Captación alquiler (2026-11-05) la primera versión iba bajo el mentón, con zoom al agente, y Tomi la corrigió: "respetando esta imagen… el título tiene que estar un poco por encima de la cabeza, no abajo". Aprobada: el frame elegido **entero, sin zoom** (agente de cuerpo entero sobre la bicisenda), lockup centrado en x = 540 con la base a ~28 px sobre el pelo medido en la máscara y achicado (78 %) hasta que el tope entre en y = 520 (cuadrado + 100 px).
 - Estructura de pauta: línea chica de barrio (Medium/Italic, "Vistalba Country", "Luján de Cuyo - Carrodilla") → línea de la casa (Black, "Casa con **PILETA**", "Casa, piscina y lote de 800 m²") → **precio en pastilla roja** (`USD 355.000`, Black beige).
 - Para títulos de reel: **caja roja** (sólida o en degradé rojo→transparente) detrás de la línea principal, texto blanco con la idea fuerte en Black MAYÚSCULA ("AL EQUIPO", "CHACRAS?", "LA CASA ES TUYA") y palabras de acento en beige.
 
@@ -70,10 +70,19 @@ Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE
 - **E. Tour house Luján USD 85.000** — `07 JULIO/01-03 FRI PAUTA Luján de Cuyo por USD 85` (30 s).
 - **F. Tour depto Chacras Park** — `09 SEPTIEMBRE/02-09 FRI PAUTA Título pendiente` (52 s, solo export).
 - **G. Tour house Las Candelas II** — `09 SEPTIEMBRE/03-09 FRI PAUTA Título pendiente` (64 s, solo export).
+- **H. Vistalba V2, guion nuevo con dos hooks** — `11 NOVIEMBRE/21-09 FRI PAUTA Vistalba VERSION 2` (HOOK A 60 s / HOOK B 63 s, 30 fps, Remotion; aprobada 2026-11-03).
+- **I. Pauta de captación (dueños que alquilan), a cámara + off con motion de marca** — `11 NOVIEMBRE/05-10 FRI PAUTA Captacion alquiler` (41 s, 30 fps, Remotion; aprobada 2026-11-05). Primer video de FRI sin propiedad: el cuerpo en off va con dos motion graphics de marca y stock de trámites.
 
-## 7. Ideas que pueden sumar (opcionales, a criterio)
+## 7. Motion de marca e ideas
+Probados y aprobados en I (05-10), estilo de los motion de DC / REB pero con la identidad FRI:
+- **Comparación con íconos sobre el drone de Mendoza** (navy al 62–85 % encima): "Hoy en / **MENDOZA**" (Black Italic, degradé blanco→beige) → fila de 12 íconos blancos de familia que entran en cascada (pop cada 2 frames) → solo 2 casas en rojo degradé con borde blanco. Para oferta vs. demanda, cantidades, "pocas como esta".
+- **Panel de lista**: fondo navy en degradé con líneas diagonales lentas; título "el **dueño** puede / **ELEGIR**"; tarjetas blancas (600×96, radio 24) con el texto en Inter Black navy y un check en círculo rojo que entra 4 frames después de la tarjeta (SFX check); el ítem final ("**EL INQUILINO**") en pastilla roja con texto beige, entra con un golpe (escala 1,6→1, rotación −8°→−2°, SFX sello) y las tarjetas anteriores bajan al 55 %.
+- Los bloques de motion van centrados en x = 540 y anclados abajo en y ≈ 1235 (pauta): medir el ancho final; MENDOZA a 150 px se salía del margen derecho (x = 930), quedó en 128.
+
+Ideas que pueden sumar (opcionales, a criterio):
 - Pin o mapa simple de Luján de Cuyo en navy cuando la ubicación es el argumento ("a minutos de…").
 - Ficha de datos apilada (m² / dormitorios / baños) en Black beige sobre el drone, en vez de repartirlos.
 
 ## 8. Correcciones del cliente
-(Vacío por ahora. Sumar con fecha y pieza de origen.)
+- **Guion nuevo sobre una pieza ya hecha** (21-09 V2, 2026-11-03): cuando le cambian hook/cuerpo/CTA a una pauta, el agente graba a cámara cada variante de hook y el CTA, y el cuerpo llega como audios en off sueltos (`VOZ/Audios/Audio N`). Se entregan **dos videos** (uno por hook) con el mismo cuerpo y CTA; los crudos de la versión anterior (`VIDEOS ANTERIORES/`) completan los ambientes que faltan.
+- Una línea del guion que no está grabada (el "USD 455.000" del final del cuerpo) **no lleva tramo propio sin voz**: va como pastilla de precio sobre el CTA, después de ESCRIBIME.
