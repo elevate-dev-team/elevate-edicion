@@ -81,6 +81,11 @@ Analizadas las seis (`assets/portadas.jpg`; cada una en `01 REELS/<mes>/<pieza>/
 
 - **Pauta con portada diseñada (K, 02-11, 2026-11-06), aprobada sin cambios:** el editor mandó la foto (Romina de cuerpo entero frente a la fachada) y pidió 2 títulos para elegir. Sistema J: velo verde oscuro `#0C3428` desde arriba (86 % → 0 en y ≈ 1010), texto suelto arriba de la cabeza: "Townhouse de" Birthstone 104 px, "4 HABITACIONES" Black Italic con glow (ajustado a 820 px de ancho), "EN MIAMI-DADE POR MENOS DE" Black menta 40 px y "$375K" Black 200 px en degradé blanco→piedra con glow. Foto bajada 110 px (espejo del cielo arriba, bajo el velo) para que el bloque entre en el cuadrado; sujeto ×1,07, fondo ×0,84 con desenfoque de 4 px. Script: `assets/plantilla-pauta/portada.py`.
 
+- **Pauta con foto de fachada, sin persona (L, 03-11, 2026-11-09):** le hice una con velo verde arriba y el texto sobre el primer piso; la rehízo él (`11 NOVIEMBRE/03-11 ROC PAUTA Título pendiente/PORTADA/…png`). Su versión, a seguir:
+  - **La casa entera y limpia**, sin velo, en la mitad de abajo (techo en y ≈ 830). El texto va **en el cielo, arriba del techo** (y ≈ 350–810), no sobre la fachada.
+  - El velo oscurece **solo el cielo**, en el mismo azul de la foto (noche, casi negro arriba), no en verde.
+  - Lockup: "Campo de golf" Birthstone blanca → **caja salvia redondeada** con "DENTRO DE TU COMUNIDAD" Black Italic blanca → "EN MIAMI DESDE" Black menta → **"$374,990" Black blanco con glow blanco fuerte**.
+
 - **Trends (I, 04-11, 2026-11-04):** portada diseñada por Claude, pero el editor eligió otro cuadro: el del remate (con la máscara, mirando de costado con el celular en la mano), no el de frente con la boca cerrada. Mismo lockup del video ("Yo cuando mi cliente" Medium + "ME NECESITA" Black Italic con glow, 50/94 px) en caja salvia bajo el mentón, centrado bajo la cara (x ≈ 468) para no tapar el celular.
 
 ## 6. Referencias aprobadas (REFERENCIA, no fórmula)
@@ -104,6 +109,8 @@ Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE
 
 - **K. Pauta townhouse Grace Townhomes, Homestead** (Remotion) — `11 NOVIEMBRE/02-11 ROC PAUTA Título pendiente` (70,6 s, 25 fps). Hook ya unido por el cliente (a cámara → negro con el precio en off → a cámara), voz en off del cuerpo, una toma suya en la terraza y CTA en la terraza. Cifras sobre B-roll luminoso, placa del 4.99 % y lista con íconos sobre B-roll. Plantilla en `assets/plantilla-pauta/`.
 
+- **L. Pauta Altamira de Lennar, Homestead** (Remotion) — `11 NOVIEMBRE/03-11 ROC PAUTA Título pendiente` (47,3 s, 25 fps). Hook al lado del lago, selfie en el clubhouse, voz en off sobre el recorrido y CTA en la puerta. Precio equivocado a cámara reemplazado por la off, amenities con lista de íconos sobre B-roll.
+
 ## 7. Ideas que pueden sumar (opcionales, a criterio)
 - Mapa simple de Broward con pin salvia cuando compara ciudades.
 - Fotos históricas o de prensa como tarjeta semitransparente (como Walt Disney en F) para datos curiosos.
@@ -123,3 +130,4 @@ Detalle por pieza en `references/piezas.md`. Rutas relativas a `{CARPETA_CLIENTE
 - **2026-11-06, K (02-11):** "Las imágenes tienen un color mate negro con opacidad baja. Prefiero que se vean bien iluminadas y agregarle un poco de sombra a los textos, pero que se vea bien la casa." → sin velo en el B-roll, sombra triple en los textos (§4).
 - **2026-11-06, K (02-11):** "Entre la placa del 4.99 % y la lista hay demasiado tiempo de texto sobre fondo verde. Meté B-roll de la propiedad. No importa si ya utilizaste algunos frames." → placas solo en tramos cortos (§4). Con eso se aprobó; la portada (diseñada por Claude) y el resto, sin cambios.
 - **2026-11-06, K (02-11):** el precio grabado ($374,990, dicho en inglés) no coincidía con el guion ($364,900): va lo que dice ella y se avisa. Lo que sumó y no estaba en el guion (casas unifamiliares desde 620,000) se sacó con el OK del editor.
+- **2026-11-09, L (03-11):** Romina dijo mal el precio a cámara (349,900); el real ($374,990, aviso del editor) estaba en la voz en off. Se corta el hook al terminar la frase anterior y se pega "desde $374,990" de la off **sobre B-roll de la fachada**, para que no se note el labio. Si el precio es otro que el grabado, buscarlo primero en las demás tomas. Portada rehecha por el editor (§5); el video se aprobó sin cambios ("quedó genial").
