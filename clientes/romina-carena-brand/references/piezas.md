@@ -100,3 +100,12 @@ Todas 1080×1920, 25 fps. Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/`. El fi
 - **Caras:** `track.swift` (Vision, cara más grande por cuadro) para anclar zooms y pegar subtítulos y CTA al mentón. Cortes de voz en la grilla de 25 fps (`cortes.py`, silencios ≥ 0,18 s).
 - **Audio:** voz limpiada por el editor (−24,4 LUFS, desfase 0,5 ms) → `voz_tomi.sh` a −13. *Gimme that Groove!* (Mixkit, instrumental) desde 8,042 s, −16 dB bajo la voz con hueco de EQ. 53 SFX (whoosh en cortes, −20 en los cortes rápidos de B-roll; swipe en los leaks; click en títulos; wink en golpes salvia; CashMoney en el precio; click digital en la lista; notificación en "escríbeme").
 - **Portada:** diseñada por Claude con la foto del editor (ver SKILL §5), aprobada sin cambios.
+
+## L. Pauta Altamira de Lennar, Homestead — `11 NOVIEMBRE/03-11 ROC PAUTA Título pendiente` (47,3 s, 25 fps, −11,1 LUFS; Remotion)
+- **Crudos:** `IMG_6298` hook junto al lago, `IMG_6295` selfie en el clubhouse, `IMG_6308` y `IMG_6309` voz en off (imagen tapada), `IMG_6290` CTA en la puerta. `IMG_6283` fachada, `IMG_6284/85/86` interiores, `IMG_6296` y `IMG_6299` exteriores de la comunidad.
+- **Lo que no coincidía con el guion:** a cámara dice 349,900 y va $374,990 de la off (aviso del editor). Dice unifamiliares desde $620,000 (guion: $509,990) y va lo que dice. No grabó "$2,600 al mes" ni "mini golf". Suma gimnasio y tenis.
+- **Estructura:** hook con fachada y lago encima → precio sobre fachada → light leak → selfie con ALTAMIRA / DE LENNAR · HOMESTEAD arriba de la cabeza → lista de amenities con íconos sobre B-roll, cada ítem con su palabra → off con cifras (3 y 4 habitaciones, $374,990, $620,000) → ESTRENAR → LOS CAYOS → TUYO → CTA "ESCRÍBEME / AL WHATSAPP" arriba de la cabeza (Romina queda chica: ×1,5–1,8 anclado a los ojos y el título no entra abajo en pauta).
+- **Caras:** en la selfie el tope del pelo queda ~170 px arriba de la caja de Vision: el título va a `HEAD − 183`.
+- **Cayos:** sin material; `FLORIDA.mp4` del banco (agua turquesa, torres de Miami Beach), aceptado.
+- **Audio:** voz limpiada por el editor (−23,7 LUFS, desfase 0) + 2 dB a la CTA → `voz_tomi.sh` a −13. *Retro Funky Groove* desde 8,70 s (el drop cae en el CTA), banda de voz 9,3 dB bajo el total, −16 dB bajo la voz con hueco de EQ. 44 SFX. Master +2,6 dB al limitador → −11,1 LUFS, −1,4 dBTP.
+- **Portada:** rehecha por el editor (ver SKILL §5).
