@@ -1,0 +1,2239 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-04T15:29:15Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 78106297,
+  "bounds": {
+    "minlat": -34.9019146,
+    "minlon": -56.1759416,
+    "maxlat": -34.9017387,
+    "maxlon": -56.1748054
+  },
+  "nodes": [
+    11456441416,
+    1893973251,
+    917603413,
+    917388950
+  ],
+  "geometry": [
+    { "lat": -34.9019146, "lon": -56.1759416 },
+    { "lat": -34.9019126, "lon": -56.1757237 },
+    { "lat": -34.9018252, "lon": -56.1752710 },
+    { "lat": -34.9017387, "lon": -56.1748054 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "residential",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "lane",
+    "parking:right:orientation": "parallel",
+    "sidewalk": "both",
+    "sidewalk:both:surface": "paving_stones",
+    "smoothness": "excellent",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 78117718,
+  "bounds": {
+    "minlat": -34.9058836,
+    "minlon": -56.1868258,
+    "maxlat": -34.9056519,
+    "maxlon": -56.1863153
+  },
+  "nodes": [
+    917545569,
+    917591926,
+    917369130,
+    4522137024,
+    917442898,
+    4522137018,
+    4522137023,
+    917734454,
+    4522137028
+  ],
+  "geometry": [
+    { "lat": -34.9058836, "lon": -56.1868258 },
+    { "lat": -34.9057816, "lon": -56.1867806 },
+    { "lat": -34.9057523, "lon": -56.1867604 },
+    { "lat": -34.9057200, "lon": -56.1867291 },
+    { "lat": -34.9056914, "lon": -56.1866879 },
+    { "lat": -34.9056742, "lon": -56.1866597 },
+    { "lat": -34.9056659, "lon": -56.1865860 },
+    { "lat": -34.9056631, "lon": -56.1865193 },
+    { "lat": -34.9056519, "lon": -56.1863153 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "tertiary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk": "both",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 178702657,
+  "bounds": {
+    "minlat": -34.8994735,
+    "minlon": -56.1698497,
+    "maxlat": -34.8990722,
+    "maxlon": -56.1687906
+  },
+  "nodes": [
+    917489981,
+    917497610
+  ],
+  "geometry": [
+    { "lat": -34.8990722, "lon": -56.1687906 },
+    { "lat": -34.8994735, "lon": -56.1698497 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 178813166,
+  "bounds": {
+    "minlat": -34.8975015,
+    "minlon": -56.1647694,
+    "maxlat": -34.8973511,
+    "maxlon": -56.1646387
+  },
+  "nodes": [
+    917568797,
+    917418339
+  ],
+  "geometry": [
+    { "lat": -34.8973511, "lon": -56.1646387 },
+    { "lat": -34.8975015, "lon": -56.1647694 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 178813168,
+  "bounds": {
+    "minlat": -34.8976172,
+    "minlon": -56.1647539,
+    "maxlat": -34.8976011,
+    "maxlon": -56.1646061
+  },
+  "nodes": [
+    917671682,
+    917679593
+  ],
+  "geometry": [
+    { "lat": -34.8976172, "lon": -56.1647539 },
+    { "lat": -34.8976011, "lon": -56.1646061 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 178813169,
+  "bounds": {
+    "minlat": -34.8983658,
+    "minlon": -56.1669740,
+    "maxlat": -34.8975367,
+    "maxlon": -56.1648438
+  },
+  "nodes": [
+    11208466744,
+    4526769028,
+    917437840,
+    917684347,
+    917598410
+  ],
+  "geometry": [
+    { "lat": -34.8975367, "lon": -56.1648438 },
+    { "lat": -34.8979136, "lon": -56.1658157 },
+    { "lat": -34.8979982, "lon": -56.1660362 },
+    { "lat": -34.8981035, "lon": -56.1663218 },
+    { "lat": -34.8983658, "lon": -56.1669740 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061645,
+  "bounds": {
+    "minlat": -34.9058824,
+    "minlon": -56.1910209,
+    "maxlat": -34.9058658,
+    "maxlon": -56.1908204
+  },
+  "nodes": [
+    1893973274,
+    917543762
+  ],
+  "geometry": [
+    { "lat": -34.9058824, "lon": -56.1910209 },
+    { "lat": -34.9058658, "lon": -56.1908204 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "4",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "sidewalk": "both",
+    "sidewalk:both:surface": "concrete:plates",
+    "smoothness": "excellent",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061647,
+  "bounds": {
+    "minlat": -34.9053837,
+    "minlon": -56.1851146,
+    "maxlat": -34.9047386,
+    "maxlon": -56.1834010
+  },
+  "nodes": [
+    1893973253,
+    917373651
+  ],
+  "geometry": [
+    { "lat": -34.9047386, "lon": -56.1834010 },
+    { "lat": -34.9053837, "lon": -56.1851146 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061649,
+  "bounds": {
+    "minlat": -34.9047386,
+    "minlon": -56.1834010,
+    "maxlat": -34.9043705,
+    "maxlon": -56.1824900
+  },
+  "nodes": [
+    917350868,
+    1893973253
+  ],
+  "geometry": [
+    { "lat": -34.9043705, "lon": -56.1824900 },
+    { "lat": -34.9047386, "lon": -56.1834010 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061651,
+  "bounds": {
+    "minlat": -34.9062303,
+    "minlon": -56.1958589,
+    "maxlat": -34.9061509,
+    "maxlon": -56.1947374
+  },
+  "nodes": [
+    917533316,
+    13903041935,
+    917735203
+  ],
+  "geometry": [
+    { "lat": -34.9062303, "lon": -56.1958589 },
+    { "lat": -34.9061560, "lon": -56.1948088 },
+    { "lat": -34.9061509, "lon": -56.1947374 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "4",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "sidewalk": "both",
+    "sidewalk:both:surface": "paving_stones",
+    "smoothness": "excellent",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061653,
+  "bounds": {
+    "minlat": -34.9036310,
+    "minlon": -56.1805615,
+    "maxlat": -34.9032487,
+    "maxlon": -56.1795584
+  },
+  "nodes": [
+    917490524,
+    917618484
+  ],
+  "geometry": [
+    { "lat": -34.9032487, "lon": -56.1795584 },
+    { "lat": -34.9036310, "lon": -56.1805615 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061659,
+  "bounds": {
+    "minlat": -34.9058658,
+    "minlon": -56.1908204,
+    "maxlat": -34.9058229,
+    "maxlon": -56.1902466
+  },
+  "nodes": [
+    917543762,
+    917365340
+  ],
+  "geometry": [
+    { "lat": -34.9058658, "lon": -56.1908204 },
+    { "lat": -34.9058229, "lon": -56.1902466 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "4",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "sidewalk": "both",
+    "sidewalk:both:surface": "paving_stones",
+    "smoothness": "excellent",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061663,
+  "bounds": {
+    "minlat": -34.8999086,
+    "minlon": -56.1709413,
+    "maxlat": -34.8994735,
+    "maxlon": -56.1698497
+  },
+  "nodes": [
+    917497610,
+    917597636
+  ],
+  "geometry": [
+    { "lat": -34.8994735, "lon": -56.1698497 },
+    { "lat": -34.8999086, "lon": -56.1709413 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061665,
+  "bounds": {
+    "minlat": -34.9057444,
+    "minlon": -56.1891159,
+    "maxlat": -34.9056365,
+    "maxlon": -56.1879884
+  },
+  "nodes": [
+    917671015,
+    4772999066,
+    917584106
+  ],
+  "geometry": [
+    { "lat": -34.9056365, "lon": -56.1879884 },
+    { "lat": -34.9057073, "lon": -56.1890083 },
+    { "lat": -34.9057444, "lon": -56.1891159 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061667,
+  "bounds": {
+    "minlat": -34.9060676,
+    "minlon": -56.1936200,
+    "maxlat": -34.9059874,
+    "maxlon": -56.1925069
+  },
+  "nodes": [
+    917560069,
+    13903041941,
+    917500859
+  ],
+  "geometry": [
+    { "lat": -34.9060676, "lon": -56.1936200 },
+    { "lat": -34.9060613, "lon": -56.1935326 },
+    { "lat": -34.9059874, "lon": -56.1925069 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "4",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "sidewalk": "both",
+    "sidewalk:both:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061669,
+  "bounds": {
+    "minlat": -34.9015067,
+    "minlon": -56.1750923,
+    "maxlat": -34.9010106,
+    "maxlon": -56.1737929
+  },
+  "nodes": [
+    917580983,
+    917515950
+  ],
+  "geometry": [
+    { "lat": -34.9010106, "lon": -56.1737929 },
+    { "lat": -34.9015067, "lon": -56.1750923 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061671,
+  "bounds": {
+    "minlat": -34.9058229,
+    "minlon": -56.1902466,
+    "maxlat": -34.9057444,
+    "maxlon": -56.1891159
+  },
+  "nodes": [
+    917365340,
+    917584106
+  ],
+  "geometry": [
+    { "lat": -34.9058229, "lon": -56.1902466 },
+    { "lat": -34.9057444, "lon": -56.1891159 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "4",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "sidewalk": "both",
+    "sidewalk:both:surface": "paving_stones",
+    "smoothness": "excellent",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061673,
+  "bounds": {
+    "minlat": -34.9028492,
+    "minlon": -56.1785456,
+    "maxlat": -34.9023594,
+    "maxlon": -56.1772934
+  },
+  "nodes": [
+    917590749,
+    917393493
+  ],
+  "geometry": [
+    { "lat": -34.9023594, "lon": -56.1772934 },
+    { "lat": -34.9028492, "lon": -56.1785456 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061675,
+  "bounds": {
+    "minlat": -34.9043705,
+    "minlon": -56.1824900,
+    "maxlat": -34.9040416,
+    "maxlon": -56.1816263
+  },
+  "nodes": [
+    917509549,
+    917350868
+  ],
+  "geometry": [
+    { "lat": -34.9040416, "lon": -56.1816263 },
+    { "lat": -34.9043705, "lon": -56.1824900 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061677,
+  "bounds": {
+    "minlat": -34.9056365,
+    "minlon": -56.1879884,
+    "maxlat": -34.9055542,
+    "maxlon": -56.1868712
+  },
+  "nodes": [
+    917501479,
+    4772999067,
+    917671015
+  ],
+  "geometry": [
+    { "lat": -34.9055542, "lon": -56.1868712 },
+    { "lat": -34.9056068, "lon": -56.1875673 },
+    { "lat": -34.9056365, "lon": -56.1879884 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061679,
+  "bounds": {
+    "minlat": -34.9010106,
+    "minlon": -56.1737929,
+    "maxlat": -34.9005991,
+    "maxlon": -56.1727335
+  },
+  "nodes": [
+    1893973242,
+    917580983
+  ],
+  "geometry": [
+    { "lat": -34.9005991, "lon": -56.1727335 },
+    { "lat": -34.9010106, "lon": -56.1737929 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061681,
+  "bounds": {
+    "minlat": -34.9023594,
+    "minlon": -56.1772934,
+    "maxlat": -34.9019950,
+    "maxlon": -56.1763274
+  },
+  "nodes": [
+    917571240,
+    917590749
+  ],
+  "geometry": [
+    { "lat": -34.9019950, "lon": -56.1763274 },
+    { "lat": -34.9023594, "lon": -56.1772934 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061683,
+  "bounds": {
+    "minlat": -34.9061509,
+    "minlon": -56.1947374,
+    "maxlat": -34.9060676,
+    "maxlon": -56.1936200
+  },
+  "nodes": [
+    917735203,
+    3244635508,
+    9319574942,
+    13903041944,
+    917560069
+  ],
+  "geometry": [
+    { "lat": -34.9061509, "lon": -56.1947374 },
+    { "lat": -34.9061451, "lon": -56.1946670 },
+    { "lat": -34.9061035, "lon": -56.1941143 },
+    { "lat": -34.9060751, "lon": -56.1937234 },
+    { "lat": -34.9060676, "lon": -56.1936200 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "4",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "sidewalk:both": "separate",
+    "sidewalk:left:surface": "concrete:plates",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "excellent",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061685,
+  "bounds": {
+    "minlat": -34.9040416,
+    "minlon": -56.1816263,
+    "maxlat": -34.9036310,
+    "maxlon": -56.1805615
+  },
+  "nodes": [
+    917618484,
+    917509549
+  ],
+  "geometry": [
+    { "lat": -34.9036310, "lon": -56.1805615 },
+    { "lat": -34.9040416, "lon": -56.1816263 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061687,
+  "bounds": {
+    "minlat": -34.9032487,
+    "minlon": -56.1795584,
+    "maxlat": -34.9028492,
+    "maxlon": -56.1785456
+  },
+  "nodes": [
+    917393493,
+    917490524
+  ],
+  "geometry": [
+    { "lat": -34.9028492, "lon": -56.1785456 },
+    { "lat": -34.9032487, "lon": -56.1795584 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061689,
+  "bounds": {
+    "minlat": -34.8986838,
+    "minlon": -56.1678101,
+    "maxlat": -34.8983658,
+    "maxlon": -56.1669740
+  },
+  "nodes": [
+    917598410,
+    1893973236,
+    1893973239
+  ],
+  "geometry": [
+    { "lat": -34.8983658, "lon": -56.1669740 },
+    { "lat": -34.8984905, "lon": -56.1672985 },
+    { "lat": -34.8986838, "lon": -56.1678101 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061692,
+  "bounds": {
+    "minlat": -34.9005991,
+    "minlon": -56.1727335,
+    "maxlat": -34.8999086,
+    "maxlon": -56.1709413
+  },
+  "nodes": [
+    917597636,
+    1893973242
+  ],
+  "geometry": [
+    { "lat": -34.8999086, "lon": -56.1709413 },
+    { "lat": -34.9005991, "lon": -56.1727335 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061694,
+  "bounds": {
+    "minlat": -34.8990722,
+    "minlon": -56.1687906,
+    "maxlat": -34.8986838,
+    "maxlon": -56.1678101
+  },
+  "nodes": [
+    1893973239,
+    917489981
+  ],
+  "geometry": [
+    { "lat": -34.8986838, "lon": -56.1678101 },
+    { "lat": -34.8990722, "lon": -56.1687906 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061697,
+  "bounds": {
+    "minlat": -34.9059874,
+    "minlon": -56.1925069,
+    "maxlat": -34.9059481,
+    "maxlon": -56.1919359
+  },
+  "nodes": [
+    917500859,
+    917606391
+  ],
+  "geometry": [
+    { "lat": -34.9059874, "lon": -56.1925069 },
+    { "lat": -34.9059481, "lon": -56.1919359 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "4",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "sidewalk": "both",
+    "sidewalk:both:surface": "paving_stones",
+    "smoothness": "excellent",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061704,
+  "bounds": {
+    "minlat": -34.8984537,
+    "minlon": -56.1669638,
+    "maxlat": -34.8976352,
+    "maxlon": -56.1648285
+  },
+  "nodes": [
+    917425895,
+    917498261,
+    917535690,
+    917508996,
+    917733358
+  ],
+  "geometry": [
+    { "lat": -34.8984537, "lon": -56.1669638 },
+    { "lat": -34.8980993, "lon": -56.1660594 },
+    { "lat": -34.8980163, "lon": -56.1658396 },
+    { "lat": -34.8977135, "lon": -56.1650426 },
+    { "lat": -34.8976352, "lon": -56.1648285 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "excellent",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt",
+    "turn:lanes": "left;through|through;right"
+  }
+},
+{
+  "type": "way",
+  "id": 179061707,
+  "bounds": {
+    "minlat": -34.9059309,
+    "minlon": -56.1916977,
+    "maxlat": -34.9058340,
+    "maxlon": -56.1910209
+  },
+  "nodes": [
+    1893973274,
+    1893973270,
+    1893973266,
+    1893973264,
+    1893973268,
+    1893973272,
+    1893973275,
+    917521463
+  ],
+  "geometry": [
+    { "lat": -34.9058824, "lon": -56.1910209 },
+    { "lat": -34.9058480, "lon": -56.1911336 },
+    { "lat": -34.9058340, "lon": -56.1912582 },
+    { "lat": -34.9058353, "lon": -56.1913696 },
+    { "lat": -34.9058463, "lon": -56.1914491 },
+    { "lat": -34.9058656, "lon": -56.1915214 },
+    { "lat": -34.9058889, "lon": -56.1915877 },
+    { "lat": -34.9059309, "lon": -56.1916977 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "concrete:plates",
+    "smoothness": "excellent",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179061710,
+  "bounds": {
+    "minlat": -34.9059754,
+    "minlon": -56.1916977,
+    "maxlat": -34.9058824,
+    "maxlon": -56.1910209
+  },
+  "nodes": [
+    917521463,
+    917428703,
+    917585035,
+    917581131,
+    917469373,
+    917740671,
+    917451471,
+    1893973274
+  ],
+  "geometry": [
+    { "lat": -34.9059309, "lon": -56.1916977 },
+    { "lat": -34.9059601, "lon": -56.1915356 },
+    { "lat": -34.9059725, "lon": -56.1914474 },
+    { "lat": -34.9059754, "lon": -56.1913615 },
+    { "lat": -34.9059638, "lon": -56.1912801 },
+    { "lat": -34.9059472, "lon": -56.1912158 },
+    { "lat": -34.9059211, "lon": -56.1911330 },
+    { "lat": -34.9058824, "lon": -56.1910209 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "concrete:plates",
+    "smoothness": "excellent",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 179739481,
+  "bounds": {
+    "minlat": -34.9059481,
+    "minlon": -56.1919359,
+    "maxlat": -34.9059309,
+    "maxlon": -56.1916977
+  },
+  "nodes": [
+    917606391,
+    917521463
+  ],
+  "geometry": [
+    { "lat": -34.9059481, "lon": -56.1919359 },
+    { "lat": -34.9059309, "lon": -56.1916977 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "4",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "sidewalk": "both",
+    "sidewalk:both:surface": "concrete:plates",
+    "smoothness": "excellent",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 319683133,
+  "bounds": {
+    "minlat": -34.9019950,
+    "minlon": -56.1763274,
+    "maxlat": -34.9015067,
+    "maxlon": -56.1750923
+  },
+  "nodes": [
+    917515950,
+    1893973244,
+    917516471,
+    917571240
+  ],
+  "geometry": [
+    { "lat": -34.9015067, "lon": -56.1750923 },
+    { "lat": -34.9016432, "lon": -56.1754292 },
+    { "lat": -34.9018901, "lon": -56.1760611 },
+    { "lat": -34.9019950, "lon": -56.1763274 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 319683134,
+  "bounds": {
+    "minlat": -34.9054965,
+    "minlon": -56.1859748,
+    "maxlat": -34.9053837,
+    "maxlon": -56.1851146
+  },
+  "nodes": [
+    917373651,
+    917500288,
+    10241300153,
+    917600122,
+    1893973259
+  ],
+  "geometry": [
+    { "lat": -34.9053837, "lon": -56.1851146 },
+    { "lat": -34.9054204, "lon": -56.1852029 },
+    { "lat": -34.9054465, "lon": -56.1852701 },
+    { "lat": -34.9054610, "lon": -56.1853496 },
+    { "lat": -34.9054965, "lon": -56.1859748 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 455836460,
+  "bounds": {
+    "minlat": -34.9056742,
+    "minlon": -56.1866597,
+    "maxlat": -34.9055902,
+    "maxlon": -56.1864756
+  },
+  "nodes": [
+    4522137018,
+    4522137019,
+    4522137022
+  ],
+  "geometry": [
+    { "lat": -34.9056742, "lon": -56.1866597 },
+    { "lat": -34.9056359, "lon": -56.1865966 },
+    { "lat": -34.9055902, "lon": -56.1864756 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "foot": "yes",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lit": "yes",
+    "maxspeed": "45",
+    "maxspeed:type": "sign",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk": "no",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 455836462,
+  "bounds": {
+    "minlat": -34.9056519,
+    "minlon": -56.1864756,
+    "maxlat": -34.9055902,
+    "maxlon": -56.1863153
+  },
+  "nodes": [
+    4522137022,
+    4522137026,
+    4522137028
+  ],
+  "geometry": [
+    { "lat": -34.9055902, "lon": -56.1864756 },
+    { "lat": -34.9056168, "lon": -56.1863946 },
+    { "lat": -34.9056519, "lon": -56.1863153 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "foot": "yes",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lit": "yes",
+    "maxspeed": "45",
+    "maxspeed:type": "sign",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:both": "no",
+    "sidewalk": "no",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1044580301,
+  "bounds": {
+    "minlat": -34.9056519,
+    "minlon": -56.1863153,
+    "maxlat": -34.9056067,
+    "maxlon": -56.1855818
+  },
+  "nodes": [
+    4522137028,
+    1930002969,
+    917440228
+  ],
+  "geometry": [
+    { "lat": -34.9056519, "lon": -56.1863153 },
+    { "lat": -34.9056316, "lon": -56.1859570 },
+    { "lat": -34.9056067, "lon": -56.1855818 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "tertiary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1209833930,
+  "bounds": {
+    "minlat": -34.8975367,
+    "minlon": -56.1648438,
+    "maxlat": -34.8975015,
+    "maxlon": -56.1647694
+  },
+  "nodes": [
+    917418339,
+    11459835930,
+    11208466744
+  ],
+  "geometry": [
+    { "lat": -34.8975015, "lon": -56.1647694 },
+    { "lat": -34.8975300, "lon": -56.1648296 },
+    { "lat": -34.8975367, "lon": -56.1648438 }
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1209833934,
+  "bounds": {
+    "minlat": -34.8976352,
+    "minlon": -56.1648285,
+    "maxlat": -34.8976172,
+    "maxlon": -56.1647539
+  },
+  "nodes": [
+    917733358,
+    11459835934,
+    917671682
+  ],
+  "geometry": [
+    { "lat": -34.8976352, "lon": -56.1648285 },
+    { "lat": -34.8976319, "lon": -56.1648146 },
+    { "lat": -34.8976172, "lon": -56.1647539 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "excellent",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt",
+    "turn:lanes": "left;through|through;right"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385722,
+  "bounds": {
+    "minlat": -34.9019146,
+    "minlon": -56.1759416,
+    "maxlat": -34.9015624,
+    "maxlon": -56.1750235
+  },
+  "nodes": [
+    11456441416,
+    11456441415
+  ],
+  "geometry": [
+    { "lat": -34.9019146, "lon": -56.1759416 },
+    { "lat": -34.9015624, "lon": -56.1750235 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385723,
+  "bounds": {
+    "minlat": -34.8991406,
+    "minlon": -56.1687471,
+    "maxlat": -34.8984537,
+    "maxlon": -56.1669638
+  },
+  "nodes": [
+    11456441417,
+    11456441461,
+    917425895
+  ],
+  "geometry": [
+    { "lat": -34.8991406, "lon": -56.1687471 },
+    { "lat": -34.8986637, "lon": -56.1675090 },
+    { "lat": -34.8984537, "lon": -56.1669638 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385724,
+  "bounds": {
+    "minlat": -34.9040995,
+    "minlon": -56.1816015,
+    "maxlat": -34.9036915,
+    "maxlon": -56.1805267
+  },
+  "nodes": [
+    11456441427,
+    11456441426
+  ],
+  "geometry": [
+    { "lat": -34.9040995, "lon": -56.1816015 },
+    { "lat": -34.9036915, "lon": -56.1805267 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385725,
+  "bounds": {
+    "minlat": -34.9055542,
+    "minlon": -56.1868712,
+    "maxlat": -34.9054965,
+    "maxlon": -56.1859748
+  },
+  "nodes": [
+    1893973259,
+    917501479
+  ],
+  "geometry": [
+    { "lat": -34.9054965, "lon": -56.1859748 },
+    { "lat": -34.9055542, "lon": -56.1868712 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "no",
+    "parking:right": "street_side",
+    "sidewalk": "right",
+    "sidewalk:right:surface": "paving_stones",
+    "smoothness": "good",
+    "source": "http://intgis.montevideo.gub.uy",
+    "source:maxspeed": "http://monolitos.montevideo.gub.uy/resoluci.nsf/WEB/Numero/954-13",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385726,
+  "bounds": {
+    "minlat": -34.9056949,
+    "minlon": -56.1879828,
+    "maxlat": -34.9056114,
+    "maxlon": -56.1868630
+  },
+  "nodes": [
+    11456441436,
+    11456441435
+  ],
+  "geometry": [
+    { "lat": -34.9056949, "lon": -56.1879828 },
+    { "lat": -34.9056114, "lon": -56.1868630 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385727,
+  "bounds": {
+    "minlat": -34.9024163,
+    "minlon": -56.1772564,
+    "maxlat": -34.9020488,
+    "maxlon": -56.1762958
+  },
+  "nodes": [
+    11456441423,
+    11456441422
+  ],
+  "geometry": [
+    { "lat": -34.9024163, "lon": -56.1772564 },
+    { "lat": -34.9020488, "lon": -56.1762958 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385728,
+  "bounds": {
+    "minlat": -34.9057661,
+    "minlon": -56.1891159,
+    "maxlat": -34.9056949,
+    "maxlon": -56.1879828
+  },
+  "nodes": [
+    917584106,
+    11456441437,
+    11456441436
+  ],
+  "geometry": [
+    { "lat": -34.9057444, "lon": -56.1891159 },
+    { "lat": -34.9057661, "lon": -56.1890047 },
+    { "lat": -34.9056949, "lon": -56.1879828 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385729,
+  "bounds": {
+    "minlat": -34.9056114,
+    "minlon": -56.1868630,
+    "maxlat": -34.9055902,
+    "maxlon": -56.1864756
+  },
+  "nodes": [
+    11456441435,
+    4522137022
+  ],
+  "geometry": [
+    { "lat": -34.9056114, "lon": -56.1868630 },
+    { "lat": -34.9055902, "lon": -56.1864756 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385732,
+  "bounds": {
+    "minlat": -34.9055902,
+    "minlon": -56.1864756,
+    "maxlat": -34.9054495,
+    "maxlon": -56.1850826
+  },
+  "nodes": [
+    4522137022,
+    11456441434,
+    11456441433,
+    11456441432,
+    11456441431,
+    11456441430
+  ],
+  "geometry": [
+    { "lat": -34.9055902, "lon": -56.1864756 },
+    { "lat": -34.9055601, "lon": -56.1859667 },
+    { "lat": -34.9055293, "lon": -56.1853912 },
+    { "lat": -34.9055158, "lon": -56.1852623 },
+    { "lat": -34.9054933, "lon": -56.1851842 },
+    { "lat": -34.9054495, "lon": -56.1850826 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "no",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385734,
+  "bounds": {
+    "minlat": -34.9054495,
+    "minlon": -56.1850826,
+    "maxlat": -34.9048020,
+    "maxlon": -56.1833664
+  },
+  "nodes": [
+    11456441430,
+    11456441429
+  ],
+  "geometry": [
+    { "lat": -34.9054495, "lon": -56.1850826 },
+    { "lat": -34.9048020, "lon": -56.1833664 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385735,
+  "bounds": {
+    "minlat": -34.9048020,
+    "minlon": -56.1833664,
+    "maxlat": -34.9044346,
+    "maxlon": -56.1824572
+  },
+  "nodes": [
+    11456441429,
+    11456441428
+  ],
+  "geometry": [
+    { "lat": -34.9048020, "lon": -56.1833664 },
+    { "lat": -34.9044346, "lon": -56.1824572 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385738,
+  "bounds": {
+    "minlat": -34.9044346,
+    "minlon": -56.1824572,
+    "maxlat": -34.9040995,
+    "maxlon": -56.1816015
+  },
+  "nodes": [
+    11456441428,
+    11456441427
+  ],
+  "geometry": [
+    { "lat": -34.9044346, "lon": -56.1824572 },
+    { "lat": -34.9040995, "lon": -56.1816015 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385742,
+  "bounds": {
+    "minlat": -34.9036915,
+    "minlon": -56.1805267,
+    "maxlat": -34.9033141,
+    "maxlon": -56.1795222
+  },
+  "nodes": [
+    11456441426,
+    11456441425
+  ],
+  "geometry": [
+    { "lat": -34.9036915, "lon": -56.1805267 },
+    { "lat": -34.9033141, "lon": -56.1795222 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385744,
+  "bounds": {
+    "minlat": -34.9033141,
+    "minlon": -56.1795222,
+    "maxlat": -34.9029135,
+    "maxlon": -56.1785088
+  },
+  "nodes": [
+    11456441425,
+    11456441424
+  ],
+  "geometry": [
+    { "lat": -34.9033141, "lon": -56.1795222 },
+    { "lat": -34.9029135, "lon": -56.1785088 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385746,
+  "bounds": {
+    "minlat": -34.9029135,
+    "minlon": -56.1785088,
+    "maxlat": -34.9024163,
+    "maxlon": -56.1772564
+  },
+  "nodes": [
+    11456441424,
+    11456441423
+  ],
+  "geometry": [
+    { "lat": -34.9029135, "lon": -56.1785088 },
+    { "lat": -34.9024163, "lon": -56.1772564 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385747,
+  "bounds": {
+    "minlat": -34.9020488,
+    "minlon": -56.1762958,
+    "maxlat": -34.9019146,
+    "maxlon": -56.1759416
+  },
+  "nodes": [
+    11456441422,
+    11456441416
+  ],
+  "geometry": [
+    { "lat": -34.9020488, "lon": -56.1762958 },
+    { "lat": -34.9019146, "lon": -56.1759416 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385750,
+  "bounds": {
+    "minlat": -34.9015624,
+    "minlon": -56.1750235,
+    "maxlat": -34.9010801,
+    "maxlon": -56.1737864
+  },
+  "nodes": [
+    11456441415,
+    11456441421
+  ],
+  "geometry": [
+    { "lat": -34.9015624, "lon": -56.1750235 },
+    { "lat": -34.9010801, "lon": -56.1737864 }
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385753,
+  "bounds": {
+    "minlat": -34.9010801,
+    "minlon": -56.1737864,
+    "maxlat": -34.9006719,
+    "maxlon": -56.1726909
+  },
+  "nodes": [
+    11456441421,
+    11456441459,
+    11456441460,
+    11456441420
+  ],
+  "geometry": [
+    { "lat": -34.9010801, "lon": -56.1737864 },
+    { "lat": -34.9010570, "lon": -56.1737245 },
+    { "lat": -34.9010012, "lon": -56.1735746 },
+    { "lat": -34.9006719, "lon": -56.1726909 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385754,
+  "bounds": {
+    "minlat": -34.9006719,
+    "minlon": -56.1726909,
+    "maxlat": -34.8999839,
+    "maxlon": -56.1708880
+  },
+  "nodes": [
+    11456441420,
+    11456441419
+  ],
+  "geometry": [
+    { "lat": -34.9006719, "lon": -56.1726909 },
+    { "lat": -34.8999839, "lon": -56.1708880 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385756,
+  "bounds": {
+    "minlat": -34.8999839,
+    "minlon": -56.1708880,
+    "maxlat": -34.8995545,
+    "maxlon": -56.1698041
+  },
+  "nodes": [
+    11456441419,
+    11456441418
+  ],
+  "geometry": [
+    { "lat": -34.8999839, "lon": -56.1708880 },
+    { "lat": -34.8995545, "lon": -56.1698041 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1234385758,
+  "bounds": {
+    "minlat": -34.8995545,
+    "minlon": -56.1698041,
+    "maxlat": -34.8991406,
+    "maxlon": -56.1687471
+  },
+  "nodes": [
+    11456441418,
+    11456441417
+  ],
+  "geometry": [
+    { "lat": -34.8995545, "lon": -56.1698041 },
+    { "lat": -34.8991406, "lon": -56.1687471 }
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "45",
+    "mvdgis:cod_nombre": "7572",
+    "name": "Avenida 18 de Julio",
+    "oneway": "yes",
+    "parking:left": "yes",
+    "parking:right": "no",
+    "sidewalk": "right",
+    "sidewalk:left:surface": "paving_stones",
+    "smoothness": "good",
+    "surface": "asphalt"
+  }
+}
+
+  ]
+}
