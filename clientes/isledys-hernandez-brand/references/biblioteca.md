@@ -10,6 +10,7 @@ Rutas con los marcadores de `edicion-reels-base` §0. Si el editor no tiene un a
 | Gimme that Groove! - Michael Ramir C. (Mixkit) | copia en `MUSICA/` de 03-10 (y DC 05-10) | Funk instrumental (voz −51 dB con Demucs). Desde 63,42 s hasta el final natural (88,4 s) en 24,97 s; −11,5 dB + hueco −5 dB en 2,2 kHz y −2 dB en 350 Hz ≈ 16–17 dB debajo de la voz. En el 04-10: desde 66,27 s en 22,13 s, −13,5 dB con el mismo hueco ≈ 16,5 dB debajo (voz −12 / música −28,5 LUFS) |
 
 | Funky Triplets (Mixkit 1141) | `https://assets.mixkit.co/music/1141/1141.mp3`; copia en `MUSICA/` de 07-10 | Funk instrumental (voz −50 dB con Demucs). Desde 78,51 s hasta el final natural (108,48 s) en 29,97 s; −14 dB + hueco −6 dB en 2,2 kHz y −2 dB en 350 Hz ≈ 19,5 dB debajo de la voz (medida en estéreo) |
+| My Mind Goes Wah Wah - Michael Ramir C. (Mixkit 1109) | `https://assets.mixkit.co/music/1109/1109.mp3`; copia en `MUSICA/` de 08-10 | Funk instrumental (Demucs −57 dB, sin voz en ninguna ventana). Denso: banda de la voz 4,9 dB bajo el total. Desde 86,6 s en 26,13 s: su golpe final (112,5 s) cae justo después de la última palabra, fade de 0,3 s al final; −11,5 dB + hueco −6 dB en 2,2 kHz y −2 dB en 350 Hz ≈ 20 dB debajo de la voz (voz estéreo −9,3 / música −29,5 LUFS). Descartadas por voz cantada: 1029, 1054 (picos −10 dB), 1027, 1042, 1127, 1152 |
 
 ## SFX (`{SFX}/`)
 | Archivo | Pico | Uso |
@@ -61,3 +62,11 @@ Se baja con `curl -L https://www.pexels.com/download/video/<id>/` (la búsqueda 
 | 6100900 | desde 9,0 s (4K, recortado al alto) | "desde el inicio, podría aparecer" (mujer preocupada con papeles) |
 | 7646610 | desde 0,3 s | "en el peor momento, el día del cierre" (pareja firmando con un asesor, cocina clara) |
 | 7646762, 7817154, 7924459, 8725784 | — | repuestos: entrega de llaves, realtor con llave, cuenta vencida, familia con asesora |
+
+## Stock usado en 08-10 (Pexels, con permiso del editor)
+| Id | Tramo | Frase |
+|---|---|---|
+| 7578271 | desde 7,6 s (1440×2560) | "las oportunidades en el mercado" (casa con garage y cartel FOR SALE que se acerca; sin caras) |
+| 7055549 | desde 2,6 s (4K) | "es decidir sin analizar los números completos" (planilla con montos en $ y lápiz; fondo blanco: degradé navy detrás del texto) |
+| 8061107 | desde 4,0 s (4K) | "si quieres que revisemos juntos qué conviene en tu caso" (pareja revisando papeles en un sillón) |
+| 6120110, 6964001, 8471077, 8814513, 7646760 | — | repuestos: lupa y calculadora sobre gráficos, calculadora de escritorio, mujer poniendo cartel HOME FOR SALE, asesora con clienta, pareja con planos |
