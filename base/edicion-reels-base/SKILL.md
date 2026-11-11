@@ -141,6 +141,7 @@ Si el usuario pasa **un solo video ya cortado** o con la estructura resuelta (so
 ## 7. Revisión antes de entregar
 - Render de revisión con guías (zona segura + zona de la cara) y hojas de contacto a lo largo de todo el video.
 - Chequear: nada fuera de la zona segura, nada sobre la cara (incluidas transiciones), textos legibles, duración = fin del habla.
+- **Cada texto entra completo en su tarjeta, placa o pastilla**, con aire a los costados (ISM 08-10, 2026-11-11: "COMPRAR AHORA" quedaba fuera de su recuadro y el usuario pidió que entrara "mucho más profesional y prolijo"). Con `whiteSpace: nowrap` el texto se desborda sin avisar: mirar la captura del estado final de cada tarjeta. Si no entra, primero bajar el cuerpo o sacar de la fila lo que sobra (un check pasa a sello en la esquina, por dentro) y recién después ensanchar la tarjeta, sin pasar x = 900.
 - Audio (regla 3): LUFS de la voz por tramo, LRA de la voz antes/después (tiene que bajar), música vs. voz por tramo, true peak del **mp4** final. Cortes musicales contra la grilla de beats (detección de escena).
 - Portada (skill `portadas-reels`): cuadrado 1080×1080 y márgenes medidos con `medir_texto.py`, y en el mp4 final frame 0 = portada, frame 1 = video, misma cantidad de frames.
 - Al entregar, informar qué se verificó y cómo; si algo no se pudo verificar (ej. escuchar en tiempo real), decirlo.
