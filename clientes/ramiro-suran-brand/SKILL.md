@@ -63,6 +63,8 @@ Analizadas: las 4 portadas `.png` de `01 REELS/11 NOVIEMBRE/` (01-09, 01-10, 02-
 - **Título:** Bootzy **MAYÚSCULA blanca**, 2–4 líneas **muy apretadas** con mezcla de tamaños ("CASA CON" grande / "PISCINA Y 300 M²" chica / "DE TERRENO" grande), centrado, apoyado justo **sobre la cabeza**. m² con el ² chico arriba.
 - **Precio:** pastilla lavanda que **sale del borde izquierdo** (esquinas derechas redondeadas, ~45 % del ancho), con `USD 80.000` en Bootzy blanca, a la altura del pecho. Opcional encima: pastilla más chica con un dato ("APTA CRÉDITO").
 - Ramiro mirando a cámara, serio o con media sonrisa.
+- **La portada final la puede hacer Tomi** (01-11, 18-11-2026: dejó la suya en `PORTADA/` como PNG y reemplazó a la mía). Igual se arma una con `scripts/portada_01-11.py` (2 frames de Ramiro con la boca cerrada o sonriendo), pero si aparece una de Tomi en `PORTADA/`, esa va al frame 0. En la suya el precio va con **coma de miles** (`$1,200,000`) y el título dice "DEPTO".
+- Alquileres en **pesos** (`$1.200.000`), no en USD.
 
 ## 6. Referencias aprobadas (REFERENCIA, no fórmula)
 Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/11 NOVIEMBRE/`.
@@ -82,8 +84,15 @@ Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/11 NOVIEMBRE/`.
 ### E. Reels de texto — `14-11 RSU Título pendiente.mp4` (16 s), `16-11 …` (10 s)
 - Stock a pantalla completa con velo lila abajo, **caja lavanda translúcida** redondeada arriba con texto blanco en Bootzy (palabra clave más grande: "**créditos**"), que se escribe de a palabras, y debajo "Leé la descripción" con dos chevrons lilas animados.
 
+### G. Pauta alquiler dpto a estrenar — `01-11 RSU PAUTA Alquiler Dpto a estrenar/EXPORT/…mp4` (37,1 s, aprobada 18-11-2026)
+- Hook a cámara (zoom 1,85→2,45 desde el 4K, exposición levantada por el contraluz) + cuerpo **en off** (tomas solo de audio) sobre el recorrido del depto + CTA a cámara.
+- Motion de marca, sin tarjetas grandes sobre el depto: tag "Neuquén Capital" sobre la cabeza, pastillas lavanda en Bootzy ("1 dormitorio / con balcón / a estrenar"), precio en pastilla sobre la cabeza, "un edificio NUEVO", **mapa esquemático** lavanda con puntos (cada calle se dibuja cuando la nombra + pin; "mapa ilustrativo"), trío "MODERNO / CÓMODO / y bien ubicado", lista con checks lavanda + sol "+ luz", **placa** "LO ESTRENÁS VOS" con sello, "en pleno CENTRO de Neuquén" con pin, pastilla "ESCRIBIME" con WhatsApp.
+- Whip en cada cambio de toma de voz, zoom-blur en los cortes del recorrido, leak cálido al CTA. Música *Dry Gin* (Mixkit 868) −16 dB bajo la voz, 40 SFX, master −11 LUFS.
+- Plantilla: `scripts/plantilla-remotion-01-11.tsx` + `build_data_01-11.py` (subs con posición), `mezcla_01-11.py`, `portada_01-11.py`.
+
 ## 7. Carruseles
 1122×1402, 4 slides (`02 CARROUSEL/`). Foto cálida y luminosa de fondo (casa, escritorio, firma), **papel crema pegado con cinta** al centro, texto lila `#9E93C3`–`#7E6BB5` con contraste de pesos (frase clave más grande y negra), resaltado en **pastilla lila con texto blanco** ("depende de tu ingreso", "escribime"). Wordmark arriba a la izquierda, número de slide (1/4) arriba a la derecha, a veces en pastilla lila. Último slide con CTA en pastilla.
 
 ## 8. Correcciones del cliente
 - 18-11 (Tomi): el sistema de subtítulos que queda es el de los creativos (Anton + Montserrat, sección 4), el más usado en las pautas.
+- 18-11 (01-11): el mapa "está muy bueno" pero "dura poco": tiene que seguir en pantalla durante la frase siguiente ("es una muy buena opción") y recién ahí pasar al depto (quedó 3,2 s). La portada la hizo Tomi (sección 5).
