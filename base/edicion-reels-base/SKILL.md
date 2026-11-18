@@ -120,6 +120,7 @@ Si el usuario pasa **un solo video ya cortado** o con la estructura resuelta (so
 ### 4.2 Tramos de voz en off o pantalla en negro (motion, stock)
 - Antes de renderizar, mandar una **propuesta corta**: qué va sobre cada frase (animación, stock o combinación). Esperar el OK.
 - **La información va centrada** (en el cuadro completo, x = 540; ver regla 1). Gráfico y subtítulo forman **un bloque centrado**, con el subtítulo **pegado debajo del gráfico** (~50 px) y **a la misma altura en todo el tramo** para que no salte. Nunca el gráfico arriba y el subtítulo lejos abajo.
+- **Un motion de pantalla completa (mapa, plano, placa de datos) no se corta cuando termina la frase que lo nombra** (corrección del usuario, 2026-11-18, RSU 01-11: el mapa "está muy bueno, el único problema es que dura poco"; duraba 2,3 s y se cortaba al decir la última calle). Se queda con su estado final (pin puesto, todo dibujado) durante la frase corta siguiente y recién ahí pasa al B-roll: **≥ ~3 s en total y ≥ ~1 s con el estado final completo**. El corte cae al final de una palabra de esa frase, no en el medio.
 
 ## 5. Legibilidad
 - Subtítulos: bloques cortos (2–3 palabras), dentro del ancho seguro, siempre legibles sobre el fondo.
