@@ -35,3 +35,18 @@ Todas en `{CARPETA_CLIENTE}/01 REELS/11 NOVIEMBRE/`. 1080×1920. Los niveles ori
 - Selfie caminando por el downtown de Dade City. Golpe "TODO ESTO / ESTÁ ENTRE / DOS CALLES" (MAYÚSCULA Bold centrada) y "5th 7th" en Black gigante saliendo por detrás de ella.
 - B-roll de vidrieras, carteles y negocios con el nombre en el subtítulo ("Café", "Farmhouse", "Cracker."). Light leaks naranja/rosa y zoom-blur entre planos.
 - Cierre selfie: "el próximo…".
+
+## G. Reel de zona con motion: el centro de Dade City tiene 100 años — `05-11 PCO El centro de Dade City tiene 1/` (50,9 s, 30 fps). Aprobado 18-11-2026, primer video editado con Claude
+- 6 tomas DJI a cámara (vertical por metadato de rotación) en tres lugares del downtown: juzgado de Pasco County, edificio de ladrillo y la concha acústica. Una toma por frase, en el orden del guion; sin cortes internos.
+- Motion en blanco + navy, todo pegado arriba de la cabeza (título O subtítulo):
+  - Hook: "el edificio más / ***fotografiado*** / de **Dade City**" con flash de cámara + SFX FOTO; después "es el **juzgado** de" + **1909** en Black 270 px que pasa por detrás de Patricia (rotoscopia, solo el pie del número detrás del pelo).
+  - Placa navy (su plano desenfocado + degradé `#05005C`→`#0B0284` + textura de puntos) con mapa: se dibuja Florida, pin en Dade City, zoom a Pasco County (rectángulo resaltado) con Tampa de referencia. Subtítulo pegado debajo del mapa.
+  - Línea de tiempo 1909 · juzgado → 1921 · concha acústica (sigue entre dos tomas).
+  - Sello navy giratorio "REGISTRO NACIONAL • SITIOS HISTÓRICOS •" con la fachada y 1909 (SFX stamp).
+  - "un centro / **DE VERDAD** / pastilla *downtown*" y "no solamente una / **avenida** / con **locales**" con tachón navy de borde blanco.
+  - Mapa de cercanía: pin "centro de *Dade City*" + casitas navy en San Antonio, Wesley Chapel y Zephyrhills con líneas punteadas ("mapa ilustrativo"; los barrios los elegí yo y Tomi los aprobó).
+  - CTA: pastilla blanca **ESCRÍBEME** (texto navy, inclinada −2°) + "y te cuento qué hay / **para comprar** / *cerca de este centro*".
+- Subtítulos Montserrat Bold 54 blanco minúscula (años un paso más grandes), pegados bajo el mentón: pasan sobre el micrófono, está bien.
+- Light leak rosa/naranja en cada cambio de toma y zoom-blur al entrar/salir de las placas. Zoom lento anclado a los ojos en cada toma (en la que entra caminando, arranca a 1,38× y se abre).
+- Música *Light it Up Boy* (Mixkit 849, instrumental) desde 8,166 s a −16 dB bajo la voz + hueco de EQ −4/−2; 35 SFX; master −10,9 LUFS / −1,4 dBTP.
+- Código: `assets/remotion/pco0511_Video.tsx` (mapas de Florida y Pasco con coordenadas reales aproximadas, línea de tiempo, sello, tachón, CTA). Portada: `scripts/portada_pco.py`.

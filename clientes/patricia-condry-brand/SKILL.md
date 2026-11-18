@@ -1,6 +1,6 @@
 ---
 name: patricia-condry-brand
-description: Identidad visual para video de Patricia Condry (PCO), Realtor en la zona de Tampa / Pasco County, Florida (Zephyrhills, Dade City, Wesley Chapel, San Antonio; casas nuevas, USD, español neutro con tuteo). Montserrat con mezcla de pesos (Light + Medium + Bold/ExtraBold, Bold Italic de acento; el manual dice Gotham pero en video va Montserrat), subtítulos blancos Montserrat Bold de 1–3 palabras en minúscula al pecho con sombra suave y entrada pop desenfocada, título de apertura arriba a la izquierda con pesos mezclados ("casa **nueva** en" + ciudad con pin), precio gigante en Montserrat ExtraBold blanco sobre la cabeza, golpes en MAYÚSCULA apretada, light leaks rosa/naranja y zoom-blur como transición, texto blanco (la paleta navy `#05005C` / `#0B0284` vive en el degradé de las portadas), más la referencia de siete piezas aprobadas (cinco pautas de casa nueva y dos reels de zona: el condado que supera a Miami-Dade y los 53 negocios de Dade City) y la guía de portadas con degradé navy. Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Patricia Condry / Patricia / PCO (reels, pauta de propiedades, videos de zona, portadas), o cuando el usuario diga "editá el video de Patricia", "video de PCO", "con la marca de Patricia Condry", aunque no mencione la skill.
+description: Identidad visual para video de Patricia Condry (PCO), Realtor en la zona de Tampa / Pasco County, Florida (Zephyrhills, Dade City, Wesley Chapel, San Antonio; casas nuevas, USD, español neutro con tuteo). Montserrat con mezcla de pesos (Light + Medium + Bold/ExtraBold, Bold Italic de acento; el manual dice Gotham pero en video va Montserrat), subtítulos blancos Montserrat Bold de 1–3 palabras en minúscula al pecho con sombra suave y entrada pop desenfocada, título de apertura arriba a la izquierda con pesos mezclados ("casa **nueva** en" + ciudad con pin), precio gigante en Montserrat ExtraBold blanco sobre la cabeza, golpes en MAYÚSCULA apretada, light leaks rosa/naranja y zoom-blur como transición, texto blanco (la paleta navy `#05005C` / `#0B0284` vive en el degradé de las portadas), motion de marca en blanco + navy (mapas de Florida/Pasco con pin, línea de tiempo, sello giratorio, tachón, pastilla CTA), más la referencia de ocho piezas aprobadas (cinco pautas de casa nueva y tres reels de zona: el condado que supera a Miami-Dade, los 53 negocios de Dade City y el centro de Dade City tiene 100 años, con motion) y la guía de portadas con degradé navy (2 frames de Patricia sonriendo, portada A/B). Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Patricia Condry / Patricia / PCO (reels, pauta de propiedades, videos de zona, portadas), o cuando el usuario diga "editá el video de Patricia", "video de PCO", "con la marca de Patricia Condry", aunque no mencione la skill.
 ---
 
 # Patricia Condry (PCO) — Marca para video
@@ -64,6 +64,8 @@ Analizadas las 6 publicadas (`assets/portadas-referencia.jpg`; originales en `{C
 - **Posición:** el bloque de texto arriba de Patricia, pegado a su cabeza o hombros, centrado o alineado a un lado. Patricia abajo, al centro o desplazada.
 - **Precio en portada:** formato corto con `USD` ("USD 361K", "$280K"). En las viejas aparece "U$D": de ahora en más va `USD`.
 - Va como primer frame del video (base + `portadas-reels`).
+- **Frames:** Tomi pide al menos **2 frames de Patricia sonriendo o con la boca cerrada** (18-11). Elegirlos midiendo la apertura de la boca (`portadas-reels/scripts/boca.swift`) en los finales de toma (antes de hablar / después de la última palabra suelen ser sonrisas), armar portada A y B y entregar las dos; la elegida va al frame 0 y la otra se saca de `PORTADA/`.
+- Aprobada (G): "El **centro** de / **Dade City** / *tiene* **100** *años*" (Light + Bold / ExtraBold 134 / Bold Italic 70 + Black 196), base del "100" 30 px arriba del pelo, frame con zoom 1,2× anclado arriba para bajar la cabeza y dar lugar al texto; degradé navy desde arriba hasta y ≈ 1000. Script: `scripts/portada_pco.py`.
 
 ## 6. Referencias aprobadas (REFERENCIA, no fórmula)
 Mirar antes de editar. Detalle de cada una en `references/piezas.md`. Hojas de los sistemas en `assets/sistema-video.jpg`.
@@ -76,10 +78,20 @@ Mirar antes de editar. Detalle de cada una en `references/piezas.md`. Hojas de l
 | D | `01-10 PCO PAUTA CASA DE 4 HABITACIONES E` (Zephyrhills) | Pauta con números FHA | 74 s |
 | E | `06-09 PCO El condado que le está ganando` | Reel de zona a cámara + stock | 44 s |
 | F | `16-09 PCO 53 negocios. Dos calles. Un so` | Reel de zona selfie caminando | 40 s |
+| G | `05-11 PCO El centro de Dade City tiene 1` | Reel de zona a cámara con motion de marca (mapas, línea de tiempo, sello) | 51 s |
+
+## 6.1 Motion de marca (reels de zona y educativos)
+Tomi lo pide "como en DC, ISM, AR y REB" (18-11, pieza G), **después** del OK a la estructura. Sistema aprobado en G (código en `assets/remotion/pco0511_Video.tsx`):
+- Todo en **blanco + navy**, Montserrat, sombra suave; nada de amarillo.
+- Placas a pantalla completa = su propio plano desenfocado (28 px) + degradé `#05005C`→`#0B0284` + textura de puntos; el subtítulo pegado debajo del gráfico.
+- Mapas de Florida → Pasco → barrios con pin blanco (punto navy) y casitas navy con borde blanco; rótulo chico "mapa ilustrativo". Si los barrios no los dice Patricia, informarlos para aprobación.
+- Línea de tiempo con marcas (punto blanco = la nueva, navy = la anterior), sello circular navy giratorio con texto en anillo, tachón navy con borde blanco, pastilla blanca con texto navy para el CTA.
+- Cifras/años en Black gigantes detrás de Patricia (rotoscopia) como en F.
 
 ## 7. Ideas que pueden sumar (opcionales, a criterio)
 - Un mapa simple del condado en navy para los reels de zona.
 - Tarjeta de números (precio / cuota / tasa / HOA) en blanco sobre un degradé navy, cuando la pauta tenga muchos datos.
 
 ## 8. Correcciones del cliente
+- 18-11 (pieza G, primer video): aprobado sin correcciones con Montserrat, sin amarillo y −11 LUFS: las decisiones por defecto de la creación quedan confirmadas.
 - 18-11 (creación de la skill): precio con coma (`$294,990`) y `USD` en las portadas; los subtítulos viejos tenían `$360.000` y las portadas `U$D`.
