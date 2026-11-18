@@ -50,6 +50,7 @@ Pedido del usuario (2026-10-05, PAO 10-09): "aislar al sujeto y darle un poco m�
 ⚠️ **Lo que salió mal y NO se repite:** desenfoque de 14 px + oscurecer al 68 % todo el fondo = "muuuuy exagerado"; desenfoque de 3 px sin bajar el fondo ni subir al sujeto = plano, sin separación; degradé inferior sobre el sujeto = sujeto oscuro; halo claro alrededor de la cabeza por usar el fondo rellenado pegado al borde.
 
 ### Scripts
+- **Elegir frames con la boca cerrada / sonriendo** (Vision, macOS): `swiftc -O scripts/boca.swift -o boca && ./boca <video> <t0> <t1> 0.1` → por frame: apertura de la boca (alto de los labios internos / alto de la cara), ancho de la boca y apertura de ojos. Ordenar por la apertura (< ~0,02 = cerrada) y mirar los mejores en una hoja de contacto; los finales de toma (antes de la primera palabra / después de la última) suelen tener la sonrisa. Si el usuario pide "2 frames", armar portada A y B y entregar las dos (PCO 05-11, 2026-11-18).
 - **Recorte de personas** (Vision, macOS; calidad alta; PNG con alfa + máscara):
   `swift scripts/recorte_personas.swift <foto.jpg> <salida_personas.png> <mascara.png> [corte]`
   - `corte` (opcional) = fracción de la altura desde arriba por debajo de la cual se descarta la máscara, con borde suave. Sirve para **mesas de vidrio y reflejos**, que Vision toma parcialmente. Poner el corte justo debajo de las manos.
