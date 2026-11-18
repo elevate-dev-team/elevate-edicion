@@ -21,6 +21,7 @@ Las skills se comparten entre editores (repo `elevate-edicion`) y cada uno guard
 - **Al empezar cualquier tarea, leer `config.json`.** Si no existe, cargar la skill `configuracion-inicial` antes de seguir.
 - Una clave en `null` o una ruta que no existe significa que **ese editor no tiene ese recurso**. No es un error: avisarle y usar una alternativa (otra biblioteca configurada, material propio del cliente, motion en lugar de stock), nunca inventar una ruta. Si una skill de cliente menciona un archivo puntual (una canción, una pieza de referencia) que el editor no tiene, decírselo y pedirle algo equivalente.
 - Las skills se referencian como `~/.claude/skills/<skill>/`. Nunca escribir en una skill rutas absolutas de una máquina puntual: siempre marcadores.
+- **ffmpeg dentro de un `while read … done < archivo`** se come la entrada del loop y procesa una sola línea (PCO 05-11, 2026-11-18): usar siempre `ffmpeg -nostdin` en loops. Los `.mov` de DJI vienen 1920×1080 con rotación 90° en el metadato: ffmpeg y Vision (`appliesPreferredTrackTransform`) ya los entregan verticales.
 
 ## 1. Márgenes de seguridad de redes sociales
 En 1080×1920, todo texto, subtítulo, gráfico, logo o dato va dentro de la zona segura:
