@@ -11,6 +11,7 @@ Rutas con los marcadores de `edicion-reels-base` §0. Si el editor no tiene un a
 
 | Funky Triplets (Mixkit 1141) | `https://assets.mixkit.co/music/1141/1141.mp3`; copia en `MUSICA/` de 07-10 | Funk instrumental (voz −50 dB con Demucs). Desde 78,51 s hasta el final natural (108,48 s) en 29,97 s; −14 dB + hueco −6 dB en 2,2 kHz y −2 dB en 350 Hz ≈ 19,5 dB debajo de la voz (medida en estéreo) |
 | My Mind Goes Wah Wah - Michael Ramir C. (Mixkit 1109) | `https://assets.mixkit.co/music/1109/1109.mp3`; copia en `MUSICA/` de 08-10 | Funk instrumental (Demucs −57 dB, sin voz en ninguna ventana). Denso: banda de la voz 4,9 dB bajo el total. Desde 86,6 s en 26,13 s: su golpe final (112,5 s) cae justo después de la última palabra, fade de 0,3 s al final; −11,5 dB + hueco −6 dB en 2,2 kHz y −2 dB en 350 Hz ≈ 20 dB debajo de la voz (voz estéreo −9,3 / música −29,5 LUFS). Descartadas por voz cantada: 1029, 1054 (picos −10 dB), 1027, 1042, 1127, 1152 |
+| Funkee Monkeee (Mixkit 1140) | `https://assets.mixkit.co/music/1140/1140.mp3`; copia en `MUSICA/` de 03-11 | Funk instrumental (Demucs −50 dB). Denso: banda de la voz 5,5 dB bajo el total. Desde 71,15 s en 25,07 s: su golpe final (~96 s) cae con la última palabra; −12 dB + hueco −6 dB en 2,2 kHz y −2 dB en 350 Hz ≈ 20 dB debajo de la voz (voz estéreo −9,3/−9,8/−9,6 / música −30,1 LUFS en hook, cuerpo y CTA) |
 
 ## SFX (`{SFX}/`)
 | Archivo | Pico | Uso |
@@ -70,3 +71,11 @@ Se baja con `curl -L https://www.pexels.com/download/video/<id>/` (la búsqueda 
 | 7055549 | desde 2,6 s (4K) | "es decidir sin analizar los números completos" (planilla con montos en $ y lápiz; fondo blanco: degradé navy detrás del texto) |
 | 8061107 | desde 4,0 s (4K) | "si quieres que revisemos juntos qué conviene en tu caso" (pareja revisando papeles en un sillón) |
 | 6120110, 6964001, 8471077, 8814513, 7646760 | — | repuestos: lupa y calculadora sobre gráficos, calculadora de escritorio, mujer poniendo cartel HOME FOR SALE, asesora con clienta, pareja con planos |
+
+## Stock usado en 03-11
+| Archivo | Tramo | Frase |
+|---|---|---|
+| Pexels 8471077 (1080×1920) | desde 1,0 s | "Tuve mi licencia de Realtor" (mujer clavando un cartel HOME FOR SALE frente a una casa; mira hacia abajo). Degradé navy arriba para el título |
+| `{STOCK}/Inmobiliario/Llaves y firmas/Firma_manos-firman-contrato-calculadora-laptop_H_HD_10s.mp4` | desde 1,0 s, recorte 608×1080 en x 700 | "pasé por mis propias transacciones" (manos firmando, sin caras) |
+| Pexels 7817154, 7646762 | — | repuestos: entrega de llaves en primer plano, agente con pareja en un depto vacío |
+
