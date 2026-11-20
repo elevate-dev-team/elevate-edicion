@@ -45,3 +45,12 @@ Base: `{CARPETA_CLIENTE}/01 REELS/2026/`. Todas 1080×1920, 25 fps. Análisis 20
 - Audio: voz −12,7 LUFS (LRA 3,3 → 1,3), música −25, master −11,0 LUFS / −1,4 dBTP. Transiciones sin SFX (pedido del editor).
 - Portada horizontal aprobada (2026-10-26): `PORTADA/24-10 FM VSL webinar 2.jpg`, frame de `VIDEOS/DJI_20261022_111858_181_video.MP4` a 3:22,5, "ESTÁS A PUNTO DE / **RESERVAR** / TU LUGAR" (golpe amarillo) a la izquierda de Fran.
 - Segunda portada aprobada (2026-10-26): `PORTADA/24-10 FM VSL webinar 2 - Como vender 2 o 3 propiedades.jpg`, frame del original a 0:25,43 (de frente, sonrisa suave; el editor la prefirió a la pose pensativa con la mano en el mentón), "¿CÓMO LOGRAR VENDER / **2 O 3** / **PROPIEDADES** / POR MES?".
+
+## FM Carrusel "14 propiedades vendidas" — carrusel de caso de éxito 1080×1350 (6 placas) ★ primer carrusel aprobado
+`02 CARROUSEL/11 NOVIEMBRE/FM Carrusel inmobiliario/` (proyecto HTML en `proyecto/`, salida en `PLACAS v1/`) · material en `08-11 FM Carrusel 14 ventas/` · aprobado 2026-11-20 tras una ronda de correcciones.
+1. Tapa: Fran sonriendo en la terraza (IMG_4550, foto al 156 % anclada arriba) — "**14** PROPIEDADES / VENDIDAS EN / UN SOLO MES." + itálica "Así se ve el resultado cuando una clienta trabaja" + pastilla "con mentalidad de **dueña de negocio**" + flecha.
+2. Vista aérea de Tampa (IMG_5525) — "PIENSA COMO / DUEÑA DE NEGOCIO." + línea + bajada.
+3. Costanera con grúa (IMG_9235) — "TRABAJA A" + pastilla grande "LARGO PLAZO." + bajada.
+4. Reunión de equipo (IMG_3005) — "SABE QUE NO PUEDE / HACER TODO **SOLA.**" + línea + bajada (equipo, delega, la mejor atención en Bold). Primero fue un video de Fran yendo al auto con la patente difuminada; Tomi lo cambió por esta foto.
+5. Video de la fuente del parque (IMG_9220.MOV, recorte y=120, 0–5 s, **5.mp4**) — pastilla "TIENE CLARO" + "SU PORQUÉ." gigante + bajada.
+6. Fran jugando al pool (IMG_5829, 116 % anclada arriba) — pregunta arriba con "RESULTADOS ASÍ?" en rojo; abajo "Comentá / "ELEVATE" / y te contamos cómo podemos **ayudarte a conseguirlo** 🚀" + logo Elevate.

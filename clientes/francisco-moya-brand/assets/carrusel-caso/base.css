@@ -1,0 +1,68 @@
+/* Carrusel FM — estética "caso de éxito" de Elevate (refs 01-11 y 34-08). 1080×1350 */
+@font-face{font-family:M;font-weight:300;src:url(fonts/Montserrat-Light.ttf)}
+@font-face{font-family:M;font-weight:400;src:url(fonts/Montserrat-Regular.ttf)}
+@font-face{font-family:M;font-weight:500;src:url(fonts/Montserrat-Medium.ttf)}
+@font-face{font-family:M;font-weight:600;src:url(fonts/Montserrat-SemiBold.ttf)}
+@font-face{font-family:M;font-weight:700;src:url(fonts/Montserrat-Bold.ttf)}
+@font-face{font-family:M;font-weight:800;src:url(fonts/Montserrat-ExtraBold.ttf)}
+@font-face{font-family:M;font-weight:900;src:url(fonts/Montserrat-Black.ttf)}
+:root{--rojo:#D7122A;--rojo2:#C40C23;--linea:#E3051F}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:M,sans-serif;color:#fff;position:relative;background:#111}
+
+/* foto a sangre + oscurecido arriba (donde vive el texto) */
+.foto{position:absolute;inset:0;background-repeat:no-repeat;background-size:cover;filter:contrast(1.05) saturate(1.05)}
+.sombra-top{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.45) 24%,rgba(0,0,0,0) 46%)}
+.sombra-bot{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 62%,rgba(0,0,0,.55) 100%)}
+
+/* bloque de texto centrado arriba */
+.bloque{position:absolute;left:70px;right:70px;top:150px;text-align:center;text-shadow:0 3px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.35)}
+.t{font-weight:800;text-transform:uppercase;letter-spacing:-.035em;line-height:.9;font-size:96px}
+.t.xl{font-size:116px;font-weight:900;letter-spacing:-.045em;line-height:.86}
+.t.md{font-size:74px}
+.t .rojo{color:var(--rojo)}
+.it{font-style:italic;font-weight:600;letter-spacing:-.02em;font-size:44px;line-height:1.05}
+.it.big{font-size:62px;font-weight:700}
+.light{font-weight:400;letter-spacing:-.03em;font-size:50px;line-height:1.05;text-transform:none}
+.light b{font-weight:800}
+.sub{font-weight:700;text-transform:uppercase;letter-spacing:-.02em;font-size:52px;line-height:.98}
+
+/* pastilla roja (etiqueta o dato) */
+.pill{display:inline-block;background:var(--rojo);border-radius:16px;padding:10px 30px 12px;font-weight:800;text-transform:uppercase;letter-spacing:-.02em;font-size:40px;line-height:1;text-shadow:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.pill.it{text-transform:none;font-style:italic;font-weight:700;font-size:36px}
+.pill.light{text-transform:none;font-weight:400;font-size:42px;padding:10px 26px}
+.pill.light b{font-weight:800}
+.pill.dato{font-weight:900;font-size:118px;letter-spacing:-.03em;padding:14px 36px 18px;border-radius:18px}
+
+/* línea roja fina debajo del titular */
+.linea{height:4px;background:var(--linea);margin:26px auto;width:82%;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+
+/* pestaña con flecha (placa 1) */
+.flecha{position:absolute;right:0;bottom:108px;width:190px;height:90px;background:var(--rojo);border-radius:18px 0 0 18px;display:flex;align-items:center;padding-left:46px}
+.flecha svg{width:46px;height:46px}
+
+/* tarjeta de chat (captura reconstruida estilo Discord) */
+.chat{position:absolute;left:52px;right:52px;background:rgba(36,30,28,.96);border-radius:22px;padding:22px 30px 22px 98px;box-shadow:0 14px 40px rgba(0,0,0,.45);font-size:21px;line-height:1.42;color:#ECEBEA}
+.chat .av{position:absolute;left:24px;top:22px;width:54px;height:54px;border-radius:50%;background:#ddd center/cover}
+.chat .who{display:flex;align-items:baseline;gap:12px;margin-bottom:4px}
+.chat .who b{color:#E2843C;font-weight:600;font-size:22px}
+.chat .who span{color:#9C9693;font-size:16px}
+.chat p{margin-bottom:14px}
+.chat .men{color:#E2843C}
+.chat .reac{display:flex;gap:8px}
+.chat .reac span{border:1.5px solid #5865F2;background:rgba(88,101,242,.22);border-radius:9px;padding:3px 12px;font-size:20px;font-weight:600}
+.chat .quote{background:#fff;color:#222;border-radius:10px;padding:14px 18px;margin:6px 0 14px;font-size:18px;max-width:640px}
+.chat .quote b{color:#D33;font-weight:600;font-size:16px;display:block}
+
+/* logo Elevate apilado (CTA) */
+.logo{position:absolute;left:0;right:0;bottom:150px;text-align:center}
+.logo img{width:92px}
+.logo div{font-weight:700;font-size:20px;letter-spacing:.06em;margin-top:6px}
+
+/* líneas que se achican solas hasta entrar en el ancho */
+.fit{white-space:nowrap}
+.fit>span{display:block}
+/* modo overlay para placas de video: sin foto y fondo transparente */
+body.ov{background:transparent}
+body.ov .foto{display:none}
