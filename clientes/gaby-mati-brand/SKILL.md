@@ -1,6 +1,6 @@
 ---
 name: gaby-mati-brand
-description: Identidad visual para video de Gaby y Mati (GYM), marca compartida de Gaby y Matías Cutuli (Mati), realtors en Miami con Cervera Real Estate que le venden a compradores argentinos (oficina en Buenos Aires, precios en USD, voseo rioplatense). Títulos en Montserrat con tres pesos mezclados en la misma frase (Light + Light Italic + Bold/Black en la palabra fuerte, ciudades en MAYÚSCULA Black: MIAMI, ARGENTINA), interlineado casi pegado, a veces detrás del sujeto con rotoscopia; subtítulos blancos de 1–2 palabras al pecho en Cera Pro Medium (licencia pendiente: Montserrat SemiBold de respaldo) con sombra suave; paleta negro / gris `#606060` / blanco, todo el texto blanco; placas de ciudad con drone (Buenos Aires ↔ Miami) con los logos Matías Cutuli y Cervera; light leak cálido y zoom-blur como transición; más la referencia de siete piezas aprobadas (cinco reels a cámara y dos pautas: Seventeen Gables en Coral Gables y captación "Tu propiedad necesita más que un listing") y la guía de portadas. Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Gaby, de Mati / Matías Cutuli o de los dos (GYM): reels, pauta de propiedades, portadas; o cuando el usuario diga "editá el video de Gaby", "video de Mati", "video de GYM", "con la marca de Gaby y Mati", aunque no mencione la skill. No confundir con Matías Heras (matias-heras-brand).
+description: Identidad visual para video de Gaby y Mati (GYM), marca compartida de Gaby y Matías Cutuli (Mati), realtors en Miami con Cervera Real Estate que le venden a compradores argentinos (oficina en Buenos Aires, precios en USD, voseo rioplatense). Títulos en Montserrat con tres pesos mezclados en la misma frase (Light + Light Italic + Bold/Black en la palabra fuerte, ciudades en MAYÚSCULA Black: MIAMI, ARGENTINA), interlineado casi pegado, a veces detrás del sujeto con rotoscopia; subtítulos blancos de 1–2 palabras al pecho en Cera Pro Medium (licencia pendiente: Montserrat SemiBold de respaldo) con sombra suave; paleta negro / gris `#606060` / blanco, todo el texto blanco; placas de ciudad con drone (Buenos Aires ↔ Miami) con los logos Matías Cutuli y Cervera; light leak cálido y zoom-blur como transición; motion de tarjetas blancas (comparables, checklist, reporte semanal) y placa gris de cierre, números de lista gigantes en Black con la pregunta completa, más la referencia de ocho piezas aprobadas (cinco reels a cámara y tres pautas: Seventeen Gables en Coral Gables, captación "Tu propiedad necesita más que un listing" y "3 preguntas antes de firmar con cualquier realtor") y la guía de portadas (una sola persona, título arriba detrás de la cabeza). Se usa junto con la skill edicion-reels-base (reglas obligatorias). Usar SIEMPRE que se edite, subtitule, anime o diseñe cualquier pieza de Gaby, de Mati / Matías Cutuli o de los dos (GYM): reels, pauta de propiedades, portadas; o cuando el usuario diga "editá el video de Gaby", "video de Mati", "video de GYM", "con la marca de Gaby y Mati", aunque no mencione la skill. No confundir con Matías Heras (matias-heras-brand).
 ---
 
 # Gaby y Mati (GYM) — Marca para video
@@ -55,7 +55,16 @@ No hay color de acento. Si una pieza necesita destacar algo, se hace con peso (B
 - **Transición de la casa:** **light leak cálido** (magenta/naranja que lava el cuadro) y **zoom-blur** en los cambios de idea; corte seco en el resto. Los B-roll a veces entran con desenfoque.
 - **Zooms:** punch-in en las frases fuertes, alternando plano abierto y cerrado del vocero.
 - **B-roll:** stock de plata (dólares, contar billetes), contratos y firma, videollamadas, tablet con listings; material propio de obra y maqueta en las pautas; skyline de Miami. Sin stock que parezca de otro país.
-- **Música:** suave, corporativa/lo-fi de fondo, sin voz. Niveles: los de la base (las referencias quedaron bajas, entre −15,6 y −23 LUFS: **no imitarlas**).
+- **Música:** suave, corporativa/lo-fi de fondo, sin voz. Niveles: los de la base (las referencias quedaron bajas, entre −15,6 y −23 LUFS: **no imitarlas**). Aprobado en 04-12: *Curiosity* (Mixkit 480) a −16 dB bajo la voz.
+- **Números de lista (1 · 2 · 3):** número gigante en Montserrat Black 320 px blanco con pop, y debajo la pregunta completa con los pesos mezclados ("¿de dónde **sale** / el **PRECIO** / que me *sugerís?*"). Centrado sobre el B-roll en y 300–400, con un velo oscuro suave arriba para que lea.
+- **Motion de marca** (aprobado en 04-12, `assets/motion-0412.jpg`): tarjetas blancas al 95 % con esquinas de 30 px, sombra grande, texto negro `#111` y gris `#606060`, e íconos de línea negra. Crecen fila por fila a medida que lo dice:
+  - **Comparables:** casas "VENDIDA" con el precio desenfocado.
+  - **Etiqueta de precio:** "$ ???.???" negra con borde blanco, rotada.
+  - **Checklist:** íconos y tildes negros.
+  - **Reporte semanal:** campana, ícono de ojo, de chat y de cita, y contadores con la etiqueta "ejemplo".
+
+  Los subtítulos van pegados debajo de la tarjeta. Si la tarjeta dice las mismas palabras que la voz, reemplaza al subtítulo.
+- **Placa de cierre sin vocero:** fondo radial gris (`#6a6a6a` → `#0d0d0d`) con grano suave, la frase en pesos mezclados ("si las respuestas son / *vagas,* / *seguí* **BUSCANDO**") y una línea blanca que se dibuja debajo. Se usa para cubrir una voz en off sin mostrar al vocero callado.
 
 ## 5. Portadas
 Analizadas las 7 de `01 REELS/10 OCTUBRE/*/` (`assets/portadas.jpg`):
@@ -64,6 +73,9 @@ Analizadas las 7 de `01 REELS/10 OCTUBRE/*/` (`assets/portadas.jpg`):
 - Texto en el tercio superior, pegado a la cabeza; a menudo la última línea queda **detrás** de la cabeza con rotoscopia.
 - Degradé oscuro arriba para que lea el blanco. Fondo: el plano del video (oficina, obra, Miami) o un skyline de Miami de noche.
 - Revisar la ortografía: la portada del 02-11 salió con "nesecita".
+- **Una sola persona en la portada** (corrección de Tomi, 2026-11-20, 04-12: "que solamente se lo vea a ÉL"). Aunque el video tenga a Gaby y a Mati, la portada lleva a uno solo (Mati sonriendo, en 04-12), con el título **arriba** en tres líneas apretadas. La última línea en Bold/Black más grande pasa con rotoscopia **detrás de la cabeza** (el pie de las letras, no la palabra entera), como en "Así viaja tu plata a MIAMI".
+  - La portada de 04-12 la hizo Tomi (`assets/portada-0412-tomi.jpg`): "**3 preguntas** antes / de **FIRMAR** con / **cualquier REALTOR**", Mati recortado sobre la pileta desenfocada.
+  - Tomi a veces entrega la portada: si deja una en `PORTADA/`, esa es la que va como frame 0.
 
 ## 6. Referencias aprobadas (REFERENCIA, no fórmula)
 Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/10 OCTUBRE/`. Detalle en `references/piezas.md`.
@@ -77,10 +89,16 @@ Rutas relativas a `{CARPETA_CLIENTE}/01 REELS/10 OCTUBRE/`. Detalle en `referenc
 | `07-11 GYM Título pendiente` | Mati en exterior (bahía) | 18,9 s | Hook "Si sos **Argentino**", logos Cervera y Matías Cutuli |
 | `02-11 GYM PAUTA TU PROPIEDAD NECESITA MÁ` | Pauta captación: Mati abre, Gaby explica | 31,7 s | El título con pesos mezclados más completo |
 | `04-10 GYM PAUTA Así es Seventeen Gables` | Pauta de proyecto en pozo | 30,9 s | "proyecto NUEVO", "Coral GABLES" con rotoscopia, maqueta, precio |
+| `11 NOVIEMBRE/04-12 GYM PAUTA 3 preguntas antes de fir` | Pauta captación: hook de Gaby a cámara, ella sigue en off sobre stock, Mati cierra con el CTA | 32,7 s | Lista 1-2-3 con números gigantes y la pregunta completa, "estas **3** *preguntas*" detrás de Gaby (rotoscopia), motion de tarjetas, placa de cierre. Aprobado 20-11 (v3) |
 
 ## 7. Ideas que pueden sumar (opcionales, a criterio)
 - Mapa simple Argentina → Miami (línea blanca) para los temas de "cómo viaja la plata".
 - Pasos numerados en Montserrat Black blanco sobre el vocero en los explicativos (escrow → cierre).
 
 ## 8. Correcciones del cliente
-_(Vacío. Sumar acá cada corrección con fecha y pieza.)_
+- **2026-11-20 · 04-12 · Subtítulos en Montserrat SemiBold 57 px:** sigue sin haber licencia de Cera Pro. Con Montserrat SemiBold se aprobó el video.
+- **2026-11-20 · 04-12 · Portada:** una sola persona, con el título arriba y detrás de la cabeza (ver §5).
+- **2026-11-20 · 04-12 · Títulos completos:** todo lo que dice el vocero tiene que estar en pantalla. Si un título reemplaza al subtítulo, lleva la frase entera (regla de la base).
+- **2026-11-20 · 04-12 · Sin vocero callado:** los planos de Gaby o Mati arrancan cuando empiezan a hablar. Para tapar voz en off se usa stock o la placa de §4.
+- **2026-11-20 · 04-12 · Sin silencios:** cortar todos, también en la voz en off (regla de la base).
+- **2026-11-20 · 04-12 · Material:** Gaby graba voces en off aparte (`VOZ/*.m4a`) que pueden venir clipeadas: la de 04-12 tenía 776 muestras en 0 dBFS y se reconstruyó con `adeclip`. Los videos llegan en 4K vertical (iPhone, rotación −90). A veces el hook llega después que el resto del material: pedirlo antes de armar.

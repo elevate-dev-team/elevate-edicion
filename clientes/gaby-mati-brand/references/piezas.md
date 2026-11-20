@@ -47,3 +47,22 @@ Los niveles están por debajo del master de la base (−11): no tomarlos como re
 - Mati en la vereda frente a la obra. "*proyecto* **NUEVO**" y "Coral **GABLES**" (GABLES detrás de Mati, rotoscopia).
 - Maqueta ("de ocho pisos", "120 residencias", "de 1 a 3 dormitorios"), entrega 2028, render de cocina y baño, pagos en etapas, saldo al final.
 - Precio "$634.900" en Bold blanco sobre la maqueta. Cierre a cámara en la obra.
+
+## 04-12 PAUTA 3 preguntas antes de firmar con cualquier realtor (aprobada 20-11, v3)
+`{CARPETA_CLIENTE}/01 REELS/11 NOVIEMBRE/04-12 GYM PAUTA 3 preguntas antes de fir/` · 32,7 s · 30 fps · master −11 LUFS.
+- Material:
+  - Hook de Gaby a cámara en la pileta (IMG_3951, 4K vertical).
+  - Voz en off de Gaby con el cuerpo (`VOZ/Veleiros Ave 2.m4a`, clipeada: se le hizo adeclip).
+  - CTA de Mati en la misma pileta (IMG_3953).
+  - Stock: 5 clips de Pexels en `RECURSOS/pexels/` y 4 del banco.
+- Hook: "¿Vas a *vender* / tu **CASA?**" arriba de la cabeza. Después, "estas / **3** *preguntas*" con el pie detrás de la cabeza de Gaby (rotoscopia). Punches en cada silencio cortado.
+- Cuerpo:
+  - Cada punto abre con su número gigante y la pregunta completa.
+  - 1 · fachada blanca con palmeras.
+  - "ventas reales de tu zona": tarjeta de comparables sobre la laptop. "número para que firmes": etiqueta "$ ???.???" sobre la firma.
+  - 2 · agente con tablet, después el drone.
+  - "¿Fotos? ¿Videos? ¿A quién…?": checklist abajo, sobre el fotógrafo y el agente con la pareja.
+  - 3 · celular desenfocado (la notificación del stock decía otra cosa). En "cada semana" entra la tarjeta "REPORTE SEMANAL", que crece con 128 / 9 / "¿aceptan ofertas?" (ejemplo) sobre la pareja del sofá.
+- Cierre: placa gris con "si las respuestas son *vagas,* *seguí* **BUSCANDO**". Mati entra justo cuando empieza a hablar.
+- Transiciones: light leak cálido en hook→1, 2, 3 y placa→CTA; zoom-blur en los demás cortes de stock. 41 SFX.
+- Portada de Tomi: Mati solo, título arriba detrás de la cabeza.
