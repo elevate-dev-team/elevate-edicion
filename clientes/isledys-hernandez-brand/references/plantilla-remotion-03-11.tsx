@@ -11,7 +11,7 @@ import {Logos} from '../ism/Logos';
 import {TituloBarra} from '../ism/TituloBarra';
 
 export const FPS = 30;
-export const ISM0311_FRAMES = 752;
+export const ISM0311_FRAMES = 763; // v4: CTA nuevo (RECURSOS/nuevo CTA.mov, solo audio)
 const f = (s: number) => Math.round(s * FPS);
 const AZUL = '#073FA7', CELESTE = '#CDE5F4', DORADO = '#E2A407', CREMA = '#F3E3A9', HUESO = '#F5F5F0';
 const MON = 'Montserrat', BOD = 'Bodoni URW';
@@ -37,6 +37,8 @@ const BR1 = [7.0333, 8.45], BR2 = [8.45, 10.1];
 const CORTES = [7.0333, 8.45, 10.1, 11.6, 19.0667, 22.0333]; // zoom-blur
 const LEAKS = [2.9667, 7.0333];
 const CTA0 = 22.40;
+const CTA_PLANO = 22.0333; // v3: desde acá solo audio + texto, sin ella (corrección del editor 19-11)
+const DY = 428;          // bloque del CTA centrado en y ≈ 960
 
 type Seg = {a: number; b: number; o: number};
 const SEGS = data.segs as Seg[];
@@ -433,47 +435,80 @@ const Idioma: React.FC = () => {
   );
 };
 
-// ---------- CTA: ESCRIBE / la palabra [REALTOR] / y el nombre de tu brokerage ----------
+// fondo azul Pioneer del CTA (entra con zoom-blur en el corte)
+const FondoCTA: React.FC = () => {
+  const g = useCurrentFrame();
+  const ent = interpolate(g, [0, 8], [0, 1], {...CL, easing: Easing.out(Easing.cubic)});
+  const lin = interpolate(g, [4, 16], [0, 1], {...CL, easing: Easing.out(Easing.cubic)});
+  return (
+    <AbsoluteFill style={{transform: `scale(${1.12 - 0.12 * ent + 0.03 * (g / 90)})`, filter: `blur(${(1 - ent) * 10}px)`}}>
+      <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 50%, #0E55D0 0%, #073FA7 45%, #04245F 100%)'}} />
+      <AbsoluteFill style={{opacity: 0.07, background: 'repeating-linear-gradient(135deg, white 0 2px, transparent 2px 26px)'}} />
+      <AbsoluteFill style={{background: 'radial-gradient(ellipse 48% 22% at 50% 50%, rgba(243,227,169,0.16), rgba(243,227,169,0) 100%)'}} />
+      <div style={{position: 'absolute', left: 540 - 260 * lin, width: 520 * lin, top: 664, height: 4, background: DORADO, borderRadius: 2}} />
+      <div style={{position: 'absolute', left: 540 - 260 * lin, width: 520 * lin, top: 1240, height: 4, background: DORADO, borderRadius: 2}} />
+    </AbsoluteFill>
+  );
+};
+
+// ---------- CTA nuevo (v4, solo audio de RECURSOS/nuevo CTA.mov): ESCRÍBEME / por [WhatsApp] / y te ayudo a cerrar / las VENTAS / con tus clientes ----------
+// tiempos de salida de cada palabra (CTA src 26,77 s → salida 22,06 s)
+const T_ESC = 22.09, T_WA = 22.62, T_AYUDO = 23.22, T_VENTAS = 23.98, T_CLIENTES = 24.47;
+const WhatsApp: React.FC<{s: number}> = ({s}) => (
+  <svg width={s} height={s} viewBox="0 0 48 48">
+    <path d="M24 5 a19 19 0 0 1 0 38 a19 19 0 0 1 -9.5 -2.6 L6 43 l2.7 -8.2 A19 19 0 0 1 24 5 z" fill="none" stroke="white" strokeWidth={3.6} strokeLinejoin="round" />
+    <path d="M17.5 14.5 c1 -0.6 2 -0.4 2.5 0.6 l1.6 3.6 c0.3 0.7 0.1 1.4 -0.4 1.9 l-1.2 1.2 c1.2 2.6 3.4 4.8 6 6 l1.2 -1.2 c0.5 -0.5 1.3 -0.7 1.9 -0.4 l3.6 1.6 c1 0.5 1.2 1.6 0.6 2.5 c-1.4 2.1 -3.4 3 -5.6 2.3 c-5.2 -1.7 -9.6 -6.1 -11.3 -11.3 c-0.7 -2.2 0.2 -4.2 2.3 -5.6 z" fill="white" />
+  </svg>
+);
 const CTA: React.FC = () => {
   const g = useCurrentFrame();
-  const base = f(CTA0);
-  const p = pop(g, 0, 10, 180);
-  const pc = pop(g, f(23.14) - base - 1, 10, 190);
-  const brillo = interpolate(g - (f(23.14) - base + 6), [0, 16], [-30, 130], CL);
+  const base = f(CTA_PLANO);
+  const r = (t: number) => f(t) - base;
+  const p = pop(g, r(T_ESC) - 1, 10, 180);
+  const pc = pop(g, r(T_WA) - 1, 10, 190);
+  const pv = pop(g, r(T_VENTAS) - 1, 16, 210);
+  const brillo = interpolate(g - (r(T_WA) + 6), [0, 16], [-30, 130], CL);
   return (
-    <>
-      <Velo top={300} h={480} />
-      <div style={{position: 'absolute', left: 0, right: 0, top: 318, textAlign: 'center', transform: `scale(${p})`}}>
-        <span style={{fontFamily: MON, fontWeight: 900, fontSize: 96, lineHeight: 1.25, background: `linear-gradient(180deg, #FFFFFF 0%, ${HUESO} 60%, #DCD8C8 100%)`,
-          WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', filter: 'drop-shadow(0 4px 10px rgba(0,10,40,0.55))'}}>ESCRIBE</span>
+    <AbsoluteFill>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 690, textAlign: 'center', transform: `scale(${p})`}}>
+        <span style={{fontFamily: MON, fontWeight: 900, fontSize: 112, lineHeight: 1.25, background: `linear-gradient(180deg, #FFFFFF 0%, ${HUESO} 60%, #DCD8C8 100%)`,
+          WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', filter: 'drop-shadow(0 4px 10px rgba(0,10,40,0.55))'}}>ESCRÍBEME</span>
       </div>
-      <Linea d={f(22.46) - base} top={448} size={44}>la palabra</Linea>
-      {g >= f(23.14) - base - 1 && (
-        <div style={{position: 'absolute', left: 0, right: 0, top: 506, display: 'flex', justifyContent: 'center', transform: `scale(${pc})`}}>
-          <div style={{position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', gap: 16, padding: '8px 34px 10px 24px', borderRadius: 44,
-            background: AZUL, border: `4px solid ${DORADO}`, boxShadow: '0 10px 24px rgba(0,10,40,0.45)'}}>
-            <Ico tipo="comentario" s={52} />
-            <span style={{fontFamily: MON, fontWeight: 900, fontSize: 54, color: 'white', letterSpacing: '0.02em', lineHeight: 1.1}}>REALTOR</span>
+      {g >= r(T_WA) - 1 && (
+        <div style={{position: 'absolute', left: 0, right: 0, top: 846, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 20}}>
+          <span style={{fontFamily: MON, fontWeight: 600, fontSize: 48, color: HUESO, textShadow: SOMBRA, opacity: Math.min(1, pc * 1.5)}}>por</span>
+          <div style={{position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', gap: 16, padding: '10px 34px 12px 24px', borderRadius: 48,
+            background: AZUL, border: `4px solid ${DORADO}`, boxShadow: '0 10px 24px rgba(0,10,40,0.45)', transform: `scale(${pc})`}}>
+            <WhatsApp s={58} />
+            <span style={{fontFamily: MON, fontWeight: 900, fontSize: 58, color: 'white', letterSpacing: '0.01em', lineHeight: 1.1}}>WhatsApp</span>
             <div style={{position: 'absolute', top: 0, bottom: 0, left: `${brillo}%`, width: '22%', transform: 'skewX(-20deg)',
               background: 'linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.35), rgba(255,255,255,0))'}} />
           </div>
         </div>
       )}
-      <Linea d={f(23.80) - base} top={622} size={42}>
-        y el nombre de tu <span style={{fontFamily: BOD, fontStyle: 'italic', fontWeight: 700, fontSize: 58, color: CREMA, textShadow: GLOW}}>brokerage</span>
-      </Linea>
-    </>
+      <Linea d={r(T_AYUDO)} top={970} size={46}>y te <b style={{fontWeight: 900, fontStyle: 'italic'}}>ayudo</b> a cerrar</Linea>
+      {g >= r(T_VENTAS) - 1 && (
+        <div style={{position: 'absolute', left: 0, right: 0, top: 1030, display: 'flex', justifyContent: 'center', alignItems: 'baseline', gap: 14, lineHeight: 1,
+          transform: `scale(${pv})`, transformOrigin: '540px 80%'}}>
+          <span style={{fontFamily: MON, fontWeight: 600, fontSize: 46, color: 'white', textShadow: SOMBRA}}>las</span>
+          <Bod size={92}>VENTAS</Bod>
+        </div>
+      )}
+      <Linea d={r(T_CLIENTES)} top={1124} size={44}>con tus <b style={{fontWeight: 900, fontStyle: 'italic'}}>clientes</b></Linea>
+    </AbsoluteFill>
   );
 };
 
 const Pie: React.FC = () => {
   const g = useCurrentFrame();
   return (
-    <div style={{position: 'absolute', left: 0, right: 0, top: 706, display: 'flex', justifyContent: 'center', opacity: interpolate(g, [0, 6], [0, 1], CL)}}>
+    <AbsoluteFill>
+    <div style={{position: 'absolute', left: 0, right: 0, top: 1184, display: 'flex', justifyContent: 'center', opacity: interpolate(g, [0, 6], [0, 1], CL)}}>
       <div style={{fontFamily: MON, fontWeight: 500, fontSize: 28, color: 'white', letterSpacing: '0.04em', background: 'rgba(7,30,80,0.6)', borderRadius: 8, padding: '6px 16px'}}>
         Mortgage Loan Originator NMLS# 1924019
       </div>
     </div>
+    </AbsoluteFill>
   );
 };
 
@@ -486,6 +521,7 @@ export const ISM0311: React.FC<{guias?: boolean}> = ({guias}) => (
       <Ella />
       {Q(BR1[0], BR1[1], <Broll src="br_sale.mp4" dur={BR1[1] - BR1[0]} zoom={[1.0, 1.06]} />)}
       {Q(BR2[0], BR2[1], <Broll src="br_firma.mp4" dur={BR2[1] - BR2[0]} zoom={[1.02, 1.1]} />)}
+      {Q(CTA_PLANO, FIN, <FondoCTA />)}
     </FX>
     {Q(0, M1[0], <Hook />)}
     {Q(5.7, BR1[0], <EseLado />)}
@@ -493,14 +529,14 @@ export const ISM0311: React.FC<{guias?: boolean}> = ({guias}) => (
     {Q(10.1, 11.6, <HoyLender />)}
     {Q(M2[0], M2[1], <MotionVaNoVa />)}
     {Q(14.0, M3[0], <Silencio />)}
-    {Q(20.53, CTA0, <Idioma />)}
-    {Q(CTA0, FIN, <CTA />)}
+    {Q(20.53, CTA_PLANO, <Idioma />)}
+    {Q(CTA_PLANO, FIN, <CTA />)}
     {Q(M1[0], M1[1] + 0.17, <MotionPending />)}
     {Q(M3[0], M3[1] + 0.17, <MotionNotis />)}
     <Subtitulos />
     {Q(FIN - 1.0, FIN, <Pie />)}
     {LEAKS.map((l, i) => Q(l - 0.13, l + 0.3, <Leak />, 'lk' + i))}
-    <Logos oscuros={[[f(M1[0]), f(M1[1])], [f(M2[0]), f(M2[1])]]} />
+    <Logos oscuros={[[f(M1[0]), f(M1[1])], [f(M2[0]), f(M2[1])], [f(CTA_PLANO), ISM0311_FRAMES]]} />
     {guias && (
       <AbsoluteFill>
         <div style={{position: 'absolute', left: 70, top: 270, width: 830, height: 980, border: '3px solid lime'}} />
