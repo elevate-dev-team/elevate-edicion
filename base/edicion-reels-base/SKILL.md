@@ -56,6 +56,7 @@ La voz manda, pero la música **se tiene que escuchar**. No hay un número fijo:
 - **Tema denso** (pop comercial, EDM, mucho medio, voces/sintes al frente): a −12 dB "está muy fuerte, tapando prácticamente la voz" (corrección del usuario, 2026-10-02, reel LIU 03-10). Aprobado: **−20 dB debajo de la voz + hueco de EQ en la música mientras se habla** (`equalizer=f=2200:t=o:w=1.6:g=-6,equalizer=f=350:t=o:w=1:g=-2`).
 - Cómo hacerlo: dos copias de la música (con hueco de EQ para los tramos hablados y limpia para los tramos solo música), cruzadas con `volume=...:eval=frame` en los cambios de sección. En un **tramo solo música** (cuerpo musical sin voz) la música va al frente, al nivel de la voz.
 - Ante la duda con un tema nuevo, empezar en −16 dB y escuchar/medir; avisar al usuario qué nivel quedó.
+- **Funk con la banda de voz a 5–6 dB del total** (LUL 01-11, 2026-11-25; antes AAL 18-11): *Funkee Monkeee* (Mixkit) mide la banda 5,5 dB bajo el total, que por la regla de arriba sería "denso", pero se aprobó a **−16 dB bajo la voz con hueco de EQ de −5 dB** (voz −13 / música −29 LUFS). La regla de −20 dB es para pop/EDM con voces o sintes al frente; un funk instrumental con la banda en 5–6 dB arranca en −16.
 
 ### 3.2 Cadena de voz (orden y por qué)
 Corrección del usuario (2026-10-02): "las voces se sienten muy enterradas todo el tiempo". La causa era la **cadena**, no el nivel:
@@ -74,6 +75,7 @@ Cadena aprobada, **por tramo/toma** (cada toma tiene su nivel y su ruido):
 - **La cadena retrasa la voz ~27 ms** (afftdn + limitador; medido por correlación de envolventes en las 5 tomas del reel PYE 11-09, idéntico en todas). Al cortar la voz procesada con los tiempos del video, leerla desde `inicio + 0,027` s, o la boca queda adelantada y los cortes caen corridos. Medirlo si cambia la cadena.
 - **Verificación obligatoria:** el **LRA de la voz tiene que BAJAR** después de la cadena (03-10: 3,9 → 2,0 LU y 4,1 → 1,2 LU). Si sube o queda igual, el compresor no está trabajando: revisar la ganancia previa.
 - Si dos tomas tienen distinto ruido de fondo (exterior vs. interior), cada una lleva su propio piso; avisar si el timbre no se empareja.
+- **Agudos que suben de más con micrófono corbatero** (LUL 01-11, 2026-11-25): con la cadena de arriba los agudos de las tomas de lav subían ~4 dB respecto de la voz cruda (de −17,4 a −13,3 dB). Un `highshelf=f=3500:g=-1.5:t=s:w=0.7` sobre la voz ya procesada los dejó a +1,3/+3,3 dB sin tocar el nivel (−13 LUFS por toma). Endurecer el compresor (umbral −30, picos a −13) los subió todavía más (+4/+5,6 dB): no es la salida.
 
 ### 3.3 SFX
 - Por debajo de la voz, nunca encima de una palabra importante; alinear el **pico** del archivo con el evento visual (medirlo). Los mp3 de la biblioteca tienen colas rotas: convertir a WAV antes de mezclar.
@@ -116,6 +118,7 @@ Aplica **solo cuando yo tengo que armar la estructura** del video: varias tomas 
 3. **Acabado**: con la estructura aprobada, sumar subtítulos, títulos, motion, zooms, música, SFX y mezcla. No cambiar los cortes aprobados sin avisar.
 
 Si el usuario pasa **un solo video ya cortado** o con la estructura resuelta (solo hay que limpiar silencios y hacer el acabado), no hacen falta estas etapas: se edita directo.
+- **Los planos a cámara de la estructura salen del mismo timeline que la voz** (LUL 01-11, 2026-11-25): el EDL del video se escribió a mano y el CTA arrancó 0,1 s después que su tramo de voz con el mismo segundo de la toma (boca atrasada 3 cuadros). Generar el inicio y el `startFrom` de cada plano a cámara desde los tramos de la voz montada (mismo cuadro de inicio, mismo `in` de la toma) y, al revisar la estructura, comparar el cuadro de inicio de cada plano a cámara con el de su tramo.
 
 ### 4.2 Tramos de voz en off o pantalla en negro (motion, stock)
 - Antes de renderizar, mandar una **propuesta corta**: qué va sobre cada frase (animación, stock o combinación). Esperar el OK.
