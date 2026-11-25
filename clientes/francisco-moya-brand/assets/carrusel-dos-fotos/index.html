@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:M;src:url(fonts/Montserrat-Regular.ttf);font-weight:400}
+@font-face{font-family:M;src:url(fonts/Montserrat-Medium.ttf);font-weight:500}
+@font-face{font-family:M;src:url(fonts/Montserrat-Bold.ttf);font-weight:700}
+@font-face{font-family:M;src:url(fonts/Montserrat-ExtraBold.ttf);font-weight:800}
+html,body{margin:0;padding:0;background:#000}
+#p{position:relative;width:1122px;height:1402px;overflow:hidden;font-family:M,sans-serif}
+.half{position:absolute;left:0;width:1122px;height:701px;overflow:hidden}
+.half.t{top:0}.half.b{top:701px}
+.ph{position:absolute;inset:0;background-repeat:no-repeat;
+  filter:brightness(.74) contrast(.96) saturate(.88) sepia(.06)}
+.half::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.12)}
+.tx{position:absolute;left:50%;transform:translate(-50%,-50%);z-index:2;width:960px;text-align:center;
+  color:#fff;font-size:50px;line-height:1.1;letter-spacing:-.015em;font-weight:400;
+  text-shadow:0 0 18px rgba(0,0,0,.55),0 2px 4px rgba(0,0,0,.45)}
+.tx b{font-weight:700}
+.arrow{position:absolute;left:50%;top:701px;transform:translate(-50%,-62%);z-index:3;width:30px;height:46px;
+  filter:drop-shadow(0 0 6px rgba(0,0,0,.5))}
+</style>
+</head>
+<body>
+<div id="p">
+  <div class="half t"><div class="ph" id="pt"></div><div class="tx" id="tt"></div></div>
+  <div class="half b"><div class="ph" id="pb"></div><div class="tx" id="tb"></div></div>
+  <svg class="arrow" viewBox="0 0 30 46"><path d="M15 2 V43 M3 31 L15 43 L27 31" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</div>
+<script>
+// Cada mitad: foto, tamaño (ancho en % del recuadro) y posición (x% y%). y del texto en % de la mitad.
+const S = {
+ 1:{t:{f:'IMG_0839',s:100,x:50,y:67},b:{f:'IMG_9404',s:100,x:50,y:45,ty:30},
+    tt:'No tenés que publicar<br><b>contenido perfecto</b>', tb:'Empezá mostrándote <b>con constancia.</b>'},
+ 2:{t:{f:'IMG_1268',s:100,x:50,y:45},b:{f:'IMG_3123',s:100,x:50,y:50},
+    tt:'No necesitás <b>cerrar una venta</b><br>para invertir', tb:'Empezá construyendo <b>el sistema</b><br>que te permita vender.'},
+ 3:{t:{f:'DJI_20260511_223338_273',s:100,x:50,y:58},b:{f:'IMG_0833',s:100,x:50,y:40},
+    tt:'No tenés que responder<br><b>una sola vez</b> y esperar', tb:'Empezá <b>haciendo seguimiento.</b>'},
+ 4:{t:{f:'IMG_9125',s:100,x:50,y:55,br:1},b:{f:'IMG_3005',s:100,x:50,y:85},
+    tt:'No tenés que <b>hacer todo vos</b>', tb:'Empezá apoyándote <b>en un equipo.</b>'},
+ 5:{t:{f:'IMG_0850',s:100,x:50,y:35},b:{f:'IMG_0603',s:100,x:50,y:70},
+    tt:'No necesitás <b>tener todo resuelto</b><br>para crecer', tb:'Empezá por <b>dar el primer paso.</b>'},
+ 6:{t:{f:'CD9800EE-FC98-4372-9086-BD3DB9B8700B',s:100,x:50,y:40},b:{f:'IMG_5525',s:100,x:50,y:45},
+    tt:'No necesitás trabajar<br><b>12 horas por día</b>', tb:'Empezá enfocándote en<br><b>las acciones que generan ventas.</b>'},
+};
+const TY = {t:47, b:46};
+const n = new URLSearchParams(location.search).get('s') || '1';
+const c = S[n];
+for (const k of ['t','b']) {
+  const h = c[k], el = document.getElementById('p'+k);
+  el.style.backgroundImage = `url(fotos/${h.f}.jpg)`;
+  el.style.backgroundSize = `${h.s}% auto`;
+  el.style.backgroundPosition = `${h.x}% ${h.y}%`;
+  if (h.br) el.style.filter = `brightness(${0.74*h.br+0.2}) contrast(.96) saturate(.88) sepia(.06)`;
+  const tx = document.getElementById('t'+k);
+  tx.innerHTML = c['t'+k];
+  tx.style.top = (h.ty ?? TY[k]) + '%';
+}
+</script>
+</body>
+</html>
