@@ -6,6 +6,7 @@ Lo que se usó (Motion Array; se descarga dentro de cada `PROYECTO/Motion Array 
 - Corporate / inspiradora (barrio, pauta más seria): *Break Down The Silos* (01-10), *The Road Ahead* (06-07), *Opening Up New Possibilities* (04-08, 05-08), *Beyond Limits* (11-07), *You're Amazing* (03-08), *This Is Your Story* (09-07).
 
 - *Gimme that Groove!* (17-10, Mixkit 872, instrumental medido con Demucs): funk, 112 BPM (primer tiempo en 1,79 s; arranca en silencio), banda de voz 11,7 dB bajo el total → −16 dB bajo la voz con hueco de EQ suave (−4 dB).
+- *Funkee Monkeee* (01-11, Mixkit 1140, instrumental; copia en `MUSICA/` de 01-11): funk, **120,0 BPM**, primer tiempo en 4,512 s del tema (empezar ahí deja la grilla en t = 0 del video). Arranca suave y crece hasta los ~15 s. Banda de voz 5,5 dB bajo el total → −16 dB bajo la voz con hueco de EQ de −5 dB (aprobado).
 - *Swagger* (14-10, Motion Array; está en `ANDREA ALMONACID/04 LOOP/06-07 AL CREDITO/Motion Array Library/Music/4213851/`): groove, banda de voz 6,7 dB bajo el total → a −18 LUFS bajo la voz con hueco de EQ de −5 dB. Entre los 25 y 28 s tiene voz (Demucs): usar desde 32,05 s.
 
 Para los próximos: buscar en Motion Array "funk", "funky groove", "corporate upbeat": 100–120 BPM, sin voces. En `{MUSICA}/` lo más cercano es `Bounce Me Brother (With a Solid Four).mp3`; el resto (cinemático, trap, clásica) no va con LUL.

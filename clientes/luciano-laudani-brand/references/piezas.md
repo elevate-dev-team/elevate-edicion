@@ -67,3 +67,13 @@ Patrón común de los tour house: gancho a cámara frente a la propiedad con el 
 - Anchos: con 1080 de ancho, "TU CASA HOY" va a 100 px, "ADROGUÉ" con pin a 112, "DEPARTAMENTOS" a 70 y "ESCRIBINOS" a 112 (más grande se pasan de x = 900). El pin necesita ~26 px de margen: el degradé rojo tiene margen negativo y lo pisa.
 - CTA: zoom 1,15→1,38× anclado a los ojos, "que te **TASEMOS** tu casa" bajo el mentón y "**ESCRIBINOS**" al final.
 - Audio: la voz pega picos fuertes en hook y CTA (el limitador trabaja 6–7 dB) y quedan ~1 dB debajo del cuerpo: se emparejan por toma en la mezcla (cuerpo −0,9 dB, CTA +0,8 dB) → las tres en −14 LUFS.
+
+## I. Pauta casa para refaccionar — Adrogué, USD 85.000 (48 s, 30 fps) · aprobado 2026-11-25
+`11 NOVIEMBRE/01-11 LUL Título pendiente/` · música *Funkee Monkeee* (Mixkit 1140, desde 4,512 s) · Remotion `PROYECTO/Video.tsx` + `edl.ts` · mezcla `PROYECTO/mezcla.py`
+- Material sin guion: hook a cámara frente a la casa (IMG_9386), 3 tomas de off con la imagen en negro (1080p24, solo voz) y CTA junto al portón lateral (IMG_9390), todo 4K60 HDR → SDR con `avconvert -p Preset3840x2160`. 8 tomas mudas de la casa (fachada con el cartel LAUDANI & CIA, recorrido interior, galería, patio, lavadero).
+- Estructura: hook 4,9 s → off 39,5 s (dirección, lote, ambientes, "necesita una refacción integral", 4 posibilidades, precio) → CTA 3,9 s. Voz cortada al habla (uniones de 0,12–0,17 s).
+- Hook: "¿Y si te **dijera**" / "que esta **CASA**" (caja) / "en **ADROGUÉ**" (índigo) → punch 1,07 → 1,18× en "puede" y el título **arriba de la cabeza** (bajo el alero): "puede transformarse en" / "**MUCHO MÁS**" / "de lo que **ves**".
+- Off con motion: ver §7 de la skill (pin, ruta, lote, ambientes, pasos 1–4, precio + sello). Cortes del B-roll en la grilla de 0,5 s (la lista de ambientes, en medios tiempos).
+- CTA: zoom 1,06 → 1,16× y punch a 1,30 → 1,38× en el corte de "escribinos"; "**ESCRIBINOS**" / "y vení a **CONOCERLA**" bajo el mentón.
+- Audio: voz con la cadena base + `highshelf=f=3500:g=-1.5` (la cadena subía los agudos 4 dB en las tomas de lav); las 5 tomas en −13 LUFS; música −16 dB bajo la voz con hueco de EQ de −5 dB; 67 SFX; master −10,8 LUFS / −1,5 dBTP.
+- Portada: la hizo Tomi (fachada, sin caja índigo, "Casa para **REFACCIONAR**", USD 85,000 en caja roja). Ver §5.
