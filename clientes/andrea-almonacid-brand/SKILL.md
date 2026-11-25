@@ -107,7 +107,7 @@ Según el manual y lo que usan los proyectos aprobados:
 - **Apertura:** todos los videos arrancan con un **whip con desenfoque de movimiento** que entra al primer plano.
 - **Transiciones:** whip/zoom con desenfoque entre planos y **light leaks cálidos** (amarillo, naranja, rosa; en los proyectos: "Generated Light Leak 1" de Premiere) en muchos cortes. A veces un **destello de color** rosa/naranja que tiñe el plano medio segundo al cambiar de tema.
 - **SFX:** swooshes en los whips y en la entrada de los títulos (en los proyectos: Animation Composer "Swoosh 04 - 02", "Swoosh Transition 03" y "28", "Transition Complex 14").
-- **Música en pauta de propiedad: funk** (pedido del usuario, 2026-10-26, AAL 02-10). Un funk **genérico**, sin buscar demasiado (2026-10-27, AAL 03-11: "elegí la música más genérica de funk, no le des tantas vueltas"). Si el editor no tiene Motion Array, bajar de Mixkit (tag funk); en 02-10 quedó "Gimme that Groove" (Michael Ramir C.) desde 0:04, 120 BPM, 16 dB debajo de la voz con hueco de EQ. En 06-11, *Funkee Monkeee* (Mixkit, instrumental, 100,0 BPM medidos) desde 4,8 s del tema → un tiempo cada 0,6 s del video; a 15–16 dB bajo la voz con hueco de EQ.
+- **Música en pauta de propiedad: funk** (pedido del usuario, 2026-10-26, AAL 02-10). Un funk **genérico**, sin buscar demasiado (2026-10-27, AAL 03-11: "elegí la música más genérica de funk, no le des tantas vueltas"). Si el editor no tiene Motion Array, bajar de Mixkit (tag funk); en 02-10 quedó "Gimme that Groove" (Michael Ramir C.) desde 0:04, 120 BPM, 16 dB debajo de la voz con hueco de EQ. En 06-11 y 18-11, *Funkee Monkeee* (Mixkit, instrumental). **Mide 120,0 BPM**, con un tiempo cada 0,5 s = 15 frames a 30 fps. En 06-11 se anotó 100 BPM por error; se corrigió al medirlo de nuevo en 18-11. Arranca desde ~4,7 s del tema, a 16 dB bajo la voz (17 en el hook) con hueco de EQ. Igual hay que medir la grilla en cada video (base).
 - **Música (piezas anteriores):** alegre y con ritmo, de Motion Array. Usadas: "Reaching For The Stars" (captación), "Vlog Happy Hiphop" (alquiler), "Sax On The Beach" (monoambiente), "Closer To The Edge" (historia personal).
 - Look natural y luminoso, colores reales. B/N y overlay rojo solo como recurso puntual de énfasis (1–2 por video).
 - Audio: master de la base (-11 LUFS). Los exports de agosto–septiembre quedaron entre -15,5 y -18,6 LUFS: no tomarlos como modelo de nivel.
@@ -121,6 +121,9 @@ Según el manual y lo que usan los proyectos aprobados:
 - Si no hay stock que cumpla, usar material de ella o un plano de detalle neutro antes que un clip que no encaje.
 - **Sus crudos traen mucho "detrás de escena"**: ella charlando con quien filma, señalando "acá", pidiendo repetir, y audio de indicaciones en casi todos los clips de recorrido. Esos planos no van (02-10: el usuario pidió cambiar uno, "que se vea más profesional"); el B-roll siempre sin su audio. Whisper alucina "Gracias por ver el video" / "Suscríbete" en los clips sin voz.
 - **Planos de ella caminando: arrancan cuando ya camina** (corrección del usuario, 2026-10-27, AAL 03-11: "se ve cómo Andrea se prepara para caminar, tomá el video desde que camina"). En sus tomas de seguimiento queda parada ~1 s acomodándose antes del primer paso; ubicar el primer paso en una tira de frames a 10 fps (en 03-11, 1,1 s) y entrar ahí.
+- **B-roll del lugar en el hook** (corrección del usuario, 2026-11-25, AAL 18-11): cuando nombra la ubicación ("kilómetro 13, Bariloche"), cortar a un plano de la propiedad (la fachada) mientras lo dice, con el título del lugar encima, y volver a ella a cámara. En 18-11 duró 1,9 s.
+- **Vale para todos los planos de caminata, no solo el primero:** en 18-11 se marcó dos veces, a 0:09 y a 0:37. Revisar cada toma de seguimiento antes de entregar la estructura.
+- **CTA a cámara más bajo que la voz en off:** en 18-11 llegó ~8 dB por debajo. El usuario pidió "por lo menos 3 dB" más; se subió 8 dB para emparejarlo y se aprobó.
 - **CTA con error al final** (corrección del usuario, 2026-11-02, AAL 06-11: "ella se equivoca al final, ¿no hay otra opción?"): graba dos o tres CTA seguidos y suele trabarse o rematar raro. Escuchar el final de cada toma antes de elegir. Si ninguna termina limpia, cortar la buena en una frase completa (en 06-11: "...escribinos por WhatsApp", sin el "y la venimos a visitar juntos" que seguía), en el silencio entre palabras, y avisarlo.
 - **Precio distinto entre tomas del hook:** en 03-11 dijo "125 mil" en dos tomas y "115 mil" en otra. Preguntar cuál es el correcto antes de elegir la toma (era USD 125.000).
 
@@ -129,7 +132,7 @@ Según el manual y lo que usan los proyectos aprobados:
 - No cambiar el copy ni la estructura del guion sin que lo pidan.
 - CTA final: WhatsApp / coordinar visita / asesoramiento / guardar el video, como lo diga ella. No pedir comentar palabras clave salvo que lo diga.
 - **El guion es guía; en pantalla va lo que ella dice.** En 02-10 la voz decía "kilómetro 12" y el guion "km 5", y nombró un dato que el guion no tenía (terreno de 1.137 m²): se puso lo dicho y se avisó la diferencia. Datos del guion que ella no dice no van como títulos salvo que el usuario los pida.
-- **Portada: normalmente la hace el usuario.** Pide 2 frames de Andrea sonriendo (boca cerrada) y 2 de la fachada, los más nítidos (varianza del laplaciano), en la resolución original a `PORTADA/`. En pauta de propiedad a veces usa la fachada (02-10, 03-11) y a veces a Andrea frente a la casa (06-11). Al recibirla, insertarla como frame 0 con `portadas-reels/scripts/portada_primer_frame.sh`. Si pide que la hagamos nosotros, seguir la sección 12.
+- **Portada: normalmente la hace el usuario.** Pide 2 frames de Andrea sonriendo (boca cerrada) y 2 de la fachada, los más nítidos (varianza del laplaciano), en la resolución original a `PORTADA/`. En pauta de propiedad a veces usa la fachada (02-10, 03-11) y a veces a Andrea frente a la casa (06-11). Al recibirla, insertarla como frame 0 con `portadas-reels/scripts/portada_primer_frame.sh`. Si pide que la hagamos nosotros, seguir la sección 12. En 18-11 la pidió con **3 opciones de título**, 2 o más frames de Andrea sonriendo o con la boca cerrada y frames de la propiedad de respaldo; eligió la A.
 - Sumar acá las correcciones de gusto que vaya marcando (con fecha y video de origen).
 
 ## 10. Referencias aprobadas
@@ -145,6 +148,26 @@ Videos que el usuario marcó como modelo del estilo. Usarlos como referencia al 
 - `02-10 AAL PAUTA GAVIOTAS 200` (65,9 s, export en `EXPORT/`): **pauta de propiedad con voz en off**, casa + 2 departamentos en Barrio Pájaro Azul (km 12 de Bustillo). Hook a cámara reordenado según el guion con punch-ins anclados a los ojos e insertos de las dos casas; cuerpo con voz en off sobre su recorrido (34 planos); CTA a cámara. Títulos: "CASA PRINCIPAL / +2 DEPARTAMENTOS", "*Barrio Pájaro Azul* / BARILOCHE" y "3 UNIDADES por / USD 289.000" sobre la cabeza con barrido rojo, pin + "A 120 METROS / *de Av. Bustillo*", "TERRENO DE 1.137 m²" con el contorno del lote, "1 DORMITORIO + BAÑO", "2 DEPARTAMENTOS" azul, grilla de servicios, "ESCRIBIME / por WHATSAPP". Whip + light leak en los cambios de bloque, zoom-blur en el resto, 55 SFX, funk de Mixkit. Composición de Remotion de referencia en `plantilla/aal0210/` de esta skill (los videos y la mezcla no están: cambiar rutas y tiempos).
 - `03-11 AAL Título pendiente` (50,2 s, export en `EXPORT/`, aprobado 2026-10-27): **pauta de propiedad con voz en off**, casa de 71 m² a terminar en Lomas del Cauquén. Hook a cámara frente a la casa (una sola toma con punch-in anclado a los ojos), "en *Lomas del Cauquén*" y "POR / USD 125.000" sobre la cabeza; la sigue entrando a la casa ("acompañame") y el cuerpo en off va sobre el recorrido (20 planos al ritmo del funk, pausas de la voz a 0,12 s); CTA a cámara adentro con "ESCRIBINOS / por WHATSAPP / y COORDINAMOS UNA VISITA" **debajo de la cara** (arriba no había lugar). Títulos: "UNA CASA DE 71 m²" con ícono de plano, "2 PLANTAS" azul, "LOTE EN PH 628 m²", barra de "AVANCE DE OBRA" que sube a 70 %, "*tu propio estilo*", listas "PLANTA BAJA" / "PLANTA ALTA" con tildes rojos que entran con cada ambiente, pin + "A 1 CUADRA / *de Av. de la Virreina*". Funk genérico de Mixkit ("Keep the Funk ON", 130 BPM medidos) a ~15 dB bajo la voz con hueco de EQ; 42 SFX. Plantilla en `plantilla/aal0311/`.
 - `06-11 AAL Título pendiente` (77,9 s, export en `EXPORT/`, aprobado 2026-11-02): **pauta de propiedad sin guion**, dos construcciones en esquina sobre Av. Las Victorias (USD 185.000). Hook a cámara frente a la casa (una toma, 4 punch-ins anclados a los ojos) con "500 m² EN ESQUINA", "en *Las Victorias*" y "POR / USD 185.000" sobre la cabeza; cuerpo con voz en off (`VOZ/`, 66 s) sobre 32 planos cortados en la grilla de *Funkee Monkeee* (100 BPM, un tiempo = 18 frames); CTA a cámara adentro. Títulos: pin + "AVENIDA / LAS VICTORIAS / a 10 MINUTOS del centro de *Bariloche*", "LOTE DE 500 m² EN ESQUINA" con el contorno del lote, "2 CONSTRUCCIONES *independientes*", "SUMAN 218 m² CUBIERTOS", listas "1ª CONSTRUCCIÓN" / "VIVIENDA" / "2ª CONSTRUCCIÓN" con tildes rojos (arriba del cuadro: Andrea camina de espaldas por el centro), "HASTA 4 UNIDADES DE RENTA", distancias "5 MIN / 5 MIN / 15 MIN" con la cifra en degradé rojo. Correcciones: CTA cambiado de toma (sección 8) y portada con Andrea (sección 12). Plantilla en `plantilla/aal0611/`; portada con `scripts/portada_aal.py`.
+
+**Noviembre** (`{CARPETA_CLIENTE}/01 REELS/11 NOVIEMBRE/`):
+- `18-11 AAL PAUTA PH KM 13 — 3 UNIDADES (B` (72,7 s, export `EXPORT/18-11 AAL PAUTA PH KM 13 v1.mp4`, aprobado 2026-11-25): **pauta de 3 PH en un complejo** sobre Av. Bustillo km 13, desde USD 89.000. Formato:
+  - **Hook a cámara:** una toma con punch-ins anclados a los ojos. En medio, el B-roll de la fachada con "KILÓMETRO 13 / *Bariloche*".
+  - **Cuerpo en off:** `VOZ/` sobre 29 planos en la grilla de 15 frames.
+  - **CTA a cámara.**
+
+  Títulos con barrido rojo sobre la cabeza: "3 PH EN VENTA", "DESDE USD 89.000" y "AVENIDA BUSTILLO" (compacto, arriba de la cabeza).
+
+  Motion que acompaña la voz:
+  - casitas 1·2·3, con la 2 marcada en "elegís el tuyo";
+  - chips rojos con ícono: 2 dormitorios, baño, gas natural, apto crédito;
+  - "OPCIÓN 1/2/3" con su precio;
+  - ícono de plano con los m² cubiertos;
+  - lote con contador de patio (10 / 186 / 322 m²);
+  - pin + "acceso directo desde *Bustillo*" / "por *Brazo Machete*";
+  - marcador chico "OPCIÓN ①②③" arriba durante cada recorrido;
+  - CTA "ESCRIBIME / con el N° DE OPCIÓN / y COORDINAMOS LA VISITA" debajo de la cara (ella no dijo WhatsApp).
+
+  74 SFX. Correcciones de la estructura: el B-roll del lugar en el hook, las caminatas, el CTA (sección 8) y la voz cortada al habla (base). Plantilla en `plantilla/aal1811/` y portada con `scripts/portada_aal_opciones.py`.
 
 **Anteriores** (carpeta `LISTOS` de cada uno):
 - `05-09 AAL "Apto crédito" no lo decide el`: orgánico educativo, con titular de hook grande, overlay rojo "NO CALIFICA", remate en B/N con "NO" rojo, script "antes de enamorarte" y subtítulos con bold italic.
@@ -162,5 +185,7 @@ Guía sacada de sus portadas de propiedad (2026-11-02, AAL 06-11): `10 OCTUBRE/0
   - Acumin no tiene itálica en el kit: se inclina con un shear de ~0,18–0,2.
 - **Con Andrea en la foto:** recortarla (Vision), fondo a 0,86 con desenfoque de 3 px, ella con más luz (gamma 0,85, brillo 1,10), y el azul **solo sobre el fondo**.
 - En sus portadas el precio va con coma ("USD 125,000"); en 06-11 se usó punto como en el resto de la skill y se aprobó.
-- Script: `scripts/portada_aal.py` (cambiar rutas, foto, textos y `TOP`).
+- **Foto corrida hacia abajo para hacer lugar al texto** (18-11: 110 px, con el pelo en y≈780): el hueco de arriba se rellena con un degradé de azul, no espejando el cielo, porque las nubes repetidas se notan.
+- Opción aprobada en 18-11 (A): pastilla "3 PH en Km 13 desde" + "USD 89.000".
+- Scripts: `scripts/portada_aal.py` (cambiar rutas, foto, textos y `TOP`) y `scripts/portada_aal_opciones.py` (la línea y el precio por argumento, para las opciones de título).
 
