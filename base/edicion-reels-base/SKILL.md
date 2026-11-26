@@ -21,6 +21,7 @@ Las skills se comparten entre editores (repo `elevate-edicion`) y cada uno guard
 - **Al empezar cualquier tarea, leer `config.json`.** Si no existe, cargar la skill `configuracion-inicial` antes de seguir.
 - Una clave en `null` o una ruta que no existe significa que **ese editor no tiene ese recurso**. No es un error: avisarle y usar una alternativa (otra biblioteca configurada, material propio del cliente, motion en lugar de stock), nunca inventar una ruta. Si una skill de cliente menciona un archivo puntual (una canción, una pieza de referencia) que el editor no tiene, decírselo y pedirle algo equivalente.
 - Las skills se referencian como `~/.claude/skills/<skill>/`. Nunca escribir en una skill rutas absolutas de una máquina puntual: siempre marcadores.
+- **"Failed to fetch … disk space is low"** en cuadros sueltos (DAE 01-12, 2026-11-26, 14 GB libres): con proxies de 1440×2560 Chrome rechazaba la lectura de cuadros al azar (939, 1113…). Arreglo: proxies de **1080×1920 en los planos con zoom ≤ 1,1** (1440 solo donde hace falta el punch), `--concurrency=2` y `--offthreadvideo-cache-size-in-bytes=800000000`.
 
 ## 1. Márgenes de seguridad de redes sociales
 En 1080×1920, todo texto, subtítulo, gráfico, logo o dato va dentro de la zona segura:
@@ -77,9 +78,11 @@ Cadena aprobada, **por tramo/toma** (cada toma tiene su nivel y su ruido):
 
 ### 3.3 SFX
 - Por debajo de la voz, nunca encima de una palabra importante; alinear el **pico** del archivo con el evento visual (medirlo). Los mp3 de la biblioteca tienen colas rotas: convertir a WAV antes de mezclar.
+- **SFX profesionales, nada de sonidos de dibujito** (corrección del usuario, 2026-11-26, DAE 01-12: el `flip.mp3` de un indicador y el `wink.mp3` de los pines "no me gusta… reemplazalo por otro más profesional como CLICK o WOOSH"). En cambios de estado, pines y tarjetas: `CLICK.mp3` o whoosh. Tampoco squeaky, cartoon stretch, bubbles ni similares.
 - Densidad aprobada en reels con mucho movimiento: ~**35 SFX en 57 s** (whoosh/swipe en cada corte y transición, pop en cifras y títulos, "check" en listas, riser que llega con su pico al drop). Con 18 dijo "faltan sfx" (2026-10-02).
 
 ### 3.4 Master y export
+- **Mezcla mono → estéreo con `pan=stereo|c0=c0|c1=c0`, nunca con `-ac 2`** (DAE 01-12, 2026-11-26): `-ac 2` reparte el mono a −3 dB por canal y el master quedaba 3 dB abajo (−4,5 dBFS de pico con el limitador en −1,5). Con la mezcla en mono, apuntar a **−14 LUFS mono** antes del `pan`: el estéreo duplicado mide −11.
 - Master final **−11 LUFS integrados, pico ≤ −1 dBTP**. Nunca entregar masters sobrecomprimidos (ej. −7 LUFS).
 - Con la voz ya comprimida y nivelada, llegar al master con **ganancia lineal + limitador suave** (`volume=<dB>,alimiter=limit=0.84:attack=1:release=80:level=disabled`). `loudnorm` con picos sin controlar cae a modo dinámico o aplasta la voz contra la música: no usarlo como "arreglo" de una voz mal comprimida.
 - **True peak de notas de voz / audios de WhatsApp** (RIS 03-09, 2026-10-07): el AAC del teléfono trae agudos que dan sobrepicos entre muestras (+0,2 dBTP con el pico de muestra en −1,9 dB). Arreglo: `lowpass=f=8000` en esa voz y el limitador del master sobremuestreado (`aresample=192000,alimiter=…,aresample=48000`) → −1,8 dBTP en el mp4.
@@ -89,6 +92,7 @@ Cadena aprobada, **por tramo/toma** (cada toma tiene su nivel y su ruido):
 ## 4. Estructura
 - **El video termina cuando el speaker termina de hablar**: sin placa final ni end card, salvo que el usuario la pida.
 - **Portada en el primer frame** (pedido del usuario, 2026-10-05, PAO 10-09): todo reel se entrega con su portada, hecha con la skill **`portadas-reels`** (cargarla aunque el usuario no pida la portada aparte; la estética sale de la skill de marca). En el export final la portada **reemplaza el frame 0** (no se agrega un frame: misma duración, mismos frames, mismo audio) con `portadas-reels/scripts/portada_primer_frame.sh`. El cuadro base de la portada sale del arranque del video para que el paso al frame 1 no salte. **Excepción:** si la skill de marca dice que la portada la hace el usuario (hoy `matias-heras-brand` y `pamela-erick-brand`), no se genera ni se inserta salvo que la pida.
+- **Cámara que sigue moviéndose después de la frase** (corrección del usuario, 2026-11-26, DAE 01-12: la vocera termina de hablar en la puerta y la cámara la sigue cruzando la puerta, "queda medio desprolijo"): no mostrar el tránsito. Fundido corto (~8 cuadros) del último cuadro útil directo a la parte ya estable del recorrido, sacando la pausa debajo; si ese tramo no alcanza para la frase siguiente y el crudo es de 60 fps, estirarlo (0,84× quedó fluido).
 - **El hook arranca en la primera sílaba** (nada del arranque de la grabación antes de hablar). Ubicar ese arranque con la energía de la voz, no con Whisper (puede estar ~1 s corrido).
 - **Cortes de cada toma precisos al habla** (corrección del usuario, 2026-10-04, reel MH 11-10: "hay muchos segundos detrás o delante"): cada toma entra **~0,03–0,05 s antes de la primera sílaba** y sale **~0,05 s después de la cola de la última palabra**; en la unión entre tomas el silencio total queda en **~0,05–0,15 s**. Cómo medirlo:
   - La energía sola engaña: en selfies, el ruido de agarrar/mover el celular al empezar y terminar la toma supera el umbral de voz (en 11-10 hubo hasta 1,3 s de ruido "como voz" antes de la primera palabra y 0,75 s después de la última).
