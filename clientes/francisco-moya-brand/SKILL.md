@@ -86,6 +86,7 @@ Natural, sin looks marcados. Fran graba mucho en exteriores luminosos (cielo azu
 | **Selfie / opinión caminando** (11-07) | Casi solo subtítulos + 1 clip pop del tema + acotación meme. Liviano. |
 | **Trend / meme** (10-07) | Texto fijo de trend, plano único, música del trend. Sin subtítulos. |
 | **YouTube / VSL / charla (horizontal)** | Mismo sistema tipográfico en 1920×1080: títulos en la pared libre al costado de Fran, placas, fotos-tarjeta con el material vertical, botón animado si hay CTA. Detalle en la sección 11. |
+| **Pauta de webinar (vertical, por ciudad)** | Selfie a cámara + títulos-golpe + placas blancas con motion + B-roll solo de la ciudad que nombra. **Sin portada.** Detalle en la sección 14. |
 
 ## 9. Portadas
 Analizadas 2026-10-07 sobre `11-07 FM Argentina` y 5 portadas de mayo (`assets/ref/portadas_mayo.jpg`):
@@ -94,6 +95,7 @@ Analizadas 2026-10-07 sobre `11-07 FM Argentina` y 5 portadas de mayo (`assets/r
 - Muchas veces **con rotoscopia**: el golpe amarillo detrás de Fran ("3 RAZONES", "UN CAMBIO?", "VENDER").
 - Ejemplos: "LOS AGENTES / PUEDEN APRENDER / **DE ARGENTINA**"; "FANÁTICOS DEL / **MULTITASKING**"; "¿HACE CUANTO NO HACES / **UN CAMBIO?**"; "ESTO TE HACE / **VENDER**"; "**COMPETIR** / POR QUIEN SOS".
 - Proceso y verificación: `portadas-reels` (cuadrado central, primer frame). Portada horizontal (YouTube / VSL): sección 11.
+- **Las pautas de webinar NO llevan portada** (corrección de Tomi, 2026-11-26, 15-11 Webinar 3 ORL: "no va"): se entregan sin portada en el frame 0. Es una excepción a la regla de `edicion-reels-base` §4.
 
 ## 10. Referencias analizadas
 `references/piezas.md`: los 4 reels de julio/agosto 2026 que definen esta skill (10-07 Netflix, 11-07 Argentina, 15-08 propiedad extra, 35-08 Entrevista Aleja), con rutas, tiempos y qué recurso aparece en cada uno, más el primer horizontal aprobado (24-10 VSL webinar 2) el primer carrusel de caso de éxito (14 propiedades vendidas) y el primer carrusel de tendencia de dos fotos (No tenés que… / Empezá…, §13).
@@ -134,3 +136,28 @@ Aprobado en **"No tenés que… / Empezá…"** (2026-11-25, `{CARPETA_CLIENTE}/
 - **Posición**: la frase de arriba va centrada al **47 %** de su mitad y la de abajo al **46 %**, en el mismo lugar en todas las placas, así al deslizar se lee como una serie. **El texto nunca tapa una cara**: primero se mueve el encuadre (cara arriba y texto en el pecho, o al revés). Solo si no hay encuadre posible se mueve esa frase (`ty`). En la placa 1 aprobada, la frase de abajo quedó al 30 %, sobre el mar y arriba de la cabeza de Fran.
 - **Elección de fotos** (pares aprobados): contenido → Fran al teléfono en el río / Fran sonriendo a cámara en el barco · invertir → la casa / Fran presentando frente a la pantalla (el sistema) · esperar → Fran sentado leyendo / Fran caminando con el celular (seguimiento) · hacer todo vos → una persona sola en el gimnasio / reunión de equipo · tener todo resuelto → torres con cielo nublado / camino entre palmeras (el primer paso) · 12 horas → skyline al atardecer / vista aérea de Tampa.
 - **Herramienta**: `scripts/carrusel_dos_fotos.sh nuevo <carpeta>` arma el proyecto con la plantilla (`assets/carrusel-dos-fotos/`: el carrusel aprobado y sus fuentes). Cada placa se edita en el objeto `S` de `index.html` (foto, tamaño `s`, encuadre `x/y`, posición `ty`, velo `br` y texto `tt/tb`). `render` saca las placas ("placa N.png") con Chrome headless y la vista previa.
+
+## 14. Pauta de webinar vertical por ciudad (1080×1920)
+Aprobada en **15-11 FM Webinar 3 ORL** (2026-11-26, 85,8 s, webinar del martes 8 de diciembre). El estilo sale de las pautas de octubre (`01 REELS/11 NOVIEMBRE/12-10 FM Pauta webinar 1 nuevo hook`, `14-10 … webinar 3`, `16-10 … webinar 5`). Proyecto de referencia: `remotion-local/src/fm1511/` (en la máquina de Tomi).
+- **Crudos**: Fran graba en selfie con un DJI Osmo. El archivo dice 1920×1080, pero trae rotación de 90° en los metadatos: es vertical, no hay que recortarlo. Graba el cuerpo una vez y aparte los **hooks por ciudad** ("Sos realtor en Orlando" / "¿Vendés propiedades en Orlando?"). Se usa el hook que pide el cliente y se descarta el arranque del cuerpo que nombra otra ciudad. De cada frase repetida va la última toma, y se sacan los "Bien", "Voy de nuevo" y "Perfecto".
+- **Inserts: solo de la ciudad que nombra** (pedido del cliente: si dice Orlando, nada de Miami ni de Tampa). El material propio de Orlando, 25/09, catalogado en `references/material-florida-oct-2026.md`, puede no estar en la máquina. Está en el Drive del equipo, en la carpeta `ORLANDO` del viaje. De Pexels, con permiso del editor, sirven las tomas aéreas de la rueda de ICON Park (ids 31248130 y 31248128). Sin permiso del editor no se usa stock.
+- **Estructura**: hook → dolor (referidos, estancado, "el año que viene tu negocio no va a crecer") → "mi nombre es Francisco Moya" + "+200 realtors" → fecha y hora → los 3 puntos numerados → "gratuita y en vivo / cupos limitados" → CTA al enlace → "nos vemos el martes…".
+- **Títulos-golpe** sobre Fran: línea Medium + **un solo golpe en Black MAYÚSCULA**, pegados arriba de la cabeza. El del hook ("sos realtor en / **ORLANDO**") va con rotoscopia detrás del pelo; el tope del pelo se mide en la máscara. En la zona de pauta (y ≥ 290) un título de 3 líneas no entra arriba de la cabeza con punch: se saca el punch de ese plano o se achica el título a 2 líneas.
+- **Placas blancas `#FDFDFD`** con texto gris carbón y motion simple del mismo gris:
+  - calendario que gira hasta "¿CUÁNDO?";
+  - calendario "DICIEMBRE / 8 / MARTES" + pastilla "7 PM · HORA FLORIDA" (aprobada aunque Fran dice "7 de la tarde");
+  - barras 2026 → 2027 con "x2" para "duplicar";
+  - casitas "+1" para "+4 propiedades";
+  - número en círculo para cada punto.
+  
+  La placa tiene que mostrar texto desde su primer cuadro: una placa vacía 1 s se ve rota.
+- **Puntos 2 y 3** sobre B-roll de la ciudad, con el número en un círculo blanco arriba del título. **CTA** en placa negra `#222`: "dale click al / **ENLACE** / de abajo" + flechas animadas.
+- **Subtítulos** debajo del mentón (límite de pauta y = 1250); si no entran, arriba de la cabeza. Sobre B-roll, centrados.
+- **Transiciones**: zoom con desenfoque en cada cambio de plano y punch-in entre tomas a cámara. **SFX**: whoosh en cada transición y pop en cada línea de título; en total 83 en 86 s.
+- **Música**: cama de `scripts/musica_corporativa.py` a −25,5 LUFS con la voz a −12,5 (master −10,9 LUFS / −1,4 dBTP). Aprobada sin cambios.
+- **Variante con casos de éxito**: aprobada en **16-11 FM Webinar 4 ORL** (2026-11-26, v2, 82,1 s). Proyecto: `remotion-local/src/fm1611/`.
+  - **Estructura**: hook → dolor → casos (Patricia Condry 9 propiedades en 4 meses, Angélica Medina 8 en 3 meses, y una lista rápida de nombres) → "mi nombre es…" → fecha → "una clase 100% en vivo" → "duplicar tus ventas" → CTA → "nos vemos el martes…".
+  - **Si el editor corrige la estructura en Premiere**, los cortes exactos se sacan del `.prproj`: es XML comprimido con gzip. En cada `VideoClipTrackItem` están `Start`/`End` y el `InPoint` de su clip, en ticks de 254016000000 por segundo. No hay que adivinarlos por audio.
+  - **Cada cliente nombrado** va con su foto o clip (lo pasa el editor) como foto-tarjeta 3:4 de 540×720 sobre blanco, con el nombre en Black MAYÚSCULA gris carbón ~88 px arriba de la tarjeta. Las tarjetas se encadenan sin desenfoque, una por nombre y con un pop cada una, aunque duren 0,6 s. Una foto grupal horizontal va como tarjeta apaisada de 780×513. Testimonio en video (entrevista en un porche): a pantalla completa, acercado a los dos, con "nuestra clienta / NOMBRE" sobre la mesa, sin tapar caras.
+  - **Placas de resultado**: "en solo 4 meses / **9 PROPIEDADES** / bajo contrato" + una fila de casitas que entran de a una, cada una con su pop.
+  - **Todo inserto sobre fondo blanco o negro va CENTRADO en el cuadro (y = 960)**. Corrección del editor, 2026-11-26: la tarjeta arriba y las placas en la mitad superior "no lucen profesionales". Las tarjetas se centran solas. En las placas se centra el bloque completo (título + separación + motion), con el texto en y ≤ 1250, así que el bloque no supera ~580 px: el calendario va al 88 % y las barras a 200 px de alto, con el "x2" al costado. Los subtítulos sobre una tarjeta van arriba de ella, en gris carbón.
